@@ -37,29 +37,18 @@
                 <div class="nav-mobile d-lg-flex align-items-center w-100">
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                         <li><a href="myaccount.html" class="nav-link txt-grey txt-green-hover text-uppercase">My Account</a></li>
-                        <li><a href="trend-hero.html" class="nav-link txt-grey txt-green-hover text-uppercase">Market Trend</a></li>
-                        <li><a href="/" class="nav-link txt-grey txt-green-hover text-uppercase active">Marketplace</a></li>
+                        <li><a href="trend-hero.html" class="nav-link txt-grey txt-green-hover text-uppercase active">Market Trend</a></li>
+                        <li><a href="/" class="nav-link txt-grey txt-green-hover text-uppercase">Marketplace</a></li>
                     </ul>
-
-                    <div class="d-block d-lg-none language-mobile">
-                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
-                            <span>English</span>
-                            <img src="assets/images/usa-icon.png" alt="">
-                        </a>
-                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
-                            <span>Tiếng Việt</span>
-                            <img src="assets/images/vn-icon.png" alt="">
-                        </a>
-                    </div>
 
                     <div class="notification-list">
                         <!-- <div class="text-end">
                             <button type="button" class="btn btn-login text-white fade-effect" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
                         </div> -->
                         <div class="account d-lg-flex align-items-center">
-                            <div class="account-user-avatar order-2">
+                            <div class="account-user-avatar order-2 position-relative">
                                 <img src="assets/images/user-avatar.png" alt="">
-                                <div class="position-relative fota-dropdown language d-none d-lg-block">
+                                <div class="position-relative fota-dropdown language">
                                     <a class="language-icon fota-toggle d-none d-lg-block" href="#">
                                         <img src="assets/images/language-icon.png" alt="">
                                     </a>
@@ -111,16 +100,12 @@
     <div class="page-content">
         <div class="fota-container">
             <div class="top-content position-relative">
-                <div class="top-navbar-custom d-flex">
-                    <a href="#" class="trade-link link active text-uppercase"><i class="icon-gold-bars d-block"></i>Trade</a>
-                    <a href="rent-index.html" class="rent-link link text-uppercase"><i class="icon-lease d-block"></i>Rent</a>
-                </div>
-                <div class="navbar-custom d-lg-flex justify-content-center">
+                <div class="navbar-custom xs-pd-40 d-lg-flex justify-content-center">
                     <ul class="nav long-type justify-content-center align-items-center">
                         <li><a href="/" class="nav-link txt-grey txt-green-hover">Market</a></li>
-                        <li><a href="index.html" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
-                        <li><a href="item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
-                        <li><a href="land.html" class="nav-link txt-grey txt-green-hover">FotaLands</a></li>
+                        <li><a href="trend-hero.html" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
+                        <li><a href="trend-item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
+                        <li><a href="trend-fota-lands.html" class="nav-link txt-grey txt-green-hover">FotaLands</a></li>
                         <li><a href="trend-skins.html" class="nav-link txt-grey txt-green-hover">Skins</a></li>
                     </ul>
                 </div>
@@ -357,7 +342,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="page-holder">
+                <div class="page-holder market-trend">
                     <div class="container-fluid overflow-hidden">
                         <section>
                             <div class="row">
@@ -391,12 +376,15 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video" id="video">
+                                            <div class="card-image">
                                                 <a href="trend-hero-detail.html">
-                                                    <div class="thumb position-relative">
+                                                    <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/kronok.png" alt="">
                                                         <div class="hero-video">
-                                                            <video class="video" src="assets/images/demon-688x1024.mp4" muted autoplay loop></video>
+                                                            <video src="assets/images/beast-688x1024.mp4" muted autoplay loop></video>
+                                                            <div class="hero-video">
+                                                                <video class="video" src="assets/images/demon-688x1024.mp4" muted autoplay loop></video>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
@@ -410,17 +398,12 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Demon
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                            <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
                                                             <span>
@@ -463,16 +446,22 @@
                                             </div>
                                             <div class="card-price d-flex align-items-center justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="left">
+                                                        <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                        <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span>100,000</span></div>
+                                                        <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="assassin-detail.html">
+                                            <div class="card-image">
+                                                <a href="trend-hero-detail.html">
                                                     <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/soul-dancer.png" alt="">
                                                         <div class="hero-video">
@@ -490,17 +479,12 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Assassin
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                            <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
                                                             <span>
@@ -543,8 +527,14 @@
                                             </div>
                                             <div class="card-price d-flex align-items-center justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="left">
+                                                        <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                        <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span>100,000</span></div>
+                                                        <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -552,7 +542,7 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="trend-hero-detail.html">
                                                     <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/awoking.png" alt="">
                                                         <div class="hero-video">
@@ -570,17 +560,12 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Warrior
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                            <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
                                                             <span>
@@ -623,16 +608,22 @@
                                             </div>
                                             <div class="card-price d-flex align-items-center justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="left">
+                                                        <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                        <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span>100,000</span></div>
+                                                        <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="snake-detail.html">
+                                            <div class="card-image">
+                                                <a href="trend-hero-detail.html">
                                                     <div class="thumb position-relative">
                                                         <img class="img-fluid image" src="assets/images/snake.png" alt="">
                                                         <div class="hero-video">
@@ -650,17 +641,12 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Serpent
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                            <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
                                                             <span>
@@ -703,16 +689,22 @@
                                             </div>
                                             <div class="card-price d-flex align-items-center justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="left">
+                                                        <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                        <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span>100,000</span></div>
+                                                        <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="assassin-detail.html">
+                                            <div class="card-image">
+                                                <a href="trend-hero-detail.html">
                                                     <div class="thumb position-relative">
                                                         <img class="img-fluid image" src="assets/images/hezio.png" alt="">
                                                         <div class="hero-video">
@@ -730,17 +722,12 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Assassin
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                            <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
                                                             <span>
@@ -783,16 +770,22 @@
                                             </div>
                                             <div class="card-price d-flex align-items-center justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="left">
+                                                        <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                        <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span>100,000</span></div>
+                                                        <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="hunter-detail.html">
+                                            <div class="card-image">
+                                                <a href="trend-hero-detail.html">
                                                     <div class="thumb position-relative">
                                                         <img class="img-fluid image" src="assets/images/hunter.png" alt="">
                                                         <div class="hero-video">
@@ -810,17 +803,12 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Hunter
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                            <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
                                                             <span>
@@ -863,8 +851,14 @@
                                             </div>
                                             <div class="card-price d-flex align-items-center justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="left">
+                                                        <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
+                                                        <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                    </div>
+                                                    <div class="right">
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span>100,000</span></div>
+                                                        <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -873,7 +867,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="trend-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -883,7 +877,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="trend-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -893,7 +887,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="trend-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -903,7 +897,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="trend-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -913,7 +907,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="trend-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -923,7 +917,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="trend-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>

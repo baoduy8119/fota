@@ -1,0 +1,182 @@
+.market-trend {
+    .grid-view {
+        .card {
+            &-spec {
+                display: none;
+            }
+            &-info {
+                padding-bottom: 40px;
+            }
+            &-price {
+                height: 130px;
+                padding: 0 20px;
+                .left {
+                    span {
+                        display: block;
+                        &.label {
+                            font-size: 12px;
+                        }
+                        &.value {
+                            font-size: 20px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                .inner {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-top: 35px;
+                    .right {
+                        .buy-btn {
+                            position: static;
+                            display: block;
+                            span {
+                                margin-top: 5px;
+                                padding-top: 16px;
+                            }
+                        }
+                        .unit-price {
+                            display: flex;
+                            flex-direction: column;
+                            text-align: center;
+                            font-size: 24px;
+                            span:first-child {
+                                font-size: 12px;
+                            }
+                            span:last-child {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+                &::before,
+                &::after {
+                    width: 8px;
+                }
+                &::before {
+                    left: -8px;
+                    background: url('../images/trend-card-price-left-bg.png');
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    right: -8px;
+                    top: 0;
+                    bottom: 0;
+                    background: url('../images/trend-card-price-right-bg.png');
+                }
+            }
+        }
+    }
+    .list-view {
+        &.items {
+            &.card-overview {
+                .card {
+                    @media screen and (max-width: 991px) {
+                        min-height: inherit;
+                    }
+                    &-spec {
+                        @media screen and (max-width: 991px) {
+                            top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        &.card-overview {
+            .card {
+                .top-info {
+                    margin-top: 5px;
+                }
+                &-spec {
+                    flex-wrap: wrap;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .card {
+            &-spec {
+                display: flex;
+            }
+            &-price {
+                .left {
+                    display: none;
+                }
+                .unit-price {
+                    @media screen and (max-width: 991px) {
+                        span:first-child {
+                            margin-left: 5px;
+                            order: 2;
+                        }
+                        span:last-child {
+                            order: 1;
+                        }
+                    }
+                }
+            }
+            &-desc {
+                display: flex;
+                .label {
+                    margin-right: 10px;
+                    font-size: 12px;
+                }
+                .value {
+                    margin-right: 30px;
+                    font-size: 20px;
+                }
+            }
+            &-info {
+                @media screen and (max-width: 991px) {
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+    .card-price {
+        .unit-price {
+            display: flex;
+            @media screen and (min-width: 992px) {
+                flex-direction: column;
+                text-align: center;
+                font-size: 24px;
+                span:first-child {
+                    font-size: 12px;
+                }
+                span:last-child {
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+.hero-statistic {
+    max-width: 900px;
+    margin: 20px auto 0;
+    .fota-dropdown {
+        display: inline-block;
+        i {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .fota-dropdown-menu {
+            right: -15px;
+            top: 25px;
+            @media screen and (max-width: 991px) {
+                .trend-item & {
+                    right: -67px;
+                }
+            }
+        }
+    }
+    > div {
+        margin: 10px 0;
+    }
+    .label {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .value {
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <title>Fota</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="fota-container">
+            <div class="header-inner d-flex">
+                <a href="/" class="d-flex align-items-center text-white text-decoration-none">
+                    <img class="logo" src="assets/images/logo.png" alt="FOTA">
+                </a>
+
+                <div class="d-flex align-items-center top-currency justify-content-end d-lg-none txt-light-yellow fw-7">
+                    <span>
+                        100.534 BUSD
+                    </span>
+                    <i class="icon-currency d-inline-block ml-10"></i>
+                </div>
+
+                <a href="#" class="toggle-menu d-block d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <div class="nav-mobile d-lg-flex align-items-center w-100">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li>
+                            <a href="myaccount.html" class="nav-link txt-grey txt-green-hover text-uppercase active">
+                                My Account
+                            </a>
+                            <div class="nav-dashboard d-lg-none">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center txt-green-hover level-1">
+                                            <i class="icon-noticeboard"></i>
+                                            Dashboard
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="myaccount-profit-pending.html" class="txt-green-hover">Profit</a></li>
+                                            <li><a href="myaccount-transaction-rent.html" class="txt-green-hover">Transaction</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-hero-farming.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-footman"></i>
+                                            Hero Farming
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-user"></i>
+                                            Account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-inventory-heroes.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-chest"></i>
+                                            Inventory
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-history.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-history"></i>
+                                            History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-old-shop"></i>
+                                            Clan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-chat.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-mail"></i>
+                                            <span>Contact</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="trend-hero.html" class="nav-link txt-grey txt-green-hover text-uppercase">Market Trend</a></li>
+                        <li><a href="/" class="nav-link txt-grey txt-green-hover text-uppercase">Marketplace</a></li>
+                    </ul>
+
+                    <div class="d-block d-lg-none language-mobile">
+                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
+                            <span>English</span>
+                            <img src="assets/images/usa-icon.png" alt="">
+                        </a>
+                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
+                            <span>Tiếng Việt</span>
+                            <img src="assets/images/vn-icon.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="notification-list">
+                        <!-- <div class="text-end">
+                            <button type="button" class="btn btn-login text-white fade-effect" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                        </div> -->
+                        <div class="account d-lg-flex align-items-center">
+                            <div class="account-user-avatar order-2">
+                                <img src="assets/images/user-avatar.png" alt="">
+                                <div class="position-relative fota-dropdown language d-none d-lg-block">
+                                    <a class="language-icon fota-toggle d-none d-lg-block" href="#">
+                                        <img src="assets/images/language-icon.png" alt="">
+                                    </a>
+                                    <div class="fota-dropdown-menu animate slideIn text-end">
+                                        <a href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                            <span>English</span>
+                                            <img src="assets/images/usa-icon.png" alt="">
+                                        </a>
+                                        <a href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                            <span>Tiếng Việt</span>
+                                            <img src="assets/images/vn-icon.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg-mr-20 text-end order-1">
+                                <div class="account-user-name text-uppercase">Player001</div>
+                                <div class="account-currency txt-light-yellow fw-7 d-lg-flex align-items-center">
+                                    <div class="d-flex align-items-center justify-content-end">
+                                        <span>
+                                            100.534 BUSD
+                                        </span>
+                                        <i class="icon-currency d-inline-block"></i>
+                                    </div>
+                                    <div class="position-relative fota-dropdown">
+                                        <a class="fota-toggle d-none d-lg-block" href="#">
+                                            <i class="fa fa-chevron-down text-white"></i>
+                                        </a>
+                                        <div class="fota-dropdown-menu animate slideIn text-end">
+                                            <div href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                                <span class="txt-light-green">1,421.524300 USDT</span>
+                                                <div><img src="assets/images/t-icon.png" alt=""></div>
+                                            </div>
+                                            <div href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                                <span class="txt-light-grey">4,500.524300 USDT</span>
+                                                <img src="assets/images/f-icon.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="page-content dashboard">
+        <div class="fota-container">
+            <div class="main-content d-lg-flex align-items-stretch ">
+                <div id="sidebar" class="sidebar">
+                    <div class="nav-dashboard d-none d-lg-block">
+                        <ul class="nav">
+                            <li>
+                                <a href="#" class="d-flex align-items-center txt-green-hover level-1">
+                                    <i class="icon-noticeboard"></i>
+                                    Dashboard
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myaccount-profit-pending.html" class="txt-green-hover">Profit</a></li>
+                                    <li><a href="myaccount-transaction-rent.html" class="txt-green-hover">Transaction</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="myaccount-hero-farming.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-footman"></i>
+                                    Hero Farming
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-user"></i>
+                                    Account
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-inventory-heroes.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-chest"></i>
+                                    Inventory
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-history.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-history"></i>
+                                    History
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-old-shop"></i>
+                                    Clan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-center txt-green-hover active">
+                                    <i class="icon-mail"></i>
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-holder">
+                    <div class="container-fluid overflow-hidden">
+                        <section>
+                            <div class="navbar-custom chat-navbar d-lg-flex position-relative justify-content-end ml-0">
+                                <ul class="nav justify-content-center align-items-center">
+                                    <li><a href="#" class="nav-link txt-grey txt-green-hover active">All</a></li>
+                                    <li><a href="#" class="nav-link txt-grey txt-green-hover">New</a></li>
+                                    <li><a href="#" class="nav-link txt-grey txt-green-hover">Replied</a></li>
+                                    <li><a href="#" class="nav-link txt-grey txt-green-hover">Closed</a></li>
+                                </ul>
+                                <div>
+                                    <a href="" class="fota-btn fota-large-btn sink-effect" data-bs-toggle="modal" data-bs-target="#newMessageModal"><i class="icon-quill-pen"></i>New Message</a>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="chat-container d-lg-flex align-items-stretch mt-40">
+                                <div class="chat-sidebar">
+                                    <div class="half-box-2">
+                                        <div class="chat-log">
+                                            <div class="chat-history-item">
+                                                <a href="#" class="fota-btn fota-green-btn"><span>Dianna Webb</span></a>
+                                                <div class="chat-history-date">Mon 4 Oct 17:28 PM</div>
+                                                <div class="chat-history-conversation">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua.</div>
+                                            </div>
+                                            <div class="chat-history-item">
+                                                <a href="#" class="fota-btn fota-green-btn"><span>Dianna Webb</span></a>
+                                                <div class="chat-history-date">Mon 4 Oct 17:28 PM</div>
+                                                <div class="chat-history-conversation">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua.</div>
+                                            </div>
+                                            <div class="chat-history-item">
+                                                <a href="#" class="fota-btn fota-green-btn"><span>Dianna Webb</span></a>
+                                                <div class="chat-history-date">Mon 4 Oct 17:28 PM</div>
+                                                <div class="chat-history-conversation">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua.</div>
+                                            </div>
+                                            <div class="chat-history-item">
+                                                <a href="#" class="fota-btn fota-green-btn"><span>Dianna Webb</span></a>
+                                                <div class="chat-history-date">Mon 4 Oct 17:28 PM</div>
+                                                <div class="chat-history-conversation">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua.</div>
+                                            </div>
+                                            <div class="chat-history-item">
+                                                <a href="#" class="fota-btn fota-green-btn"><span>Dianna Webb</span></a>
+                                                <div class="chat-history-date">Mon 4 Oct 17:28 PM</div>
+                                                <div class="chat-history-conversation">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chat-content">
+                                    <div class="full-box-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h3 class="fs-26 fw-7">Question #1234</h3>
+                                            <button class="fota-btn sink-effect">Close</button>
+                                        </div>
+                                        <div class="chat-log">
+                                            <div class="chat-history-item received">
+                                                <a href="#" class="fota-btn fota-green-btn"><span>Dianna Webb</span></a>
+                                                <div class="chat-history-date">Mon 4 Oct 17:28 PM</div>
+                                                <div class="chat-history-conversation">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua.</div>
+                                            </div>
+                                            <div class="chat-history-item sent">
+                                                <a href="#" class="fota-btn fota-green-btn"><span>John Smith</span></a>
+                                                <div class="chat-history-date">Mon 4 Oct 17:28 PM</div>
+                                                <div class="chat-history-conversation">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua.</div>
+                                            </div>
+                                            <div class="chat-history-item received">
+                                                <a href="#" class="fota-btn fota-green-btn"><span>Dianna Webb</span></a>
+                                                <div class="chat-history-date">Mon 4 Oct 17:28 PM</div>
+                                                <div class="chat-history-conversation">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua.</div>
+                                            </div>
+                                            <div class="chat-history-item sent">
+                                                <a href="#" class="fota-btn fota-green-btn"><span>John Smith</span></a>
+                                                <div class="chat-history-date">Mon 4 Oct 17:28 PM</div>
+                                                <div class="chat-history-conversation">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua.</div>
+                                            </div>
+                                            <div class="chat-history-item received">
+                                                <a href="#" class="fota-btn fota-green-btn"><span>Dianna Webb</span></a>
+                                                <div class="chat-history-date">Mon 4 Oct 17:28 PM</div>
+                                                <div class="chat-history-conversation">Lorem ipsum dolor sit amet, consectetur
+                                                    adipiscing elit, sed do eiusmod tempor
+                                                    incididunt ut labore et dolore magna aliqua.</div>
+                                            </div>
+                                        </div>
+                                        <div class="textarea-box">
+                                            <textarea rows="5" placeholder="Your message ..."></textarea>
+                                        </div>
+                                        <button class="sink-effect fota-btn fota-large-btn mt-20 txt-light-grey"><i class="icon-send-comment"></i>Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="newMessageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog large-dialog modal-dialog-centered">
+                    <div class="modal-content brown-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Your Messsage</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
+                        </div>
+                        <div class="modal-body mt-20">
+                            <form action="">
+                                <div class="mb-4">
+                                    <input type="text" placeholder="Message title..." class="fota-form-control">
+                                </div>
+                                <div class="mb-4">
+                                    <div class="textarea-box">
+                                        <textarea placeholder="Your message..." rows="5"></textarea>
+                                    </div>
+                                    <div class="invalid-message txt-orange"><i class="icon-spam"></i>Wanring message goes here.</div>
+                                </div>
+                                <div>
+                                    <a href="#" class="fota-btn m-auto sink-effect txt-light-grey"><i class="icon-send-comment"></i>Send</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

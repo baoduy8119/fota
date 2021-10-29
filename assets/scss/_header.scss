@@ -1,0 +1,305 @@
+.header {
+    position: relative;
+    background-color: $dark-green;
+    z-index: 3;
+    @media screen and (max-width: 991px) {
+        padding: 0 10px;
+    }
+    .top-currency {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .header-inner {
+        height: 90px;
+        @media screen and (max-width: 991px) {
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            .logo {
+                width: 70px;
+            }
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -13px;
+        height: 13px;
+        background: url('../images/header-bg.png') no-repeat 100% 0;
+        background-size: cover;
+    }
+    .nav {
+        @media screen and (min-width: 992px) {
+            margin-left: 30px;
+        }
+    }
+    .toggle-menu {
+        font-size: 30px;
+    }
+}
+.nav {
+    li {
+        position: relative;
+        font-weight: bold;
+        &::after {
+            content: '/';
+            position: absolute;
+            top: 7px;
+            right: -5px;
+            height: 20px;
+            color: $grey;
+            @media screen and (max-width: 991px) {
+                top: 10px;
+                font-size: 14px;
+            }
+        }
+        &:last-child {
+            &::after {
+                content: none;
+            }
+        }
+        a {
+            padding: 8px 30px;
+            @media screen and (max-width: 991px) {
+                padding: 8px 25px;
+            }
+        }
+    }
+}
+.search-container {
+    @media screen and (max-width: 991px) {
+        width: 294px;
+        height: 40px;
+        margin: 0 auto;
+    }
+    .icon-search {
+        top: 16px;
+        right: 20px;
+        font-size: 20px;
+        @media screen and (max-width: 991px) {
+            top: 10px;
+        }
+    }
+}
+.search-block {
+    @media screen and (min-width: 992px) {
+        margin-top: 20px;
+    }
+}
+.search-box {
+    width: 306px;
+    height: 50px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 0;
+    background: url('../images/search-box-bg.png');
+    background-size: cover;
+    font-size: 14px;
+    @media screen and (max-width: 991px) {
+        width: 294px;
+        height: 40px;
+        background: url('../images/search-box-mb-bg.png');
+    }
+}
+.btn-login {
+    width: 114px;
+    height: 40px;
+    background: url('../images/btn-login-bg.png');
+    font-size: 16px;
+    @media screen and (max-width: 991px) {
+        margin: 30px 20px 0 0;
+    }
+}
+.account {
+    font-size: 13px;
+    &-user-avatar {
+        img {
+            border-radius: 50%;
+        }
+        .language {
+            a {
+                color: white;
+            }
+            img {
+                margin-left: 15px;
+            }
+            &-icon {
+                position: absolute;
+                right: -9px;
+                bottom: 0;
+            }
+            .fota-dropdown-menu {
+                top: 10px;
+                right: -9px;
+            }
+        }
+    }
+    &-user-name,
+    &-currency {
+        margin: 5px 0;
+    }
+    &-currency {
+        .icon-currency {
+            margin: 0 10px;
+        }
+        .fa-chevron-down {
+            font-size: 10px;
+        }
+        .fota {
+            &-dropdown-menu {
+                top: 20px;
+                right: -15px;
+                padding-bottom: 15px;
+                span {
+                    margin-right: 10px;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}
+.icon-currency {
+    width: 18px;
+    height: 18px;
+    background: url('../images/icon-currency.png') no-repeat;
+}
+.top-navbar-custom {
+    bottom: 35px;
+    position: absolute;
+    @media screen and (min-width: 992px) and (max-width: 1600px) {
+        bottom: 40px;
+    }
+    @media screen and (max-width: 991px) {
+        top: 1px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .link {
+        display: block;
+        width: 106px;
+        height: 76px;
+        margin: 0 12px;
+        text-align: center;
+        @media screen and (max-width: 991px) {
+            width: 90px;
+            height: 65px;
+            font-size: 13px;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+        i {
+            margin-top: 8px;
+            font-size: 16px;
+        }
+        &:not(.active) {
+            opacity: 0.7;
+        }
+        &:hover {
+            opacity: 1;
+            color: $light-grey;
+        }
+        &.active {
+            width: 137px;
+            height: 99px;
+            font-size: 20px;
+            @media screen and (max-width: 991px) {
+                width: 106px;
+                height: 77px;
+                font-size: 16px;
+            }
+            i {
+                margin-top: 9px;
+                font-size: 22px;
+            }
+        }
+    }
+    .trade-link {
+        background: url('../images/trade-bg.png');
+        background-size: 100%;
+    }
+    .rent-link {
+        background: url('../images/rent-bg.png');
+        background-size: 100%;
+    }
+}
+.notification-list {
+    @media screen and (max-width: 991px) {
+        position: relative;
+        &::before {
+            content: '';
+            height: 1px;
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            background-color: #1f2323;
+        }
+    }
+}
+.nav-mobile {
+    @media screen and (max-width: 991px) {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 300px !important;
+        transform: translateX(100%);
+        background-color: $dark-green;
+        transition: all 0.3s;
+        z-index: 10;
+        &.show {
+            transform: translateX(0);
+        }
+        .account {
+            margin-top: 10px;
+            position: relative;
+            padding: 10px 20px 0;
+        }
+        .nav {
+            display: block;
+            text-align: right;
+            margin-top: 20px;
+            li {
+                &::after {
+                    content: none;
+                }
+                a {
+                    padding: 15px 20px;
+                }
+            }
+        }
+        .fota-dropdown-menu {
+            display: block;
+            position: static;
+            padding: 0;
+        }
+        .account-user-avatar {
+            position: absolute;
+            top: 35px;
+            right: 20px;
+            text-align: right;
+        }
+        .account-currency {
+            padding: 0;
+            .icon-currency {
+                margin-right: 0;
+            }
+        }
+        .account-user-name {
+            padding: 30px 50px 30px 0;
+            font-size: 16px;
+        }
+    }
+}
+.language-mobile {
+    padding: 0 20px;
+    margin-bottom: 30px;
+    img {
+        margin-left: 10px;
+    }
+    > a {
+        margin: 20px 0;
+    }
+}

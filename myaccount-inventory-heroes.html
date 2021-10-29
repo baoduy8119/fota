@@ -36,9 +36,63 @@
 
                 <div class="nav-mobile d-lg-flex align-items-center w-100">
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="myaccount.html" class="nav-link txt-grey txt-green-hover text-uppercase">My Account</a></li>
+                        <li>
+                            <a href="myaccount.html" class="nav-link txt-grey txt-green-hover text-uppercase active">
+                                My Account
+                            </a>
+                            <div class="nav-dashboard d-lg-none">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center txt-green-hover level-1">
+                                            <i class="icon-noticeboard"></i>
+                                            Dashboard
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="myaccount-profit-pending.html" class="txt-green-hover">Profit</a></li>
+                                            <li><a href="myaccount-transaction-rent.html" class="txt-green-hover">Transaction</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-hero-farming.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-footman"></i>
+                                            Hero Farming
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-user"></i>
+                                            Account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-inventory-heroes.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-chest"></i>
+                                            Inventory
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-history.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-history"></i>
+                                            History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-old-shop"></i>
+                                            Clan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-chat.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-mail"></i>
+                                            <span>Contact</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
                         <li><a href="trend-hero.html" class="nav-link txt-grey txt-green-hover text-uppercase">Market Trend</a></li>
-                        <li><a href="/" class="nav-link txt-grey txt-green-hover text-uppercase active">Marketplace</a></li>
+                        <li><a href="/" class="nav-link txt-grey txt-green-hover text-uppercase">Marketplace</a></li>
                     </ul>
 
                     <div class="d-block d-lg-none language-mobile">
@@ -108,25 +162,60 @@
             </div>
         </div>
     </header>
-    <div class="page-content">
+    <div class="page-content dashboard">
         <div class="fota-container">
-            <div class="top-content position-relative">
-                <div class="top-navbar-custom d-flex">
-                    <a href="#" class="trade-link link active text-uppercase"><i class="icon-gold-bars d-block"></i>Trade</a>
-                    <a href="rent-index.html" class="rent-link link text-uppercase"><i class="icon-lease d-block"></i>Rent</a>
-                </div>
-                <div class="navbar-custom d-lg-flex justify-content-center">
-                    <ul class="nav long-type justify-content-center align-items-center">
-                        <li><a href="/" class="nav-link txt-grey txt-green-hover">Market</a></li>
-                        <li><a href="index.html" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
-                        <li><a href="item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
-                        <li><a href="land.html" class="nav-link txt-grey txt-green-hover">FotaLands</a></li>
-                        <li><a href="trend-skins.html" class="nav-link txt-grey txt-green-hover">Skins</a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="main-content d-lg-flex align-items-stretch ">
                 <div id="sidebar" class="sidebar">
+                    <div class="nav-dashboard d-none d-lg-block">
+                        <ul class="nav">
+                            <li>
+                                <a href="#" class="d-flex align-items-center txt-green-hover level-1">
+                                    <i class="icon-noticeboard"></i>
+                                    Dashboard
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myaccount-profit-pending.html" class="txt-green-hover">Profit</a></li>
+                                    <li><a href="myaccount-transaction-rent.html" class="txt-green-hover">Transaction</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="myaccount-hero-farming.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-footman"></i>
+                                    Hero Farming
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-user"></i>
+                                    Account
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-inventory-heroes.html" class="d-flex align-items-center txt-green-hover active">
+                                    <i class="icon-chest"></i>
+                                    Inventory
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-history.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-history"></i>
+                                    History
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-old-shop"></i>
+                                    Clan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-chat.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-mail"></i>
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="search-block">
                         <form>
                             <div class="search-container position-relative">
@@ -141,6 +230,32 @@
                             <div><a href="#" class="text-white fs-14">Clear All</a></div>
                         </div>
                         <div class="filter-list">
+                            <div class="filter-item">
+                                <div class="label">Status</div>
+                                <div class="check-list">
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        In Stock
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        For Sale
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        For Rent
+                                    </label>
+                                </div>
+                            </div>
                             <div class="filter-item">
                                 <div class="label">Price</div>
                                 <div class="content">
@@ -360,6 +475,17 @@
                 <div class="page-holder">
                     <div class="container-fluid overflow-hidden">
                         <section>
+                            <div class="navbar-custom d-lg-flex justify-content-center ml-0">
+                                <ul class="nav long-type justify-content-center align-items-center">
+                                    <li><a href="/" class="nav-link txt-grey txt-green-hover">Market</a></li>
+                                    <li><a href="myaccount-inventory-heroes.html" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
+                                    <li><a href="myaccount-inventory-item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
+                                    <li><a href="myaccount-inventory-land.html" class="nav-link txt-grey txt-green-hover">FotaLands</a></li>
+                                    <li><a href="myaccount-inventory-skins.html" class="nav-link txt-grey txt-green-hover">Skins</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section>
                             <div class="row">
                                 <div class="col">
                                     <div class="page-title-box d-lg-flex align-items-center justify-content-between">
@@ -369,18 +495,6 @@
                                                 <li><a href="" class="txt-dark-grey d-flex align-items-center grid-view"><i class="icon-view-module"></i>Grid</a></li>
                                                 <li><a href="" class="txt-dark-grey d-flex align-items-center list-view"><i class="icon-bulleted-list"></i>List</a></li>
                                             </ul>
-                                            <div class="sort-by position-relative fota-dropdown">
-                                                <a class="sort-box fota-toggle green-hover d-flex justify-content-between align-items-center" href="javascript:;">
-                                                    Sort by Newest <i class="icon-sort"></i>
-                                                </a>
-                                                <div class="sort-dropdown fota-dropdown-menu animate slideIn">
-                                                    <a href="#" class="sort-item downdown-item green-hover">Newest</a>
-                                                    <a href="#" class="sort-item downdown-item green-hover">Highest Price</a>
-                                                    <a href="#" class="sort-item downdown-item green-hover">Lowest Price</a>
-                                                    <a href="#" class="sort-item downdown-item green-hover">Best Selling</a>
-                                                    <a href="#" class="sort-item downdown-item green-hover">Discount</a>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -392,7 +506,7 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image full-video" id="video">
-                                                <a href="trend-hero-detail.html">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <div class="thumb position-relative">
                                                         <img class="img-fluid image" src="assets/images/kronok.png" alt="">
                                                         <div class="hero-video">
@@ -410,9 +524,7 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Demon
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
+                                                                    <span class="grid-view-hide card-id">#MD0001</span>
                                                                 </div>
                                                                 <div class="card-id list-view-hide">
                                                                     #MD0001
@@ -461,10 +573,9 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
-                                                <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                            <div class="card-price d-flex align-items-center justify-content-center px-0">
+                                                <div class="text-center">
+                                                    <div class="amount txt-green fs-20 fw-7">999.99 USDT</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -472,7 +583,7 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image full-video">
-                                                <a href="assassin-detail.html">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/soul-dancer.png" alt="">
                                                         <div class="hero-video">
@@ -490,9 +601,7 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Assassin
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
+                                                                    <span class="grid-view-hide card-id">#MD0001</span>
                                                                 </div>
                                                                 <div class="card-id list-view-hide">
                                                                     #MD0001
@@ -541,10 +650,9 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
-                                                <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                            <div class="card-price d-flex align-items-center justify-content-center px-0">
+                                                <div class="text-center">
+                                                    <div class="amount txt-green fs-20 fw-7">999.99 USDT</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -552,7 +660,7 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/awoking.png" alt="">
                                                         <div class="hero-video">
@@ -570,9 +678,7 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Warrior
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
+                                                                    <span class="grid-view-hide card-id">#MD0001</span>
                                                                 </div>
                                                                 <div class="card-id list-view-hide">
                                                                     #MD0001
@@ -621,18 +727,17 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
-                                                <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                            <div class="card-price d-flex align-items-center justify-content-center px-0">
+                                                <div class="text-center">
+                                                    <div class="amount txt-green fs-20 fw-7">999.99 USDT</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="snake-detail.html">
+                                            <div class="card-image">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <div class="thumb position-relative">
                                                         <img class="img-fluid image" src="assets/images/snake.png" alt="">
                                                         <div class="hero-video">
@@ -650,9 +755,7 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Serpent
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
+                                                                    <span class="grid-view-hide card-id">#MD0001</span>
                                                                 </div>
                                                                 <div class="card-id list-view-hide">
                                                                     #MD0001
@@ -701,18 +804,17 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
-                                                <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                            <div class="card-price d-flex align-items-center justify-content-center px-0">
+                                                <div class="text-center">
+                                                    <div class="amount txt-green fs-20 fw-7">999.99 USDT</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="assassin-detail.html">
+                                            <div class="card-image">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <div class="thumb position-relative">
                                                         <img class="img-fluid image" src="assets/images/hezio.png" alt="">
                                                         <div class="hero-video">
@@ -730,9 +832,7 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Assassin
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
+                                                                    <span class="grid-view-hide card-id">#MD0001</span>
                                                                 </div>
                                                                 <div class="card-id list-view-hide">
                                                                     #MD0001
@@ -781,18 +881,17 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
-                                                <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                            <div class="card-price d-flex align-items-center justify-content-center px-0">
+                                                <div class="text-center">
+                                                    <div class="amount txt-green fs-20 fw-7">999.99 USDT</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="hunter-detail.html">
+                                            <div class="card-image">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <div class="thumb position-relative">
                                                         <img class="img-fluid image" src="assets/images/hunter.png" alt="">
                                                         <div class="hero-video">
@@ -810,9 +909,7 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Hunter
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
+                                                                    <span class="grid-view-hide card-id">#MD0001</span>
                                                                 </div>
                                                                 <div class="card-id list-view-hide">
                                                                     #MD0001
@@ -861,10 +958,9 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
-                                                <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                            <div class="card-price d-flex align-items-center justify-content-center px-0">
+                                                <div class="text-center">
+                                                    <div class="amount txt-green fs-20 fw-7">999.99 USDT</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -873,7 +969,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -883,7 +979,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -893,7 +989,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -903,7 +999,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -913,7 +1009,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -923,7 +1019,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="myaccount-inventory-heroes-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>

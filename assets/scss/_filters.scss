@@ -1,0 +1,207 @@
+.filters {
+    margin-top: 10px;
+    .filter-item {
+        padding: 12px 0;
+        border-top: 1px solid #5e655b;
+        .label {
+            margin-bottom: 5px;
+            color: $yellow;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        &.class {
+            .checkbox-container {
+                flex: 0 0 33.33%;
+            }
+        }
+    }
+    .toggle-filter {
+        display: flex;
+        align-items: center;
+        .fa-chevron-down {
+            font-size: 10px;
+            margin-right: 10px;
+        }
+    }
+    &.show {
+        .fa-chevron-down {
+            &::before {
+                content: '\f077';
+            }
+        }
+        .filter-list {
+            @media screen and (max-width: 991px) {
+                max-height: 2000px;
+            }
+        }
+    }
+    .filter-list {
+        @media screen and (max-width: 991px) {
+            overflow: hidden;
+            max-height: 0;
+            transition: all 0.4s ease;
+        }
+    }
+}
+.form-range {
+    height: 20px;
+    border-radius: 0;
+    -webkit-appearance: none;
+    width: 100%;
+    outline: none;
+    padding: 0;
+    margin: 10px 0 0;
+
+    &::-webkit-slider-runnable-track {
+        background-color: #81a78a;
+        height: 1px;
+        border-radius: 0;
+        border: 1px solid transparent;
+    }
+
+    &::-webkit-slider-thumb {
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #0c433b;
+        box-shadow: 0px 0px 0px 1px #fff;
+        cursor: pointer;
+        transition: background 0.15s ease-in-out;
+        margin-top: -8px;
+
+        &:hover,
+        &:focus {
+            background: black;
+            box-shadow: 0px 0px 0px 2px #00f4c9;
+        }
+    }
+
+    &::-moz-range-thumb {
+        appearance: none;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: #0c433b;
+        cursor: pointer;
+        transition: background 0.15s ease-in-out;
+        &:hover,
+        &:focus {
+            background: black;
+            box-shadow: 0px 0px 0px 2px #00f4c9;
+        }
+    }
+
+    &:active::-moz-range-thumb {
+        background: black;
+    }
+}
+
+.range-item {
+    .range-label {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 12px;
+        i {
+            margin-right: 5px;
+            font-size: 18px;
+        }
+    }
+}
+
+.check-list {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (max-width: 991px) {
+        margin-top: 10px;
+    }
+
+    .checkbox-container {
+        flex: 0 0 50%;
+        margin: 10px 0;
+        @media screen and (max-width: 991px) {
+            margin: 2px 0;
+        }
+    }
+
+    img {
+        width: 40px;
+    }
+}
+
+.custom-checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+
+    &:hover input ~ .checkmark {
+        background-color: black;
+        border-color: #00f4c9;
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked ~ .checkmark {
+            background-color: black;
+            border-color: #00f4c9;
+        }
+
+        &:checked ~ .checkmark:after {
+            display: block;
+        }
+    }
+    .text {
+        display: flex;
+        align-items: center;
+        i {
+            margin-right: 10px;
+            font-size: 18px;
+        }
+        span {
+            line-height: 12px;
+        }
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 2px;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        background-color: #0c433b;
+        border: 2px solid white;
+
+        &:after {
+            content: '';
+            position: absolute;
+            display: none;
+            left: 5px;
+            top: 1px;
+            width: 4px;
+            height: 9px;
+            border: solid #00f4c9;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+        }
+    }
+}

@@ -41,25 +41,14 @@
                         <li><a href="/" class="nav-link txt-grey txt-green-hover text-uppercase active">Marketplace</a></li>
                     </ul>
 
-                    <div class="d-block d-lg-none language-mobile">
-                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
-                            <span>English</span>
-                            <img src="assets/images/usa-icon.png" alt="">
-                        </a>
-                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
-                            <span>Tiếng Việt</span>
-                            <img src="assets/images/vn-icon.png" alt="">
-                        </a>
-                    </div>
-
                     <div class="notification-list">
-                        <!-- <div class="text-end">
+                        <div class="text-end">
                             <button type="button" class="btn btn-login text-white fade-effect" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
-                        </div> -->
-                        <div class="account d-lg-flex align-items-center">
-                            <div class="account-user-avatar order-2">
+                        </div>
+                        <!-- <div class="account d-lg-flex align-items-center">
+                            <div class="account-user-avatar order-2 position-relative">
                                 <img src="assets/images/user-avatar.png" alt="">
-                                <div class="position-relative fota-dropdown language d-none d-lg-block">
+                                <div class="position-relative fota-dropdown language">
                                     <a class="language-icon fota-toggle d-none d-lg-block" href="#">
                                         <img src="assets/images/language-icon.png" alt="">
                                     </a>
@@ -101,7 +90,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -115,18 +104,12 @@
                     <a href="#" class="trade-link link active text-uppercase"><i class="icon-gold-bars d-block"></i>Trade</a>
                     <a href="rent-index.html" class="rent-link link text-uppercase"><i class="icon-lease d-block"></i>Rent</a>
                 </div>
-                <div class="navbar-custom d-lg-flex justify-content-center">
-                    <ul class="nav long-type justify-content-center align-items-center">
-                        <li><a href="/" class="nav-link txt-grey txt-green-hover">Market</a></li>
-                        <li><a href="index.html" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
+                <div class="navbar-custom d-lg-flex position-relative justify-content-end">
+                    <ul class="nav justify-content-center align-items-center">
+                        <li><a href="/" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
                         <li><a href="item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
-                        <li><a href="land.html" class="nav-link txt-grey txt-green-hover">FotaLands</a></li>
-                        <li><a href="trend-skins.html" class="nav-link txt-grey txt-green-hover">Skins</a></li>
+                        <li><a href="land.html" class="nav-link txt-grey txt-green-hover">Lands</a></li>
                     </ul>
-                </div>
-            </div>
-            <div class="main-content d-lg-flex align-items-stretch ">
-                <div id="sidebar" class="sidebar">
                     <div class="search-block">
                         <form>
                             <div class="search-container position-relative">
@@ -135,6 +118,10 @@
                             </div>
                         </form>
                     </div>
+                </div>
+            </div>
+            <div class="main-content d-lg-flex align-items-stretch ">
+                <div id="sidebar" class="sidebar">
                     <div class="filters">
                         <div class="d-flex justify-content-between align-items-center mb-15">
                             <div class="label-1 toggle-filter"><i class="fa fa-chevron-down text-white d-lg-none"></i>Filters (3)</div>
@@ -161,58 +148,24 @@
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Humanoid
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Elf
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Keen
+                                        <img src="assets/images/human-icon.png" alt="">
+                                        Human
                                     </label>
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        <!-- <img src="assets/images/human-icon.png" alt=""> -->
-                                        Demon
+                                        <img src="assets/images/monster-icon.png" alt="">
+                                        Monster
                                     </label>
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Ogre
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        <!-- <img src="assets/images/beast-icon.png" alt=""> -->
+                                        <img src="assets/images/beast-icon.png" alt="">
                                         Beast
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Omni
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Dragons
                                     </label>
                                 </div>
                             </div>
@@ -298,53 +251,36 @@
                             </div>
                             <div class="filter-item">
                                 <div class="range-item">
-                                    <div class="label">Attributes</div>
+                                    <div class="label">Price</div>
                                     <div class="content">
                                         <div class="range-slider">
-                                            <div class="range-label">
-                                                <i class="icon-heart"></i>
-                                                <span class="spec fw-6">HP</span>
-                                            </div>
+                                            <div class="range-label">Heal</div>
                                             <input type="range" class="form-range" id="customRange1">
                                             <div class="d-flex justify-content-between">
                                                 <span class="min">1</span>
                                                 <span class="max">99</span>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="range-item">
+                                    <div class="label">Price</div>
+                                    <div class="content">
                                         <div class="range-slider">
-                                            <div class="range-label"><i class="icon-blur"></i>
-                                                <span class="spec fw-6">MP</span>
-                                            </div>
+                                            <div class="range-label">Mana</div>
                                             <input type="range" class="form-range" id="customRange1">
                                             <div class="d-flex justify-content-between">
                                                 <span class="min">1</span>
                                                 <span class="max">99</span>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="range-item">
+                                    <div class="label">Price</div>
+                                    <div class="content">
                                         <div class="range-slider">
-                                            <div class="range-label"><i class="icon-sword"></i>
-                                                <span class="spec fw-6">Damge</span>
-                                            </div>
-                                            <input type="range" class="form-range" id="customRange1">
-                                            <div class="d-flex justify-content-between">
-                                                <span class="min">1</span>
-                                                <span class="max">99</span>
-                                            </div>
-                                        </div>
-                                        <div class="range-slider">
-                                            <div class="range-label"><i class="icon-shield"></i>
-                                                <span class="spec fw-6">Armor</span>
-                                            </div>
-                                            <input type="range" class="form-range" id="customRange1">
-                                            <div class="d-flex justify-content-between">
-                                                <span class="min">1</span>
-                                                <span class="max">99</span>
-                                            </div>
-                                        </div>
-                                        <div class="range-slider">
-                                            <div class="range-label"><i class="icon-exercise"></i>
-                                                <span class="spec fw-6">Speed</span>
-                                            </div>
+                                            <div class="range-label">Damage</div>
                                             <input type="range" class="form-range" id="customRange1">
                                             <div class="d-flex justify-content-between">
                                                 <span class="min">1</span>
@@ -391,13 +327,11 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video" id="video">
-                                                <a href="trend-hero-detail.html">
-                                                    <div class="thumb position-relative">
+                                            <div class="card-image">
+                                                <a href="javascipt:;">
+                                                    <div class="thumb">
+                                                        <div id="player-container" style="width: 100%; height: 100%;"></div>
                                                         <img class="img-fluid image" src="assets/images/kronok.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/demon-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
@@ -410,19 +344,13 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Demon
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
                                                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
                                                         </div>
-                                                        <div class="card-spec">
+                                                        <div class="card-spec d-flex">
                                                             <span>
                                                                 <i class="icon-heart"></i>
                                                                 <span class="spec color-heart">HP</span>
@@ -435,26 +363,17 @@
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
-                                                                <span class="spec color-sword">
-                                                                    <span class="d-none d-lg-block">DMG</span>
-                                                                    <span class="d-lg-none">DAMAGE</span>
-                                                                </span>
+                                                                <span class="spec color-sword">DMG</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
-                                                                <span class="spec color-shield">
-                                                                    <span class="d-none d-lg-block">DEF</span>
-                                                                    <span class="d-lg-none">ARMOR</span>
-                                                                </span>
+                                                                <span class="spec color-shield">DEF</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
-                                                                <span class="spec color-exercise">
-                                                                    <span class="d-none d-lg-block">SPD</span>
-                                                                    <span class="d-lg-none">SPEED</span>
-                                                                </span>
+                                                                <span class="spec color-exercise">SPD</span>
                                                                 100
                                                             </span>
                                                         </div>
@@ -471,13 +390,10 @@
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="assassin-detail.html">
+                                            <div class="card-image">
+                                                <a href="hero-detail.html">
                                                     <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/soul-dancer.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/assasin-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
@@ -490,19 +406,13 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Assassin
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
                                                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
                                                         </div>
-                                                        <div class="card-spec">
+                                                        <div class="card-spec d-flex">
                                                             <span>
                                                                 <i class="icon-heart"></i>
                                                                 <span class="spec color-heart">HP</span>
@@ -515,26 +425,17 @@
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
-                                                                <span class="spec color-sword">
-                                                                    <span class="d-none d-lg-block">DMG</span>
-                                                                    <span class="d-lg-none">DAMAGE</span>
-                                                                </span>
+                                                                <span class="spec color-sword">DMG</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
-                                                                <span class="spec color-shield">
-                                                                    <span class="d-none d-lg-block">DEF</span>
-                                                                    <span class="d-lg-none">ARMOR</span>
-                                                                </span>
+                                                                <span class="spec color-shield">DEF</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
-                                                                <span class="spec color-exercise">
-                                                                    <span class="d-none d-lg-block">SPD</span>
-                                                                    <span class="d-lg-none">SPEED</span>
-                                                                </span>
+                                                                <span class="spec color-exercise">SPD</span>
                                                                 100
                                                             </span>
                                                         </div>
@@ -555,9 +456,6 @@
                                                 <a href="hero-detail.html">
                                                     <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/awoking.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video src="assets/images/beast-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
@@ -570,19 +468,13 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Warrior
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
                                                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
                                                         </div>
-                                                        <div class="card-spec">
+                                                        <div class="card-spec d-flex">
                                                             <span>
                                                                 <i class="icon-heart"></i>
                                                                 <span class="spec color-heart">HP</span>
@@ -595,26 +487,17 @@
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
-                                                                <span class="spec color-sword">
-                                                                    <span class="d-none d-lg-block">DMG</span>
-                                                                    <span class="d-lg-none">DAMAGE</span>
-                                                                </span>
+                                                                <span class="spec color-sword">DMG</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
-                                                                <span class="spec color-shield">
-                                                                    <span class="d-none d-lg-block">DEF</span>
-                                                                    <span class="d-lg-none">ARMOR</span>
-                                                                </span>
+                                                                <span class="spec color-shield">DEF</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
-                                                                <span class="spec color-exercise">
-                                                                    <span class="d-none d-lg-block">SPD</span>
-                                                                    <span class="d-lg-none">SPEED</span>
-                                                                </span>
+                                                                <span class="spec color-exercise">SPD</span>
                                                                 100
                                                             </span>
                                                         </div>
@@ -631,13 +514,10 @@
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="snake-detail.html">
-                                                    <div class="thumb position-relative">
+                                            <div class="card-image">
+                                                <a href="hero-detail.html">
+                                                    <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/snake.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/snake-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
@@ -650,19 +530,13 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Serpent
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
                                                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
                                                         </div>
-                                                        <div class="card-spec">
+                                                        <div class="card-spec d-flex">
                                                             <span>
                                                                 <i class="icon-heart"></i>
                                                                 <span class="spec color-heart">HP</span>
@@ -675,26 +549,17 @@
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
-                                                                <span class="spec color-sword">
-                                                                    <span class="d-none d-lg-block">DMG</span>
-                                                                    <span class="d-lg-none">DAMAGE</span>
-                                                                </span>
+                                                                <span class="spec color-sword">DMG</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
-                                                                <span class="spec color-shield">
-                                                                    <span class="d-none d-lg-block">DEF</span>
-                                                                    <span class="d-lg-none">ARMOR</span>
-                                                                </span>
+                                                                <span class="spec color-shield">DEF</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
-                                                                <span class="spec color-exercise">
-                                                                    <span class="d-none d-lg-block">SPD</span>
-                                                                    <span class="d-lg-none">SPEED</span>
-                                                                </span>
+                                                                <span class="spec color-exercise">SPD</span>
                                                                 100
                                                             </span>
                                                         </div>
@@ -711,13 +576,10 @@
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="assassin-detail.html">
-                                                    <div class="thumb position-relative">
+                                            <div class="card-image">
+                                                <a href="hero-detail.html">
+                                                    <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/hezio.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/assassin-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
@@ -730,19 +592,13 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Assassin
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
                                                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
                                                         </div>
-                                                        <div class="card-spec">
+                                                        <div class="card-spec d-flex">
                                                             <span>
                                                                 <i class="icon-heart"></i>
                                                                 <span class="spec color-heart">HP</span>
@@ -755,26 +611,17 @@
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
-                                                                <span class="spec color-sword">
-                                                                    <span class="d-none d-lg-block">DMG</span>
-                                                                    <span class="d-lg-none">DAMAGE</span>
-                                                                </span>
+                                                                <span class="spec color-sword">DMG</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
-                                                                <span class="spec color-shield">
-                                                                    <span class="d-none d-lg-block">DEF</span>
-                                                                    <span class="d-lg-none">ARMOR</span>
-                                                                </span>
+                                                                <span class="spec color-shield">DEF</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
-                                                                <span class="spec color-exercise">
-                                                                    <span class="d-none d-lg-block">SPD</span>
-                                                                    <span class="d-lg-none">SPEED</span>
-                                                                </span>
+                                                                <span class="spec color-exercise">SPD</span>
                                                                 100
                                                             </span>
                                                         </div>
@@ -791,13 +638,10 @@
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="hunter-detail.html">
-                                                    <div class="thumb position-relative">
+                                            <div class="card-image">
+                                                <a href="hero-detail.html">
+                                                    <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/hunter.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/hunter-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
@@ -810,19 +654,13 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Hunter
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="card-desc">
                                                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
                                                         </div>
-                                                        <div class="card-spec">
+                                                        <div class="card-spec d-flex">
                                                             <span>
                                                                 <i class="icon-heart"></i>
                                                                 <span class="spec color-heart">HP</span>
@@ -835,26 +673,17 @@
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
-                                                                <span class="spec color-sword">
-                                                                    <span class="d-none d-lg-block">DMG</span>
-                                                                    <span class="d-lg-none">DAMAGE</span>
-                                                                </span>
+                                                                <span class="spec color-sword">DMG</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
-                                                                <span class="spec color-shield">
-                                                                    <span class="d-none d-lg-block">DEF</span>
-                                                                    <span class="d-lg-none">ARMOR</span>
-                                                                </span>
+                                                                <span class="spec color-shield">DEF</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
-                                                                <span class="spec color-exercise">
-                                                                    <span class="d-none d-lg-block">SPD</span>
-                                                                    <span class="d-lg-none">SPEED</span>
-                                                                </span>
+                                                                <span class="spec color-exercise">SPD</span>
                                                                 100
                                                             </span>
                                                         </div>

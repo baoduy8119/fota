@@ -1,0 +1,150 @@
+.card-wrapper {
+    &.list-view {
+        &.lands {
+            .card {
+                &-desc {
+                    @media screen and (max-width: 991px) {
+                        position: absolute;
+                        top: 20px;
+                        left: 205px;
+                        right: 15px;
+                    }
+                }
+                &-price {
+                    padding: 0;
+                    .amount {
+                        @media screen and (min-width: 992px) {
+                            font-size: 30px;
+                        }
+                        span {
+                            @media screen and (min-width: 992px) {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                &-promotion {
+                    .total-reward {
+                        > div {
+                            display: inline-block;
+                        }
+                    }
+                    @media screen and (min-width: 992px) {
+                        margin-top: 10px;
+                    }
+                }
+                .land-btn-list {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @media screen and (min-width: 992px) {
+                        flex-direction: column;
+                        margin: 0 30px 0 auto;
+                        .btn {
+                            margin: 10px 0;
+                        }
+                    }
+                    @media screen and (max-width: 991px) {
+                        position: absolute;
+                        z-index: 1;
+                        bottom: -42px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        .btn {
+                            margin: 0 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.grid-view {
+        &.lands {
+            .card {
+                &-desc {
+                    display: none !important;
+                }
+                &-promotion {
+                    position: relative;
+                    z-index: 1;
+                    @media screen and (min-width: 992px) {
+                        margin-top: 15px;
+                        padding: 0 20px;
+                    }
+                    @media screen and (min-width: 992px) and (max-width: 1599px) {
+                        margin-top: 5px;
+                        font-size: 14px;
+                    }
+                }
+                &-image {
+                    .thumb {
+                        margin-bottom: 5px !important;
+                    }
+                }
+                &-id {
+                    margin: 7px;
+                }
+                &-item {
+                    position: relative;
+                    @media screen and (min-width: 1600px) {
+                        width: 33.33333333%;
+                    }
+                    @media screen and (min-width: 1850px) {
+                        width: 25%;
+                    }
+                }
+                .land-btn-list {
+                    display: flex;
+                    justify-content: space-between;
+                    position: absolute;
+                    bottom: -63px;
+                    left: 50%;
+                    right: 25px;
+                    width: 210px;
+                    transform: translateX(-50%);
+                    @media screen and (max-width: 991px) {
+                        bottom: -3px;
+                    }
+                    .btn {
+                        position: static;
+                        display: block;
+                    }
+                }
+            }
+        }
+        &.lands,
+        &.items {
+            .no-item {
+                .card-image {
+                    // @media screen and (max-width: 991px) {
+                    > a {
+                        position: static;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    // }
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    &.lands {
+        .land-btn-list {
+            .btn {
+                font-size: 16px;
+                width: 96px;
+                height: 69px;
+                font-size: 16px;
+                &.rent-btn {
+                    padding-top: 2px;
+                }
+                &.buy-btn {
+                    padding-top: 14px;
+                }
+            }
+        }
+    }
+}

@@ -108,25 +108,19 @@
             </div>
         </div>
     </header>
-    <div class="page-content">
+    <div class="page-content page-rent">
         <div class="fota-container">
             <div class="top-content position-relative">
                 <div class="top-navbar-custom d-flex">
-                    <a href="#" class="trade-link link active text-uppercase"><i class="icon-gold-bars d-block"></i>Trade</a>
-                    <a href="rent-index.html" class="rent-link link text-uppercase"><i class="icon-lease d-block"></i>Rent</a>
+                    <a href="/" class="trade-link link text-uppercase"><i class="icon-gold-bars d-block"></i>Trade</a>
+                    <a href="rent-index.html" class="rent-link link active text-uppercase"><i class="icon-lease d-block"></i>Rent</a>
                 </div>
-                <div class="navbar-custom d-lg-flex justify-content-center">
-                    <ul class="nav long-type justify-content-center align-items-center">
-                        <li><a href="/" class="nav-link txt-grey txt-green-hover">Market</a></li>
-                        <li><a href="index.html" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
-                        <li><a href="item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
-                        <li><a href="land.html" class="nav-link txt-grey txt-green-hover">FotaLands</a></li>
-                        <li><a href="trend-skins.html" class="nav-link txt-grey txt-green-hover">Skins</a></li>
+                <div class="navbar-custom d-lg-flex position-relative justify-content-end">
+                    <ul class="nav justify-content-center align-items-center">
+                        <li><a href="rent-index.html" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
+                        <li><a href="rent-item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
+                        <li><a href="rent-land.html" class="nav-link txt-grey txt-green-hover">Lands</a></li>
                     </ul>
-                </div>
-            </div>
-            <div class="main-content d-lg-flex align-items-stretch ">
-                <div id="sidebar" class="sidebar">
                     <div class="search-block">
                         <form>
                             <div class="search-container position-relative">
@@ -135,6 +129,10 @@
                             </div>
                         </form>
                     </div>
+                </div>
+            </div>
+            <div class="main-content d-lg-flex align-items-stretch ">
+                <div id="sidebar" class="sidebar">
                     <div class="filters">
                         <div class="d-flex justify-content-between align-items-center mb-15">
                             <div class="label-1 toggle-filter"><i class="fa fa-chevron-down text-white d-lg-none"></i>Filters (3)</div>
@@ -161,58 +159,24 @@
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Humanoid
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Elf
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Keen
+                                        <img src="assets/images/human-icon.png" alt="">
+                                        Human
                                     </label>
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        <!-- <img src="assets/images/human-icon.png" alt=""> -->
-                                        Demon
+                                        <img src="assets/images/monster-icon.png" alt="">
+                                        Monster
                                     </label>
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Ogre
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        <!-- <img src="assets/images/beast-icon.png" alt=""> -->
+                                        <img src="assets/images/beast-icon.png" alt="">
                                         Beast
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Omni
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Dragons
                                     </label>
                                 </div>
                             </div>
@@ -392,7 +356,7 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image full-video" id="video">
-                                                <a href="trend-hero-detail.html">
+                                                <a href="trend-rent-hero-detail.html">
                                                     <div class="thumb position-relative">
                                                         <img class="img-fluid image" src="assets/images/kronok.png" alt="">
                                                         <div class="hero-video">
@@ -410,12 +374,6 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Demon
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -471,8 +429,8 @@
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="assassin-detail.html">
+                                            <div class="card-image">
+                                                <a href="rent-hero-detail.html">
                                                     <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/soul-dancer.png" alt="">
                                                         <div class="hero-video">
@@ -490,12 +448,6 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Assassin
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -552,7 +504,7 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="rent-hero-detail.html">
                                                     <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/awoking.png" alt="">
                                                         <div class="hero-video">
@@ -570,12 +522,6 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Warrior
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -631,13 +577,10 @@
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="snake-detail.html">
-                                                    <div class="thumb position-relative">
+                                            <div class="card-image">
+                                                <a href="rent-hero-detail.html">
+                                                    <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/snake.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/snake-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
@@ -650,12 +593,6 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Serpent
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -711,13 +648,10 @@
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="assassin-detail.html">
-                                                    <div class="thumb position-relative">
+                                            <div class="card-image">
+                                                <a href="rent-hero-detail.html">
+                                                    <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/hezio.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/assassin-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
@@ -730,12 +664,6 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Assassin
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -791,13 +719,10 @@
                                     </div>
                                     <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="hunter-detail.html">
-                                                    <div class="thumb position-relative">
+                                            <div class="card-image">
+                                                <a href="rent-hero-detail.html">
+                                                    <div class="thumb">
                                                         <img class="img-fluid image" src="assets/images/hunter.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/hunter-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
@@ -810,12 +735,6 @@
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Hunter
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -873,7 +792,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="rent-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -883,7 +802,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="rent-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -893,7 +812,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="rent-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -903,7 +822,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="rent-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -913,7 +832,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="rent-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>
@@ -923,7 +842,7 @@
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <a href="rent-hero-detail.html">
                                                     <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
                                                 </a>
                                             </div>

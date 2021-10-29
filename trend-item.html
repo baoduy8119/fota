@@ -37,29 +37,18 @@
                 <div class="nav-mobile d-lg-flex align-items-center w-100">
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                         <li><a href="myaccount.html" class="nav-link txt-grey txt-green-hover text-uppercase">My Account</a></li>
-                        <li><a href="trend-hero.html" class="nav-link txt-grey txt-green-hover text-uppercase">Market Trend</a></li>
-                        <li><a href="/" class="nav-link txt-grey txt-green-hover text-uppercase active">Marketplace</a></li>
+                        <li><a href="trend-hero.html" class="nav-link txt-grey txt-green-hover text-uppercase active">Market Trend</a></li>
+                        <li><a href="/" class="nav-link txt-grey txt-green-hover text-uppercase">Marketplace</a></li>
                     </ul>
-
-                    <div class="d-block d-lg-none language-mobile">
-                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
-                            <span>English</span>
-                            <img src="assets/images/usa-icon.png" alt="">
-                        </a>
-                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
-                            <span>Tiếng Việt</span>
-                            <img src="assets/images/vn-icon.png" alt="">
-                        </a>
-                    </div>
 
                     <div class="notification-list">
                         <!-- <div class="text-end">
                             <button type="button" class="btn btn-login text-white fade-effect" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
                         </div> -->
                         <div class="account d-lg-flex align-items-center">
-                            <div class="account-user-avatar order-2">
+                            <div class="account-user-avatar order-2 position-relative">
                                 <img src="assets/images/user-avatar.png" alt="">
-                                <div class="position-relative fota-dropdown language d-none d-lg-block">
+                                <div class="position-relative fota-dropdown language">
                                     <a class="language-icon fota-toggle d-none d-lg-block" href="#">
                                         <img src="assets/images/language-icon.png" alt="">
                                     </a>
@@ -111,16 +100,12 @@
     <div class="page-content">
         <div class="fota-container">
             <div class="top-content position-relative">
-                <div class="top-navbar-custom d-flex">
-                    <a href="#" class="trade-link link active text-uppercase"><i class="icon-gold-bars d-block"></i>Trade</a>
-                    <a href="rent-index.html" class="rent-link link text-uppercase"><i class="icon-lease d-block"></i>Rent</a>
-                </div>
-                <div class="navbar-custom d-lg-flex justify-content-center">
+                <div class="navbar-custom xs-pd-40 d-lg-flex justify-content-center">
                     <ul class="nav long-type justify-content-center align-items-center">
                         <li><a href="/" class="nav-link txt-grey txt-green-hover">Market</a></li>
-                        <li><a href="index.html" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
-                        <li><a href="item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
-                        <li><a href="land.html" class="nav-link txt-grey txt-green-hover">FotaLands</a></li>
+                        <li><a href="trend-hero.html" class="nav-link txt-grey txt-green-hover">Heroes</a></li>
+                        <li><a href="trend-item.html" class="nav-link txt-grey txt-green-hover active">Items</a></li>
+                        <li><a href="trend-fota-lands.html" class="nav-link txt-grey txt-green-hover">FotaLands</a></li>
                         <li><a href="trend-skins.html" class="nav-link txt-grey txt-green-hover">Skins</a></li>
                     </ul>
                 </div>
@@ -154,210 +139,97 @@
                                 </div>
                             </div>
                             <div class="filter-item">
-                                <div class="label">Alliances</div>
+                                <div class="label">Rarity</div>
                                 <div class="check-list">
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Humanoid
+                                        Normal
                                     </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Elf
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Keen
-                                    </label>
-                                    <label class="checkbox-container">
+                                    <label class="checkbox-container txt-blue">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        <!-- <img src="assets/images/human-icon.png" alt=""> -->
-                                        Demon
+                                        Rare
                                     </label>
-                                    <label class="checkbox-container">
+                                    <label class="checkbox-container txt-pink">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Ogre
+                                        Epic
                                     </label>
-                                    <label class="checkbox-container">
+                                    <label class="checkbox-container txt-yellow">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        <!-- <img src="assets/images/beast-icon.png" alt=""> -->
-                                        Beast
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Omni
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Dragons
+                                        Legendary
                                     </label>
                                 </div>
                             </div>
                             <div class="filter-item">
-                                <div class="label">Level</div>
-                                <div class="content">
-                                    <div class="range-slider">
-                                        <input type="range" class="form-range" id="customRange1">
-                                        <div class="d-flex justify-content-between">
-                                            <span class="min">0</span>
-                                            <span class="max">99</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter-item class">
-                                <div class="label">Class</div>
+                                <div class="label">Stat</div>
                                 <div class="check-list">
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Mage
+                                        <span class="text">
+                                            <i class="icon-heart"></i>
+                                            <span>HP</span>
+                                        </span>
                                     </label>
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Hunter
+                                        <span class="text">
+                                            <i class="icon-blur"></i>
+                                            <span>MP</span>
+                                        </span>
                                     </label>
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Durid
+                                        <span class="text">
+                                            <i class="icon-sword"></i>
+                                            <span>Damage</span>
+                                        </span>
                                     </label>
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Warrior
+                                        <span class="text">
+                                            <i class="icon-shield"></i>
+                                            <span>Armor</span>
+                                        </span>
                                     </label>
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Demon
+                                        <span class="text">
+                                            <i class="icon-exercise"></i>
+                                            <span>Speed</span>
+                                        </span>
                                     </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Assassin
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Mech
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Warlock
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Knight
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="filter-item">
-                                <div class="range-item">
-                                    <div class="label">Attributes</div>
-                                    <div class="content">
-                                        <div class="range-slider">
-                                            <div class="range-label">
-                                                <i class="icon-heart"></i>
-                                                <span class="spec fw-6">HP</span>
-                                            </div>
-                                            <input type="range" class="form-range" id="customRange1">
-                                            <div class="d-flex justify-content-between">
-                                                <span class="min">1</span>
-                                                <span class="max">99</span>
-                                            </div>
-                                        </div>
-                                        <div class="range-slider">
-                                            <div class="range-label"><i class="icon-blur"></i>
-                                                <span class="spec fw-6">MP</span>
-                                            </div>
-                                            <input type="range" class="form-range" id="customRange1">
-                                            <div class="d-flex justify-content-between">
-                                                <span class="min">1</span>
-                                                <span class="max">99</span>
-                                            </div>
-                                        </div>
-                                        <div class="range-slider">
-                                            <div class="range-label"><i class="icon-sword"></i>
-                                                <span class="spec fw-6">Damge</span>
-                                            </div>
-                                            <input type="range" class="form-range" id="customRange1">
-                                            <div class="d-flex justify-content-between">
-                                                <span class="min">1</span>
-                                                <span class="max">99</span>
-                                            </div>
-                                        </div>
-                                        <div class="range-slider">
-                                            <div class="range-label"><i class="icon-shield"></i>
-                                                <span class="spec fw-6">Armor</span>
-                                            </div>
-                                            <input type="range" class="form-range" id="customRange1">
-                                            <div class="d-flex justify-content-between">
-                                                <span class="min">1</span>
-                                                <span class="max">99</span>
-                                            </div>
-                                        </div>
-                                        <div class="range-slider">
-                                            <div class="range-label"><i class="icon-exercise"></i>
-                                                <span class="spec fw-6">Speed</span>
-                                            </div>
-                                            <input type="range" class="form-range" id="customRange1">
-                                            <div class="d-flex justify-content-between">
-                                                <span class="min">1</span>
-                                                <span class="max">99</span>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="page-holder">
+                <div class="page-holder market-trend">
                     <div class="container-fluid overflow-hidden">
                         <section>
                             <div class="row">
@@ -387,40 +259,61 @@
                             </div>
                         </section>
                         <section>
-                            <div class="card-wrapper hero-list grid-view">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="full-box receipt-box position-relative">
+                                        <div class="d-sm-flex">
+                                            <div class="image">
+                                                <img src="assets/images/receipt-item.png" alt="">
+                                            </div>
+                                            <div class="content d-flex flex-column justify-content-center">
+                                                <h3 class="fs-30 fw-7 txt-light-grey">Recipe</h3>
+                                                <div class="fs-14 fw-bold">Consumable</div>
+                                                <div class="text-white mt-20">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                                    irure
+                                                    dolor in reprehenderit
+                                                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                                    mollit anim id est laborum.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="card-wrapper items card-overview grid-view">
                                 <div class="row">
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video" id="video">
-                                                <a href="trend-hero-detail.html">
-                                                    <div class="thumb position-relative">
-                                                        <img class="img-fluid image" src="assets/images/kronok.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/demon-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="/assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="trend-item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/soul-taker.png" alt="">
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
-                                                            <div class="card-class">
-                                                                <img src="assets/images/monster-large-icon.png" alt="">
-                                                            </div>
                                                             <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
                                                                 <div class="card-name">
-                                                                    Kronok
+                                                                    Desert Zone A
                                                                 </div>
                                                                 <div class="card-class">
-                                                                    Demon
+                                                                    Desert Land
                                                                     <span class="card-id grid-view-hide">
                                                                         #MD0001
                                                                     </span>
                                                                 </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
-                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card-desc">
+                                                        <div class="card-desc list-view-hide">
                                                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-desc grid-view-hide">
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
                                                             <span>
@@ -458,49 +351,55 @@
                                                                 100
                                                             </span>
                                                         </div>
+                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
+                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
+                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
+                                                            <p>+15% HP Up for owner’s training team on this land.</p>
+                                                        </div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price item-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
+                                                    <div class="top-price d-flex justify-content-between w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
                                                     <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="assassin-detail.html">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="/assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="trend-item-detail.html">
                                                     <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/soul-dancer.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/assasin-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
+                                                        <img class="img-fluid image" src="assets/images/leather-cuirass.png" alt="">
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
-                                                            <div class="card-class">
-                                                                <img src="assets/images/monster-large-icon.png" alt="">
-                                                            </div>
                                                             <div class="info">
-                                                                <div class="card-name">
-                                                                    Soul Dancer
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-blue">
+                                                                    Leather Cuirass
                                                                 </div>
                                                                 <div class="card-class">
-                                                                    Assassin
+                                                                    Rare Armor
                                                                     <span class="card-id grid-view-hide">
                                                                         #MD0001
                                                                     </span>
                                                                 </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
-                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card-desc">
+                                                        <div class="card-desc list-view-hide">
                                                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-desc grid-view-hide">
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
                                                             <span>
@@ -538,49 +437,132 @@
                                                                 100
                                                             </span>
                                                         </div>
+                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
+                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
+                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
+                                                            <p>+15% HP Up for owner’s training team on this land.</p>
+                                                        </div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price item-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex justify-content-between w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
+                                                <img class="list-view-bg w-100" src="/assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="trend-item-detail.html">
                                                     <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/awoking.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video src="assets/images/beast-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
+                                                        <img class="img-fluid image" src="assets/images/soul-taker-2.png" alt="">
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
-                                                            <div class="card-class">
-                                                                <img src="assets/images/beast-large-icon.png" alt="">
-                                                            </div>
                                                             <div class="info">
-                                                                <div class="card-name">
-                                                                    Awoking
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-pink">
+                                                                    Soul Taker
                                                                 </div>
                                                                 <div class="card-class">
-                                                                    Warrior
+                                                                    Epic Weapon
                                                                     <span class="card-id grid-view-hide">
                                                                         #MD0001
                                                                     </span>
                                                                 </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc list-view-hide">
+                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-desc grid-view-hide">
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                        </div>
+                                                        <div class="card-spec flex-wrap">
+                                                            <span>
+                                                                <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">DMG</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">DEF</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">SPD</span>
+                                                                100
+                                                            </span>
+                                                        </div>
+                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
+                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
+                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
+                                                            <p>+15% HP Up for owner’s training team on this land.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-price item-price d-flex justify-content-center">
+                                                <div class="inner">
+                                                    <div class="top-price d-flex justify-content-between w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
+                                        <div class="card sink-effect">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="/assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="trend-item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/apollo-tear.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
                                                                 <div class="card-id list-view-hide">
                                                                     #MD0001
                                                                 </div>
+                                                                <div class="card-name txt-light-yellow">
+                                                                    Apollo Tear
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Legendary Ring
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card-desc">
+                                                        <div class="card-desc list-view-hide">
                                                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-desc grid-view-hide">
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
                                                             <span>
@@ -618,49 +600,55 @@
                                                                 100
                                                             </span>
                                                         </div>
+                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
+                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
+                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
+                                                            <p>+15% HP Up for owner’s training team on this land.</p>
+                                                        </div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price item-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex justify-content-between w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="snake-detail.html">
-                                                    <div class="thumb position-relative">
-                                                        <img class="img-fluid image" src="assets/images/snake.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/snake-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="/assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="trend-item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/hp-potion.png" alt="">
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
-                                                            <div class="card-class">
-                                                                <img src="assets/images/monster-large-icon.png" alt="">
-                                                            </div>
                                                             <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
                                                                 <div class="card-name">
-                                                                    Devouress
+                                                                    HP Position
                                                                 </div>
                                                                 <div class="card-class">
-                                                                    Serpent
+                                                                    Consumable
                                                                     <span class="card-id grid-view-hide">
                                                                         #MD0001
                                                                     </span>
                                                                 </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
-                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card-desc">
+                                                        <div class="card-desc list-view-hide">
                                                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-desc grid-view-hide">
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
                                                             <span>
@@ -698,49 +686,55 @@
                                                                 100
                                                             </span>
                                                         </div>
+                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
+                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
+                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
+                                                            <p>+15% HP Up for owner’s training team on this land.</p>
+                                                        </div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price item-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex justify-content-between w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="assassin-detail.html">
-                                                    <div class="thumb position-relative">
-                                                        <img class="img-fluid image" src="assets/images/hezio.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/assassin-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="/assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="trend-item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/atk-potion.png" alt="">
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
-                                                            <div class="card-class">
-                                                                <img src="assets/images/monster-large-icon.png" alt="">
-                                                            </div>
                                                             <div class="info">
-                                                                <div class="card-name">
-                                                                    Hezio
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-yellow">
+                                                                    Atk. Up Potion
                                                                 </div>
                                                                 <div class="card-class">
-                                                                    Assassin
+                                                                    Legendary Consumable
                                                                     <span class="card-id grid-view-hide">
                                                                         #MD0001
                                                                     </span>
                                                                 </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
-                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card-desc">
+                                                        <div class="card-desc list-view-hide">
                                                             Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-desc grid-view-hide">
+                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
                                                             <span>
@@ -778,153 +772,81 @@
                                                                 100
                                                             </span>
                                                         </div>
+                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
+                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
+                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
+                                                            <p>+15% HP Up for owner’s training team on this land.</p>
+                                                        </div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price item-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex justify-content-between w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Purchases</span><span class="value fw-6">10,000</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
-                                        <div class="card sink-effect">
-                                            <div class="card-image full-video">
-                                                <a href="hunter-detail.html">
-                                                    <div class="thumb position-relative">
-                                                        <img class="img-fluid image" src="assets/images/hunter.png" alt="">
-                                                        <div class="hero-video">
-                                                            <video class="video" src="assets/images/hunter-688x1024.mp4" muted autoplay loop></video>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-info txt-dark-grey">
-                                                        <div class="top-info">
-                                                            <div class="card-class">
-                                                                <img src="assets/images/monster-large-icon.png" alt="">
-                                                            </div>
-                                                            <div class="info">
-                                                                <div class="card-name">
-                                                                    Valerie
-                                                                </div>
-                                                                <div class="card-class">
-                                                                    Hunter
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-                                                        </div>
-                                                        <div class="card-spec">
-                                                            <span>
-                                                                <i class="icon-heart"></i>
-                                                                <span class="spec color-heart">HP</span>
-                                                                100
-                                                            </span>
-                                                            <span>
-                                                                <i class="icon-blur"></i>
-                                                                <span class="spec color-blur">MP</span>
-                                                                100
-                                                            </span>
-                                                            <span>
-                                                                <i class="icon-sword"></i>
-                                                                <span class="spec color-sword">
-                                                                    <span class="d-none d-lg-block">DMG</span>
-                                                                    <span class="d-lg-none">DAMAGE</span>
-                                                                </span>
-                                                                100
-                                                            </span>
-                                                            <span>
-                                                                <i class="icon-shield"></i>
-                                                                <span class="spec color-shield">
-                                                                    <span class="d-none d-lg-block">DEF</span>
-                                                                    <span class="d-lg-none">ARMOR</span>
-                                                                </span>
-                                                                100
-                                                            </span>
-                                                            <span>
-                                                                <i class="icon-exercise"></i>
-                                                                <span class="spec color-exercise">
-                                                                    <span class="d-none d-lg-block">SPD</span>
-                                                                    <span class="d-lg-none">SPEED</span>
-                                                                </span>
-                                                                100
-                                                            </span>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
-                                                <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 USDT</div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/trend-grid-thumbnail.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/trend-grid-thumbnail.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/trend-grid-thumbnail.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/trend-grid-thumbnail.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/trend-grid-thumbnail.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-3 card-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
                                         <div class="card sink-effect">
                                             <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="hero-detail.html">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/trend-grid-thumbnail.png" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -987,47 +909,115 @@
             </div>
             <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content medium-modal">
+                    <div class="modal-content large-modal">
                         <div class="modal-header">
                             <h5 class="modal-title">Buy<br>
-                                Kronok
+                                Desert Zone A
                             </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
                         </div>
                         <div class="modal-body">
                             <form action="">
-                                <div class="select-balance text-center fs-14">
-                                    Select balance:
-                                </div>
-                                <div class="input-group">
-                                    <label class="radio-container">
-                                        <span class="txt-green">500.00 USDT</span>
-                                        <input type="radio" checked="checked" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="input-group">
-                                    <label class="radio-container">
-                                        <span class="txt-light-yellow">500.00 BUSD</span>
-                                        <input type="radio" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="input-group">
-                                    <label class="radio-container">
-                                        <span>500.00 FOTA</span>
-                                        <input type="radio" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </div>
-                                <div class="mb-3 mt-3">
-                                    <div class="text-center fs-14">
-                                        Total Price:
-                                    </div>
-                                    <div class="text-center fs-30 fw-7 text-uppercase">100.00 FOTA</div>
-                                </div>
                                 <div>
-                                    <a href="#" class="modal-btn d-flex align-items-center text-center sink-effect"><span>BUY</span></a>
+                                    <div class="select-balance text-center fs-14 mb-10">
+                                        Conditions to buy:
+                                    </div>
+                                    <div class="group-content-1 m-auto">
+                                        <div class="txt-green fs-14"><i class="icon-checkmark"></i>Rank > 5</div>
+                                        <div class="txt-green fs-14"><i class=" icon-checkmark"></i>1 max leved Hero locked</div>
+                                        <div class="txt-orange fs-14"><i class=" icon-delete"></i>Out Clan</div>
+                                    </div>
+                                    <div class="select-balance text-center xs-mt-20 fs-14 mt-30 mb-10">
+                                        Select balance:
+                                    </div>
+                                    <div class="input-group">
+                                        <label class="radio-container">
+                                            <span class="txt-green">500.00 USDT</span>
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group">
+                                        <label class="radio-container">
+                                            <span class="txt-light-yellow">500.00 BUSD</span>
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group">
+                                        <label class="radio-container">
+                                            <span>500.00 FOTA</span>
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                        <div class="text-center fs-14">
+                                            Total Price:
+                                        </div>
+                                        <div class="text-center fs-30 fw-7 text-uppercase">100.00 FOTA</div>
+                                        <div class="invalid-message txt-orange justify-content-center"><i class="icon-spam"></i>Wanring message goes here.</div>
+                                    </div>
+                                    <div>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#buyModal2" class="modal-btn d-flex align-items-center text-center sink-effect"><span>BUY</span></a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="buyModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content large-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title mt-40">Get 1% share of<br>
+                                Desert Zone A
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div>
+                                    <div class="select-balance text-center fs-14 mb-10">
+                                        Conditions to be shared:
+                                    </div>
+                                    <div class="group-content-2 m-auto">
+                                        <div class="txt-green fs-14"><i class="icon-checkmark"></i>Join Clan <span class="d-none d-lg-inline-block">(which for sell this land 1%)</span></div>
+                                    </div>
+                                    <div class="select-balance text-center fs-14 mt-30 mb-10">
+                                        Select balance:
+                                    </div>
+                                    <div class="input-group">
+                                        <label class="radio-container">
+                                            <span class="txt-green">500.00 USDT</span>
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group">
+                                        <label class="radio-container">
+                                            <span class="txt-light-yellow">500.00 BUSD</span>
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="input-group">
+                                        <label class="radio-container">
+                                            <span>500.00 FOTA</span>
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                    <div class="mb-3 mt-3">
+                                        <div class="text-center fs-14">
+                                            Total Price:
+                                        </div>
+                                        <div class="text-center fs-30 fw-7 text-uppercase">100.00 FOTA</div>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="modal-btn d-flex align-items-center text-center sink-effect"><span>BUY</span></a>
+                                    </div>
                                 </div>
                             </form>
                         </div>

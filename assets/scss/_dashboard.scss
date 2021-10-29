@@ -1,0 +1,544 @@
+.dashboard {
+    background: #06302b url(../images/content-bg.png) no-repeat 0 -150px;
+    color: $light-grey;
+    .illustration {
+        margin-top: 90px;
+        background-size: cover;
+        @media screen and (max-width: 991px) {
+            margin-top: 50px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 991px) {
+            .small-box {
+                width: 50%;
+                margin: 40px auto;
+            }
+        }
+        .card {
+            .thumb {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .content {
+                width: 100%;
+                margin-top: 40px;
+                text-align: center;
+            }
+            .amount {
+                @media screen and (min-width: 1600px) {
+                    > div {
+                        width: 50%;
+                    }
+                }
+                @media screen and (min-width: 1400px) and (max-width: 1599px) {
+                    flex-direction: column;
+                    div {
+                        &:nth-child(2) {
+                            order: 3;
+                        }
+                        &:nth-child(4) {
+                            order: 4;
+                        }
+                    }
+                }
+            }
+            @media screen and (max-width: 1399px) {
+                margin: 15px 0;
+                .amount {
+                    flex-direction: row;
+                    div {
+                        width: 40%;
+                    }
+                }
+            }
+            @media screen and (max-width: 767px) {
+                margin: 15px 0;
+                .amount {
+                    flex-direction: column;
+                    div {
+                        width: 100%;
+                        &:nth-child(2) {
+                            order: 3;
+                        }
+                        &:nth-child(4) {
+                            order: 4;
+                        }
+                    }
+                }
+            }
+            .address {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            img {
+                width: 100px;
+            }
+        }
+        .account-info {
+            padding-top: 90px;
+            text-align: center;
+            .avatar {
+                position: absolute;
+                top: -30px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100px;
+                height: 100px;
+                background: url('../images/avatar-bg.png') no-repeat;
+                background-size: cover;
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+            .clan-leader-name {
+                margin: 0 5px;
+                color: #f44d64;
+                font-weight: bold;
+            }
+            .clan-name {
+                margin: 0 5px;
+                color: #1488ff;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .icon-copy {
+                position: relative;
+                margin-left: 10px;
+                top: 2px;
+            }
+        }
+    }
+    .filters {
+        @media screen and (max-width: 991px) {
+            margin-top: 0;
+            padding-top: 40px;
+        }
+    }
+    .navbar-custom {
+        @media screen and (max-width: 991px) {
+            padding-top: 10px;
+        }
+    }
+    &.page-detail {
+        .full-box .price-box {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -40px;
+            background: transparent;
+            padding: 0;
+            @media screen and (max-width: 991px) {
+                padding: 0 20px;
+                bottom: -25px;
+            }
+            &::before {
+                content: none;
+            }
+            .inner {
+                display: flex;
+            }
+            .buy-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 15px;
+                padding-bottom: 38px;
+                position: static;
+                font-size: 24px;
+                @media screen and (max-width: 767px) {
+                    margin: 0 10px;
+                    font-size: 20px;
+                    padding-bottom: 6px;
+                    span {
+                        margin-top: 0;
+                    }
+                }
+                i {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .card-wrapper {
+        &.items {
+            &.grid-view .card-price {
+                padding: 0;
+            }
+            &.list-view .card-price {
+                padding: 0;
+                .amount {
+                    @media screen and (min-width: 992px) {
+                        font-size: 30px;
+                    }
+                    span {
+                        @media screen and (min-width: 992px) {
+                            display: block;
+                        }
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &.lands {
+            &.list-view {
+                .card {
+                    @media screen and (max-width: 991px) {
+                        padding-bottom: 50px;
+                    }
+                    &-amount {
+                        font-size: 26px;
+                        color: $green;
+                        @media screen and (max-width: 991px) {
+                            font-size: 20px;
+                        }
+                    }
+                    &-promotion {
+                        margin: 0 0 10px;
+                        .total-reward > div {
+                            display: block;
+                        }
+                    }
+                    &-desc {
+                        @media screen and (min-width: 992px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            &.grid-view {
+                .card {
+                    @media screen and (max-width: 991px) {
+                        margin: 20px 0 60px;
+                    }
+                    &-image {
+                        .thumb {
+                            @media screen and (min-width: 1200px) and (max-width: 1440px) {
+                                margin-top: 40px;
+                            }
+                        }
+                    }
+                    &-price {
+                        padding: 0;
+                    }
+                    &-item {
+                        @media screen and (min-width: 992px) {
+                            margin: 30px 0 40px;
+                            .card {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.nav-dashboard {
+    width: 306px;
+    padding: 0 10px;
+    @media screen and (min-width: 992px) {
+        padding: 40px 10px;
+        height: 511px;
+        background: url('../images/nav-dashboard-bg.png');
+    }
+    li {
+        &::after {
+            content: none;
+        }
+    }
+    .nav {
+        @media screen and (max-width: 991px) {
+            margin-top: 0;
+        }
+        > li {
+            margin: 5px 0;
+            padding-left: 20px;
+            > a {
+                font-size: 22px;
+                font-weight: 600;
+                letter-spacing: 1px;
+                line-height: 22px;
+                @media screen and (max-width: 991px) {
+                    padding: 5px 20px;
+                    justify-content: end;
+                    font-size: 16px;
+                }
+                &.active {
+                    + .dropdown-menu {
+                        display: block;
+                    }
+                }
+                i {
+                    margin-top: -2px;
+                    margin-right: 10px;
+                    font-size: 28px;
+                    @media screen and (max-width: 991px) {
+                        margin: 0 0 0 10px;
+                        order: 2;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        padding: 0 10px 0 40px;
+        background: transparent;
+        color: $light-grey;
+        border: none;
+        @media screen and (max-width: 991px) {
+            text-align: right;
+            a {
+                padding: 15px 40px 15px 0 !important;
+                font-size: 12px;
+                font-weight: 500;
+            }
+        }
+        li {
+            margin: 5px 0;
+            @media screen and (max-width: 991px) {
+                margin: 3px 0;
+            }
+        }
+    }
+}
+.pools {
+    .card {
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 460px;
+            padding: 40px 22px;
+            background-size: cover;
+            z-index: 1;
+            background: url('../images/pool-item-bg.png') no-repeat;
+            background-size: cover;
+            @media screen and (min-width: 1200px) and (max-width: 1440px) {
+                padding: 40px 17px;
+            }
+            @media screen and (min-width: 1600px) {
+                padding: 40px;
+            }
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 3px;
+            right: 3px;
+            bottom: 5px;
+            box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.6);
+        }
+        &:hover {
+            filter: saturate(1.5);
+        }
+        ul {
+            margin-top: 35px;
+            li {
+                display: flex;
+                justify-content: space-between;
+                margin: 17px 0;
+            }
+        }
+        .pool-icon {
+            position: absolute;
+            top: 5px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .btn {
+            min-width: 30%;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        .fota-btn {
+            width: 90px;
+            height: 32px;
+        }
+    }
+}
+.custom-text-input {
+    position: relative;
+    width: 360px;
+    @media screen and (max-width: 991px) {
+        width: 265px;
+    }
+    .fota-btn {
+        position: absolute;
+        top: 5px;
+        right: 4px;
+        @media screen and (max-width: 991px) {
+            font-size: 12px;
+            top: 3px;
+            right: 2px;
+            width: 61px;
+            height: 29px;
+        }
+    }
+}
+.history-list {
+    ul {
+        margin-bottom: 0;
+    }
+    li {
+        padding: 12px 0;
+        border-bottom: 1px solid #1d2e2b;
+        font-size: 14px;
+        &:last-child {
+            border: none;
+            padding-bottom: 0;
+        }
+    }
+}
+.chat {
+    &-content {
+        @media screen and (min-width: 992px) {
+            margin-left: 30px;
+        }
+        @media screen and (max-width: 991px) {
+            margin-top: 40px;
+        }
+        .chat-log {
+            @media screen and (max-width: 991px) {
+                margin: 20px 0;
+                padding: 0 10px;
+                max-height: 400px;
+                overflow-y: auto;
+            }
+        }
+    }
+    &-sidebar {
+        @media screen and (min-width: 992px) {
+            flex: 0 0 350px;
+        }
+        @media screen and (min-width: 1600px) {
+            flex: 0 0 450px;
+        }
+        .chat-log {
+            @media screen and (max-width: 991px) {
+                padding: 0 10px;
+                max-height: 400px;
+                overflow-y: auto;
+            }
+        }
+    }
+    &-history-item {
+        position: relative;
+        margin: 30px 0;
+        padding: 10px 30px 30px;
+        background-color: black;
+        color: white;
+        @media screen and (max-width: 991px) {
+            padding: 10px 15px 15px;
+        }
+        .fota-btn {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+        }
+        &.received {
+            margin-right: 40px;
+            @media screen and (max-width: 991px) {
+                margin-right: 20px;
+            }
+        }
+        &.sent {
+            margin-left: 40px;
+            @media screen and (max-width: 991px) {
+                margin-left: 20px;
+            }
+            .fota-btn {
+                left: inherit;
+                right: -10px;
+                background: url('../images/fota-brown-btn-bg.png');
+            }
+            .chat-history-date {
+                text-align: left;
+            }
+        }
+    }
+    &-history-conversation {
+        margin-top: 20px;
+    }
+    &-history-date {
+        text-align: right;
+        font-size: 11px;
+        color: $light-grey;
+        @media screen and (min-width: 992px) {
+            margin-right: -20px;
+        }
+    }
+}
+.half-box-2,
+.full-box-2 {
+    position: relative;
+    padding: 30px;
+    background: rgba($color: #010e0e, $alpha: 0.5);
+    margin: 8px 0;
+    @media screen and (max-width: 767px) {
+        padding: 20px 15px;
+    }
+}
+.half-box-2 {
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        height: 8px;
+    }
+    &::before {
+        top: -8px;
+        background: url('../images/chat-top-half-box-bg.png');
+    }
+    &::after {
+        bottom: -8px;
+        background: url('../images/chat-bottom-half-box-bg.png');
+    }
+}
+.full-box-2 {
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        height: 8px;
+    }
+    &::before {
+        top: -8px;
+        background: url('../images/chat-top-full-box-bg.png');
+    }
+    &::after {
+        bottom: -8px;
+        background: url('../images/chat-bottom-full-box-bg.png');
+    }
+}
+.chat-navbar {
+    @media screen and (max-width: 991px) {
+        margin-top: 40px;
+        .nav {
+            li a {
+                padding: 8px 14px;
+            }
+        }
+        .fota-btn {
+            margin: 40px auto 0;
+        }
+    }
+    @media screen and (min-width: 1200px) and (max-width: 1440px) {
+        .nav {
+            li a {
+                padding: 8px 20px;
+            }
+        }
+    }
+}

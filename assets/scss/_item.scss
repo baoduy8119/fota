@@ -1,0 +1,192 @@
+.card-wrapper {
+    &.list-view {
+        &.items {
+            .list-view-bg {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1850px) {
+    .card-item {
+        width: 25%;
+    }
+}
+
+.card-wrapper {
+    &.list-view {
+        &.card-overview {
+            .card {
+                @media screen and (max-width: 992px) {
+                    // min-height: 500px;
+                }
+                &-info {
+                    padding: 0 0 0 30px;
+                    @media screen and (max-width: 991px) {
+                        margin-top: 20px;
+                        padding: 0;
+                    }
+                    .top-info {
+                        margin-top: 10px;
+                        margin-left: 0;
+                    }
+                }
+                &-promotion {
+                    @media screen and (max-width: 991px) {
+                        display: none !important;
+                    }
+                }
+                .list-view-bg {
+                    display: none;
+                }
+                &-image {
+                    padding: 20px;
+                    height: auto;
+                    border: none;
+                    @media screen and (max-width: 991px) {
+                        padding-bottom: 0;
+                    }
+                    .thumb {
+                        @media screen and (min-width: 992px) {
+                            width: 200px;
+                            img {
+                                position: static;
+                                width: 200px;
+                                max-width: 200px;
+                            }
+                        }
+                    }
+                }
+                &-spec {
+                    @media screen and (min-width: 992px) {
+                        flex-wrap: inherit;
+                    }
+                    i {
+                        margin-right: 5px;
+                    }
+                }
+                &-price {
+                    &.item-price {
+                        @media screen and (max-width: 991px) {
+                            align-items: center;
+                        }
+                        @media screen and (min-width: 992px) {
+                            align-items: center;
+                        }
+                        .top-price {
+                            justify-content: center !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.grid-view {
+        &.card-overview {
+            .card {
+                &-image {
+                    text-align: center;
+                    &::before {
+                        z-index: -1;
+                    }
+                    .image {
+                        position: relative;
+                        width: auto;
+                    }
+                    .thumb {
+                        display: inline-block;
+                        position: relative;
+                        text-align: center;
+                        margin: 50px 0 30px;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            top: 4px;
+                            left: 4px;
+                            right: 4px;
+                            bottom: 4px;
+                            box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.75);
+                        }
+                    }
+                    > a {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+                &-desc {
+                    position: relative;
+                    display: block;
+                    color: white;
+                    padding: 10px 30px 10px;
+                    z-index: 1;
+                    @media screen and (min-width: 992px) and (max-width: 1599px) {
+                        padding: 5px 30px 10px;
+                        font-size: 14px;
+                    }
+                    @media screen and (max-width: 991px) {
+                        display: none;
+                    }
+                }
+                &-info {
+                    position: static;
+                }
+                &-spec {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                    @media screen and (max-width: 991px) {
+                        display: none !important;
+                    }
+                }
+                &-promotion {
+                    @media screen and (max-width: 991px) {
+                        position: relative;
+                        z-index: 1;
+                        margin-top: 5px;
+                        padding: 0 40px;
+                    }
+                }
+                &-price {
+                    &.item-price {
+                        span {
+                            display: block;
+                        }
+                        .inner {
+                            margin-top: 20px;
+                            .unit-price {
+                                font-size: 24px;
+                            }
+                        }
+                        .buy-btn {
+                            top: inherit;
+                            bottom: -30px;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            span {
+                                margin-top: 19px;
+                            }
+                        }
+                        .top-price {
+                            text-align: center;
+                        }
+                        .unit-price {
+                            display: block !important;
+                            .currency-unit {
+                                @media screen and (max-width: 991px) {
+                                    display: block;
+                                    font-size: 12px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

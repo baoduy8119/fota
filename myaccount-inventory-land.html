@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <title>Fota</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="fota-container">
+            <div class="header-inner d-flex">
+                <a href="/" class="d-flex align-items-center text-white text-decoration-none">
+                    <img class="logo" src="assets/images/logo.png" alt="FOTA">
+                </a>
+
+                <div class="d-flex align-items-center top-currency justify-content-end d-lg-none txt-light-yellow fw-7">
+                    <span>
+                        100.534 BUSD
+                    </span>
+                    <i class="icon-currency d-inline-block ml-10"></i>
+                </div>
+
+                <a href="#" class="toggle-menu d-block d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <div class="nav-mobile d-lg-flex align-items-center w-100">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li>
+                            <a href="myaccount.html" class="nav-link txt-grey txt-green-hover text-uppercase active">
+                                My Account
+                            </a>
+                            <div class="nav-dashboard d-lg-none">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center txt-green-hover level-1">
+                                            <i class="icon-noticeboard"></i>
+                                            Dashboard
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="myaccount-profit-pending.html" class="txt-green-hover">Profit</a></li>
+                                            <li><a href="myaccount-transaction-rent.html" class="txt-green-hover">Transaction</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-hero-farming.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-footman"></i>
+                                            Hero Farming
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-user"></i>
+                                            Account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-inventory-heroes.html" class="d-flex align-items-center txt-green-hover active">
+                                            <i class="icon-chest"></i>
+                                            Inventory
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-history.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-history"></i>
+                                            History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-old-shop"></i>
+                                            Clan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-chat.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-mail"></i>
+                                            <span>Contact</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="trend-hero.html" class="nav-link txt-grey txt-green-hover text-uppercase">Market Trend</a></li>
+                        <li><a href="/" class="nav-link txt-grey txt-green-hover text-uppercase">Marketplace</a></li>
+                    </ul>
+
+                    <div class="d-block d-lg-none language-mobile">
+                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
+                            <span>English</span>
+                            <img src="assets/images/usa-icon.png" alt="">
+                        </a>
+                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
+                            <span>Tiếng Việt</span>
+                            <img src="assets/images/vn-icon.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="notification-list">
+                        <!-- <div class="text-end">
+                            <button type="button" class="btn btn-login text-white fade-effect" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                        </div> -->
+                        <div class="account d-lg-flex align-items-center">
+                            <div class="account-user-avatar order-2">
+                                <img src="assets/images/user-avatar.png" alt="">
+                                <div class="position-relative fota-dropdown language d-none d-lg-block">
+                                    <a class="language-icon fota-toggle d-none d-lg-block" href="#">
+                                        <img src="assets/images/language-icon.png" alt="">
+                                    </a>
+                                    <div class="fota-dropdown-menu animate slideIn text-end">
+                                        <a href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                            <span>English</span>
+                                            <img src="assets/images/usa-icon.png" alt="">
+                                        </a>
+                                        <a href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                            <span>Tiếng Việt</span>
+                                            <img src="assets/images/vn-icon.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg-mr-20 text-end order-1">
+                                <div class="account-user-name text-uppercase">Player001</div>
+                                <div class="account-currency txt-light-yellow fw-7 d-lg-flex align-items-center">
+                                    <div class="d-flex align-items-center justify-content-end">
+                                        <span>
+                                            100.534 BUSD
+                                        </span>
+                                        <i class="icon-currency d-inline-block"></i>
+                                    </div>
+                                    <div class="position-relative fota-dropdown">
+                                        <a class="fota-toggle d-none d-lg-block" href="#">
+                                            <i class="fa fa-chevron-down text-white"></i>
+                                        </a>
+                                        <div class="fota-dropdown-menu animate slideIn text-end">
+                                            <div href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                                <span class="txt-light-green">1,421.524300 USDT</span>
+                                                <div><img src="assets/images/t-icon.png" alt=""></div>
+                                            </div>
+                                            <div href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                                <span class="txt-light-grey">4,500.524300 USDT</span>
+                                                <img src="assets/images/f-icon.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="page-content dashboard">
+        <div class="fota-container">
+            <div class="main-content d-lg-flex align-items-stretch ">
+                <div id="sidebar" class="sidebar">
+                    <div class="nav-dashboard d-none d-lg-block">
+                        <ul class="nav">
+                            <li>
+                                <a href="#" class="d-flex align-items-center txt-green-hover level-1">
+                                    <i class="icon-noticeboard"></i>
+                                    Dashboard
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myaccount-profit-pending.html" class="txt-green-hover">Profit</a></li>
+                                    <li><a href="myaccount-transaction-rent.html" class="txt-green-hover">Transaction</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="myaccount-hero-farming.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-footman"></i>
+                                    Hero Farming
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount.html" class="d-flex align-items-center txt-green-hover ">
+                                    <i class="icon-user"></i>
+                                    Account
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-inventory-heroes.html" class="d-flex align-items-center txt-green-hover active">
+                                    <i class="icon-chest"></i>
+                                    Inventory
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-history.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-history"></i>
+                                    History
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-old-shop"></i>
+                                    Clan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-chat.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-mail"></i>
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search-block">
+                        <form>
+                            <div class="search-container position-relative">
+                                <input type="text" class="search-box" placeholder="Search by Name, ID..." aria-label="Search">
+                                <i class="icon-search position-absolute text-white"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="filters">
+                        <div class="d-flex justify-content-between align-items-center mb-15">
+                            <div class="label-1 toggle-filter"><i class="fa fa-chevron-down text-white d-lg-none"></i>Filters (3)</div>
+                            <div><a href="#" class="text-white fs-14">Clear All</a></div>
+                        </div>
+                        <div class="filter-list">
+                            <div class="filter-item">
+                                <div class="label">Price</div>
+                                <div class="content">
+                                    <div class="range-slider">
+                                        <input type="range" class="form-range" id="customRange1">
+                                        <div class="d-flex justify-content-between">
+                                            <span class="min">1 USDT</span>
+                                            <span class="max">10,000 USDT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-item">
+                                <div class="label">Land</div>
+                                <div class="check-list">
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        Desert Land
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        Forest Land
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        Arctic Land
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        Grass Land
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        Lava Land
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        Crystal Kingdom
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-holder">
+                    <div class="container-fluid overflow-hidden">
+                        <section>
+                            <div class="navbar-custom d-lg-flex justify-content-center ml-0">
+                                <ul class="nav long-type justify-content-center align-items-center">
+                                    <li><a href="/" class="nav-link txt-grey txt-green-hover">Market</a></li>
+                                    <li><a href="myaccount-inventory-heroes.html" class="nav-link txt-grey txt-green-hover">Heroes</a></li>
+                                    <li><a href="myaccount-inventory-item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
+                                    <li><a href="myaccount-inventory-land.html" class="nav-link txt-grey txt-green-hover active">FotaLands</a></li>
+                                    <li><a href="myaccount-inventory-skins.html" class="nav-link txt-grey txt-green-hover">Skins</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="page-title-box d-lg-flex align-items-center justify-content-between">
+                                        <div class="label-1">1,200 results</div>
+                                        <div class="layout-select d-flex">
+                                            <ul class="list-unstyled d-flex">
+                                                <li><a href="" class="txt-dark-grey d-flex align-items-center grid-view"><i class="icon-view-module"></i>Grid</a></li>
+                                                <li><a href="" class="txt-dark-grey d-flex align-items-center list-view"><i class="icon-bulleted-list"></i>List</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="card-wrapper inventory lands card-overview grid-view">
+                                <div class="row">
+                                    <div class="col-sm-6 col-xxl-4 card-item">
+                                        <div class="card sink-effect">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="/assets/images/land-grid-bg.png" alt="">
+                                                <a href="myaccount-inventory-land.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/desert-zone-a.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name">
+                                                                    Desert Zone A
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Desert Land
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc">
+                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-promotion">
+                                                            <div class="fw-7 mb-1 txt-green mt-20 list-view-hide">Owner: Marketplace</div>
+                                                            <div class="txt-light-yellow mt-20 total-reward">
+                                                                <div class="fw-7">Total Rewards:</div>
+                                                                <div>5,000.00 FOTA</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-amount grid-view-hide">999,999.00 USDT</div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-price d-flex align-items-center justify-content-center list-view-hide">
+                                                <div class="inner">
+                                                    <span class="txt-green amount">999,999.00 <span>USDT</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="land-btn-list">
+                                                <a href="#" class="buy-btn btn" data-bs-target="#sellModal"><span class="d-block text-center">SELL</span></a>
+                                                <a href="#" class="rent-btn btn"><span class="d-block text-center">FOR <br>RENT</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xxl-4 card-item">
+                                        <div class="card sink-effect">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="/assets/images/land-grid-bg.png" alt="">
+                                                <a href="myaccount-inventory-land-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/forest-zone-a.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name">
+                                                                    Forest Zone A
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Forest Land
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc">
+                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-promotion">
+                                                            <div class="fw-7 mb-1 txt-green mt-20">Owner: Marketplace</div>
+                                                            <div class="txt-light-yellow mt-20 total-reward">
+                                                                <div class="fw-7">Total Rewards:</div>
+                                                                <div>5,000.00 FOTA</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-price d-flex align-items-center justify-content-center list-view-hide">
+                                                <div class="inner">
+                                                    <span class="txt-green amount">999,999.00 <span>USDT</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="land-btn-list">
+                                                <a href="#" class="buy-btn btn" data-bs-target="#sellModal"><span class="d-block text-center">SELL</span></a>
+                                                <a href="#" class="rent-btn btn"><span class="d-block text-center">FOR <br>RENT</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xxl-4 card-item">
+                                        <div class="card sink-effect">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="/assets/images/land-grid-bg.png" alt="">
+                                                <a href="myaccount-inventory-land.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/arctic-zone-a.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name">
+                                                                    Arctic Zone A
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Arctic Land
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc">
+                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-promotion">
+                                                            <div class="fw-7 mb-1 txt-green mt-20">Owner: Marketplace</div>
+                                                            <div class="txt-light-yellow mt-20 total-reward">
+                                                                <div class="fw-7">Total Rewards:</div>
+                                                                <div>5,000.00 FOTA</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-price d-flex align-items-center justify-content-center list-view-hide">
+                                                <div class="inner">
+                                                    <span class="txt-green amount">999,999.00 <span>USDT</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="land-btn-list">
+                                                <a href="#" class="buy-btn btn" data-bs-target="#sellModal"><span class="d-block text-center">SELL</span></a>
+                                                <a href="#" class="rent-btn btn"><span class="d-block text-center">FOR <br>RENT</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xxl-4 card-item">
+                                        <div class="card sink-effect">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="/assets/images/land-grid-bg.png" alt="">
+                                                <a href="myaccount-inventory-land.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/grass-zone-a.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name">
+                                                                    Grass Zone A
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Grass Land
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc">
+                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-promotion">
+                                                            <div class="fw-7 mb-1 txt-green mt-20">Owner: Marketplace</div>
+                                                            <div class="txt-light-yellow mt-20 total-reward">
+                                                                <div class="fw-7">Total Rewards:</div>
+                                                                <div>5,000.00 FOTA</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-price d-flex align-items-center justify-content-center list-view-hide">
+                                                <div class="inner">
+                                                    <span class="txt-green amount">999,999.00 <span>USDT</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="land-btn-list">
+                                                <a href="#" class="buy-btn btn" data-bs-target="#sellModal"><span class="d-block text-center">SELL</span></a>
+                                                <a href="#" class="rent-btn btn"><span class="d-block text-center">FOR <br>RENT</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xxl-4 card-item">
+                                        <div class="card sink-effect">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="/assets/images/land-grid-bg.png" alt="">
+                                                <a href="myaccount-inventory-land.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/lava-zone-a.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name">
+                                                                    Lava Zone A
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Lava Land
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc">
+                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-promotion">
+                                                            <div class="fw-7 mb-1 txt-green mt-20">Owner: Marketplace</div>
+                                                            <div class="txt-light-yellow mt-20 total-reward">
+                                                                <div class="fw-7">Total Rewards:</div>
+                                                                <div>5,000.00 FOTA</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-price d-flex align-items-center justify-content-center list-view-hide">
+                                                <div class="inner">
+                                                    <span class="txt-green amount">999,999.00 <span>USDT</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="land-btn-list">
+                                                <a href="#" class="buy-btn btn" data-bs-target="#sellModal"><span class="d-block text-center">SELL</span></a>
+                                                <a href="#" class="rent-btn btn"><span class="d-block text-center">FOR <br>RENT</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xxl-4 card-item">
+                                        <div class="card sink-effect">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="/assets/images/land-grid-bg.png" alt="">
+                                                <a href="myaccount-inventory-land.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/crystal-zone-a.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name">
+                                                                    Crystal Zone A
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Crystal Land
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc">
+                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        </div>
+                                                        <div class="card-promotion">
+                                                            <div class="fw-7 mb-1 txt-green mt-20">Owner: Marketplace</div>
+                                                            <div class="txt-light-yellow mt-20 total-reward">
+                                                                <div class="fw-7">Total Rewards:</div>
+                                                                <div>5,000.00 FOTA</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-price d-flex align-items-center justify-content-center list-view-hide">
+                                                <div class="inner">
+                                                    <span class="txt-green amount">999,999.00 <span>USDT</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="land-btn-list">
+                                                <a href="#" class="buy-btn btn" data-bs-target="#sellModal"><span class="d-block text-center">SELL</span></a>
+                                                <a href="#" class="rent-btn btn"><span class="d-block text-center">FOR <br>RENT</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xxl-4 card-item no-item">
+                                        <div class="card sink-effect">
+                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
+                                            <div class="card-image">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xxl-4 card-item no-item">
+                                        <div class="card sink-effect">
+                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
+                                            <div class="card-image">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xxl-4 card-item no-item">
+                                        <div class="card sink-effect">
+                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
+                                            <div class="card-image">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xxl-4 card-item no-item">
+                                        <div class="card sink-effect">
+                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
+                                            <div class="card-image">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xxl-4 card-item no-item">
+                                        <div class="card sink-effect">
+                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
+                                            <div class="card-image">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xxl-4 card-item no-item">
+                                        <div class="card sink-effect">
+                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
+                                            <div class="card-image">
+                                                <a href="#">
+                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <nav class="d-flex justify-content-center w-100">
+                                <ul class="fota-pagination">
+                                    <li class="page-item"><a class="page-link previous-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                    <li class="page-item"><a class="page-link next-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class=" modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Register</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="mb-3">
+                                    <label class="fota-form-label">
+                                        <span>Username: </span>
+                                        <span class="txt-green help-text">View naming rules</span>
+                                        <div class="help-text-content animate slideIn">
+                                            <span class="d-block txt-orange mb-2">A username must be followed these rules:</span>
+                                            <div>Must be unique.<br>
+                                                4 to 15 characters.<br>
+                                                Must be uppercased ( A to Z).<br>
+                                                Can not start with numbers.<br>
+                                                No special characters.<br>
+                                                No space between characters.
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <input type="email" class="fota-form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="fota-form-label">Ref. ID: </label>
+                                    <input type="email" class="fota-form-control">
+                                    <div class="invalid-message txt-orange"><i class="icon-spam"></i>Wanring message goes here.</div>
+                                </div>
+                                <div>
+                                    <a href="#" class="modal-btn d-flex align-items-center text-center sink-effect"><span>create account</span></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content medium-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Buy<br>
+                                Kronok
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="select-balance text-center fs-14">
+                                    Select balance:
+                                </div>
+                                <div class="input-group">
+                                    <label class="radio-container">
+                                        <span class="txt-green">500.00 USDT</span>
+                                        <input type="radio" checked="checked" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <label class="radio-container">
+                                        <span class="txt-light-yellow">500.00 BUSD</span>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="input-group">
+                                    <label class="radio-container">
+                                        <span>500.00 FOTA</span>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="mb-3 mt-3">
+                                    <div class="text-center fs-14">
+                                        Total Price:
+                                    </div>
+                                    <div class="text-center fs-30 fw-7 text-uppercase">100.00 FOTA</div>
+                                </div>
+                                <div>
+                                    <a href="#" class="modal-btn d-flex align-items-center text-center sink-effect"><span>BUY</span></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
