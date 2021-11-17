@@ -180,3 +180,100 @@
         font-weight: bold;
     }
 }
+.market-trend-page {
+    .page-holder {
+        padding-left: 0;
+    }
+    .navbar-custom {
+        // @media screen and (min-width: 992px) {
+        margin: 0 auto;
+        // }
+    }
+    .info-box {
+        margin-top: 50px;
+        .days {
+            a {
+                display: inline-block;
+                margin: 0 10px;
+                padding: 5px 20px;
+                min-width: 120px;
+                border: 2px solid #323b37;
+                border-radius: 40px;
+                font-size: 18px;
+                color: white;
+                text-align: center;
+                font-weight: 600;
+                &.active {
+                    color: $green;
+                    border-color: $green;
+                }
+            }
+        }
+        .illustration-item {
+            margin-top: 40px;
+            i {
+                margin-right: 30px;
+                font-size: 50px;
+            }
+            .label {
+                font-size: 14px;
+                font-weight: bold;
+            }
+            .amount {
+                font-size: 24px;
+                font-weight: bold;
+            }
+        }
+    }
+    .trend-list {
+        margin-top: 50px;
+    }
+    .trend-item-list {
+        margin-top: 30px;
+        border-top: 1px solid #36594c;
+        .card {
+            padding: 30px 0;
+            &-image {
+                margin-right: 20px;
+                img {
+                    width: 100px;
+                }
+            }
+            &-name {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            &-spec {
+                margin-top: 10px;
+                font-size: 14px;
+                i {
+                    font-size: 20px;
+                    margin-right: 5px;
+                }
+                > span {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+            .price {
+                margin-top: 10px;
+                font-size: 22px;
+                color: $green;
+                font-weight: 600;
+            }
+        }
+    }
+    .trend-item-header {
+        h3 {
+            font-size: 30px;
+        }
+        i {
+            font-size: 30px;
+            margin-right: 20px;
+        }
+    }
+}

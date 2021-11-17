@@ -790,7 +790,8 @@ button {
 }
 .full-box,
 .half-box,
-.small-box {
+.small-box,
+.half-box-2 {
     position: relative;
     padding: 40px;
     background-color: rgba($color: #010e0e, $alpha: 0.9);
@@ -1017,6 +1018,16 @@ button {
     &::after {
         bottom: -7px;
         background: url('../images/half-box-bottom-bg.png');
+    }
+}
+.half-box-2 {
+    &::before {
+        top: -7px;
+        background: url('../images/half-box-top-bg-2.png');
+    }
+    &::after {
+        bottom: -7px;
+        background: url('../images/half-box-bottom-bg-2.png');
     }
 }
 .nav-tabs {
