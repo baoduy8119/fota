@@ -1735,3 +1735,19 @@ button {
     animation: glow 0.7s ease-in-out infinite alternate;
     font-size: 20px;
 }
+.load-more {
+    display: flex;
+    justify-content: center;
+    width: 110px;
+    margin: 0 auto;
+    padding: 3px 15px;
+    font-size: 14px;
+    border: 2px solid #505050;
+    background-color: #000;
+    border-radius: 20px;
+    color: white;
+    &:hover {
+        border-color: #ffe593;
+        color: #ffe593;
+    }
+}

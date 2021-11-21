@@ -230,18 +230,40 @@
     }
     .trend-item-list {
         margin-top: 30px;
-        border-top: 1px solid #36594c;
         .card {
-            padding: 30px 0;
+            border-top: 1px solid #36594c;
+            padding: 30px 0 20px;
+            &-info {
+                position: relative;
+                width: 100%;
+                min-height: 152px;
+                margin-top: -5px;
+            }
             &-image {
-                margin-right: 20px;
-                img {
-                    width: 100px;
+                margin-right: 10px;
+                @media screen and (min-width: 1441px) {
+                    margin-right: 20px;
+                }
+                .img {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 2px;
+                        right: 2px;
+                        top: 2px;
+                        bottom: 2px;
+                        box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.5);
+                    }
+                    img {
+                        width: 100px;
+                    }
                 }
             }
             &-name {
                 font-size: 20px;
                 font-weight: bold;
+                width: 200px;
             }
             &-spec {
                 margin-top: 10px;
@@ -253,17 +275,58 @@
                 > span {
                     display: flex;
                     align-items: center;
-                    margin-right: 10px;
+                    margin-right: 5px;
+                    @media screen and (min-width: 1600px) {
+                        margin-right: 10px;
+                    }
                     &:last-child {
                         margin-right: 0;
                     }
                 }
+            }
+            .date {
+                position: absolute;
+                top: 4px;
+                right: 0;
+                text-align: right;
+                color: #fcfdcc;
+                font-size: 14px;
             }
             .price {
                 margin-top: 10px;
                 font-size: 22px;
                 color: $green;
                 font-weight: 600;
+            }
+            .card-class {
+                margin-top: 10px;
+                font-size: 14px;
+                .item-class {
+                    position: relative;
+                    margin: 0 5px;
+                    &:hover {
+                        .tooltip-class {
+                            opacity: 1;
+                            display: block;
+                        }
+                    }
+                    img {
+                        width: 30px;
+                    }
+                    .tooltip-class {
+                        position: absolute;
+                        bottom: -40px;
+                        right: -64px;
+                        padding: 5px 10px;
+                        border-radius: 3px;
+                        background-color: #000;
+                        border: 1px solid #575757;
+                        font-size: 14px;
+                        opacity: 0;
+                        transition: all 0.3s;
+                        display: none;
+                    }
+                }
             }
         }
     }
