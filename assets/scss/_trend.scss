@@ -477,6 +477,19 @@
 .diagram {
     display: flex;
     align-items: center;
+    &.top {
+        align-items: end;
+        > .level-col {
+            &:first-child {
+                margin-bottom: 71px;
+            }
+        }
+        > .level-col.two-branch {
+            &:before {
+                top: calc(50% + 71px);
+            }
+        }
+    }
     @media screen and (min-width: 992px) {
         justify-content: center;
     }
@@ -490,6 +503,11 @@
             display: block;
             content: '';
             background-color: #7f886f;
+        }
+        &.first {
+            &::before {
+                content: none;
+            }
         }
         &.last {
             &::after {
