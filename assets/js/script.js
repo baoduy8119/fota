@@ -38,4 +38,13 @@ $(function () {
         e.preventDefault();
         $('.toast').toast('show')
     });
+    var range = $('.range-slider input');
+    range.on('input', function (e) {
+        var rangeV = $(this).prev('.range-value');
+        const newValue = Number(($(this).val() - $(this).attr('min')) * 100 / ($(this).attr('max') - $(this).attr('min')));
+        const newPosition = 10 - (newValue * 0.2);
+        rangeV.html(`<span>${$(this).val()}</span>`);
+        rangeV.css('left', `calc(${newValue}% + (${newPosition}px))`);
+    })
+
 });

@@ -43,6 +43,37 @@
         }
     }
 }
+.filter-item {
+    .range-item {
+        .content .range-slider {
+            margin-bottom: 20px;
+        }
+    }
+}
+.range-slider {
+    position: relative;
+    .range-value {
+        position: absolute;
+        top: -12px;
+        span {
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            color: #00f4c9;
+            font-size: 14px;
+            display: block;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    }
+    .range-label {
+        margin-bottom: 10px;
+        + .range-value {
+            top: 15px;
+        }
+    }
+}
 .form-range {
     height: 20px;
     border-radius: 0;
