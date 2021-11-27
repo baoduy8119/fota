@@ -336,7 +336,20 @@
     &.card-wrapper {
         &.list-view {
             .card {
+                min-height: auto;
                 padding: 15px;
+                &-name {
+                    margin-left: 10px;
+                    text-transform: uppercase;
+                }
+                &-info {
+                    padding: 14px 30px;
+                }
+                &-spec {
+                    i {
+                        font-size: 18px;
+                    }
+                }
             }
             .card-image {
                 .thumb {
@@ -367,6 +380,11 @@
                     bottom: 0;
                     background: url('../images/fgame.png') no-repeat;
                     background-size: 100%;
+                }
+            }
+            .card {
+                &-name {
+                    margin-top: 7px;
                 }
             }
         }
