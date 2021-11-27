@@ -274,22 +274,22 @@
                 height: 8px;
             }
             @media screen and (min-width: 992px) {
-                background-color: rgba($color: $dark-green, $alpha: 0.9);
-                border-left: 2px solid rgba($color: #39cab6, $alpha: 0.7);
-                border-right: 2px solid rgba($color: #39cab6, $alpha: 0.7);
+                background-color: rgba($color: $dark-green, $alpha: 0.5);
+                border-left: 2px solid transparent;
+                border-right: 2px solid transparent;
                 display: flex;
                 // background: url('../images/hero-list-bg.png') no-repeat;
                 min-height: 240px;
                 background-size: 100%;
                 &::before {
-                    top: -6px;
+                    top: -8px;
                     background: url('../images/hero-list-top-bg.png') no-repeat;
-                    background-size: 100%;
+                    background-size: cover;
                 }
                 &::after {
-                    bottom: -6px;
+                    bottom: -8px;
                     background: url('../images/hero-list-bottom-bg.png') no-repeat;
-                    background-size: 100%;
+                    background-size: cover;
                 }
             }
             @media screen and (max-width: 991px) {
@@ -309,6 +309,25 @@
                     bottom: -7px;
                     background: url(../images/full-box-bottom-bg.png);
                     background-color: 100%;
+                }
+            }
+            &:hover {
+                @media screen and (min-width: 992px) {
+                    background-color: rgba($color: $dark-green, $alpha: 0.9);
+                    border-color: rgba($color: #39cab6, $alpha: 0.7);
+                    &::before,
+                    &::after {
+                        left: -2px;
+                        right: -2px;
+                    }
+                    &::before {
+                        background: url('../images/hero-list-top-active-bg.png') no-repeat;
+                        background-size: cover;
+                    }
+                    &::after {
+                        background: url('../images/hero-list-bottom-active-bg.png') no-repeat;
+                        background-size: cover;
+                    }
                 }
             }
             &-item {
@@ -380,11 +399,11 @@
                 font-size: 12px;
                 margin-top: 20px;
                 @media screen and (max-width: 991px) {
-                    position: absolute;
-                    top: 45px;
-                    left: 175px;
-                    margin: 0 30px;
-                    justify-content: center;
+                    // position: absolute;
+                    // top: 45px;
+                    // left: 175px;
+                    // margin: 0 30px;
+                    // justify-content: center;
                 }
                 > span {
                     display: flex;

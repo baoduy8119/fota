@@ -344,16 +344,31 @@
                 }
                 &-info {
                     padding: 14px 30px;
+                    @media screen and (max-width: 991px) {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .top-info {
+                    }
                 }
                 &-spec {
                     i {
                         font-size: 18px;
                     }
                 }
+                &-item {
+                    @media screen and (min-width: 1024px) and (max-width: 1366px) {
+                        width: 100%;
+                    }
+                }
             }
             .card-image {
                 .thumb {
                     width: auto;
+                    @media screen and (max-width: 991px) {
+                        text-align: center;
+                    }
                 }
                 .image {
                     position: static;

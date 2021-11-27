@@ -112,6 +112,9 @@
                 > span {
                     flex: 0 0 33.33%;
                     width: auto;
+                    @media screen and (max-width: 991px) {
+                        flex: 0 0 50%;
+                    }
                 }
             }
             &-price {
