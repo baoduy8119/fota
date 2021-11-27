@@ -335,12 +335,18 @@
 .hero-list {
     &.card-wrapper {
         &.list-view {
+            .card {
+                padding: 15px;
+            }
             .card-image {
+                .thumb {
+                    width: auto;
+                }
                 .image {
+                    position: static;
                     @media screen and (min-width: 992px) {
-                        position: absolute;
-                        width: 180px;
-                        max-width: 180px;
+                        width: 200px;
+                        max-width: 200px;
                     }
                 }
             }
