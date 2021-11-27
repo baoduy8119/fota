@@ -33,6 +33,14 @@
                 background: linear-gradient(0deg, rgba(90, 47, 66, 1) 0%, rgba(255, 255, 255, 0) 100%);
             }
         }
+        &.bg-grey {
+            background: #efdb8f;
+            .hero-video-bg::after {
+                bottom: 6px;
+                background: rgb(239, 219, 143);
+                background: linear-gradient(0deg, rgba(239, 219, 143, 1) 0%, rgba(255, 255, 255, 0) 100%);
+            }
+        }
     }
     .hero-container {
         padding-top: 0;
@@ -94,7 +102,7 @@
             }
         }
         &-summary {
-            padding: 170px 30px 100px;
+            padding: 170px 30px 50px;
             text-align: center;
             z-index: 2;
             @media screen and (max-width: 991px) {
@@ -104,16 +112,26 @@
                 position: absolute;
                 top: 0;
                 left: 50%;
-                width: 165px;
                 transform: translate(-50%, -50%);
-                img {
-                    @media screen and (max-width: 991px) {
-                        width: 60%;
-                    }
+                @media screen and (max-width: 991px) {
+                    width: 120px;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 2px;
+                    right: 2px;
+                    top: 2px;
+                    bottom: 2px;
+                    box-shadow: 0px 3px 10px 3px rgba(0, 0, 0, 0.5);
                 }
             }
             .sub-title {
                 font-style: italic;
+                @media screen and (min-width: 992px) {
+                    max-width: 800px;
+                    margin: 0 auto;
+                }
                 @media screen and (max-width: 991px) {
                     font-size: 20px;
                 }
@@ -130,6 +148,8 @@
             font-size: 50px;
             line-height: 40px;
             font-weight: bold;
+            text-transform: uppercase;
+            margin-top: 40px;
             @media screen and (max-width: 991px) {
                 font-size: 40px;
             }
@@ -143,7 +163,16 @@
         }
         &-class-name {
             margin-top: 10px;
-            font-size: 14px;
+            .card-class {
+                width: 40px;
+            }
+        }
+        &-alliances {
+            .item-class {
+                img {
+                    width: 40px;
+                }
+            }
         }
         &-desc {
             margin: 0 auto;
@@ -240,7 +269,7 @@
             }
             .item {
                 flex: 0 0 33.33%;
-                margin: 10px 0;
+                margin: 15px 0;
                 padding: 0 10px;
                 @media screen and (max-width: 991px) {
                     flex: 0 0 50%;
@@ -270,12 +299,12 @@
         }
     }
     .tab-content {
-        .title {
-            margin-top: 15px;
-        }
         .sub-title {
+            margin-top: 10px;
             font-size: 14px;
             line-height: 1;
+            text-transform: uppercase;
+            color: #e9a64f;
         }
         .desc {
             margin-top: 15px;
@@ -330,7 +359,7 @@
                     top: 0;
                     right: 0;
                     bottom: 0;
-                    background: url('../images/fgame.png');
+                    background: url('../images/fgame.png') no-repeat;
                     background-size: 100%;
                 }
             }

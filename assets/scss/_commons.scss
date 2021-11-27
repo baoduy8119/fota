@@ -1073,7 +1073,7 @@ button {
             width: 100px;
             transition: all 0.3s;
             @media screen and (max-width: 991px) {
-                width: 50px;
+                width: 70px;
             }
         }
         &:hover {
@@ -1085,7 +1085,7 @@ button {
             background: transparent;
             opacity: 1;
             img {
-                width: 130px;
+                transform: scale(1.2);
                 @media screen and (max-width: 991px) {
                     width: 70px;
                 }
@@ -1351,7 +1351,7 @@ button {
     }
 }
 .hero-video {
-    position: absolute;
+    // position: absolute;
     left: 0;
     top: 0;
     right: 0;
@@ -1847,4 +1847,14 @@ button {
         border-color: #ffe593;
         color: #ffe593;
     }
+}
+.class-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+}
+.text-justify {
+    text-align: justify;
+    text-align-last: center;
 }

@@ -647,3 +647,34 @@
         }
     }
 }
+.hero-alliances {
+    margin-top: 10px;
+    font-size: 14px;
+    .item-class {
+        position: relative;
+        margin: 0 5px;
+        &:hover {
+            .tooltip-class {
+                opacity: 1;
+                display: block;
+            }
+        }
+        img {
+            width: 30px;
+        }
+        .tooltip-class {
+            position: absolute;
+            bottom: -40px;
+            right: -64px;
+            padding: 5px 10px;
+            border-radius: 3px;
+            background-color: #000;
+            border: 1px solid #575757;
+            font-size: 14px;
+            opacity: 0;
+            transition: all 0.3s;
+            display: none;
+            z-index: 1;
+        }
+    }
+}
