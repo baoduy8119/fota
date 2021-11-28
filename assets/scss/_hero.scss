@@ -201,6 +201,9 @@
                 .spec {
                     display: block;
                     margin-top: 12px;
+                    @media screen and (max-width: 991px) {
+                        white-space: nowrap;
+                    }
                 }
                 i {
                     font-size: 30px;
