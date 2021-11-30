@@ -65,13 +65,13 @@
                     width: 8px;
                 }
                 &::before {
-                    left: -8px;
+                    left: -7px;
                     background: url('../images/trend-card-price-left-bg.png');
                 }
                 &::after {
                     content: '';
                     position: absolute;
-                    right: -8px;
+                    right: -7px;
                     top: 0;
                     bottom: 0;
                     background: url('../images/trend-card-price-right-bg.png');
@@ -140,7 +140,7 @@
                     font-size: 12px;
                 }
                 .value {
-                    margin-right: 30px;
+                    margin-right: 15px;
                     font-size: 20px;
                 }
             }
