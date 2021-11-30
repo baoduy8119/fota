@@ -126,6 +126,14 @@ body {
             &::after {
                 content: none;
             }
+            a {
+                &:hover,
+                &:focus {
+                    .label-tooltip {
+                        color: white;
+                    }
+                }
+            }
         }
         @media screen and (min-width: 1200px) and (max-width: 1440px) {
             width: 450px;
@@ -1856,4 +1864,35 @@ button {
 .text-justify {
     text-align: justify;
     text-align-last: center;
+}
+.label-tooltip {
+    position: relative;
+    &:hover {
+        .tooltip-content {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    .tooltip-content {
+        position: absolute;
+        visibility: hidden;
+        width: 114px;
+        height: 40px;
+        text-align: center;
+        background: url('../images/fota-btn-bg.png') no-repeat;
+        font-size: 14px;
+        color: white;
+        opacity: 0;
+        transition: all 0.3s;
+        line-height: 40px;
+        z-index: 1;
+        &.bottom {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -52px;
+            @media screen and (max-width: 575px) {
+                bottom: -45px;
+            }
+        }
+    }
 }
