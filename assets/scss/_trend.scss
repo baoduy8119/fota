@@ -77,6 +77,15 @@
                     background: url('../images/trend-card-price-right-bg.png');
                 }
             }
+            // Fix UI when hasn't content
+            &-image {
+                .list-view-bg {
+                    height: 330px;
+                }
+                &::after {
+                    background: none;
+                }
+            }
         }
     }
 
@@ -142,6 +151,9 @@
                 .value {
                     margin-right: 15px;
                     font-size: 20px;
+                    @media screen and (min-width: 992px) and (max-width: 1024px){ 
+                        font-size: 16px;
+                    }
                 }
             }
             &-info {
