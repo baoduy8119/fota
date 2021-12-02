@@ -6,6 +6,12 @@
             }
             &-info {
                 padding-bottom: 40px;
+                .card-name {
+                    margin: 10px 0 8px;
+                    @media screen and (min-width: 992px) and (max-width: 1366px) {
+                        font-size: 24px
+                    }
+                }
             }
             &-price {
                 height: 130px;
@@ -14,6 +20,9 @@
                     height: 75px;
                     .inner {
                         margin-top: 0;
+                        span:first-child {
+                            line-height: 26px;
+                        }
                     }
                     &::before,
                     &::after {
@@ -80,7 +89,7 @@
             // Fix UI when hasn't content
             &-image {
                 .list-view-bg {
-                    height: 330px;
+                    height: 345px;
                 }
                 &::after {
                     background: none;
@@ -209,7 +218,7 @@
             top: 25px;
             @media screen and (max-width: 991px) {
                 .trend-item & {
-                    right: -67px;
+                    right: 0;
                 }
             }
         }
@@ -367,7 +376,7 @@
                 min-height: 152px;
                 margin-top: -5px;
                 .wallet {
-                    @media screen and (min-width: 992px) and (max-width: 1024px) {
+                    @media screen and (min-width: 992px) and (max-width: 1366px) {
                         max-width: 180px;
                     }
                     @media screen and (max-width: 575px) {
