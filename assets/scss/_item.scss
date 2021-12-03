@@ -92,7 +92,8 @@
                     }
                     .image {
                         position: relative;
-                        width: auto;
+                        width: 100%;
+                        max-width: 250px;
                     }
                     .thumb {
                         display: inline-block;
