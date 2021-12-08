@@ -924,12 +924,17 @@ button {
                 top: 50%;
                 right: 30px;
                 transform: translateY(-50%);
-                @media screen and (max-width: 991px) {
+                @media screen and (max-width: 767px) {
                     top: inherit;
                     bottom: -60px;
                     left: 50%;
                     transform: translateX(-50%);
                     z-index: 1;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1366px){
+                    position: static;
+                    transform: translateY(0);
+                    margin-top: 30px;
                 }
             }
             .content {
@@ -938,6 +943,9 @@ button {
                 }
                 @media screen and (max-width: 991px) {
                     padding-bottom: 40px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1366px){
+                    padding-right: 0;
                 }
             }
         }

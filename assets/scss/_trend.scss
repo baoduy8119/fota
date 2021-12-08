@@ -125,16 +125,6 @@
             }
         }
         .card {
-            &-spec {
-                display: flex;
-                > span {
-                    flex: 0 0 33.33%;
-                    width: auto;
-                    @media screen and (max-width: 991px) {
-                        flex: 0 0 50%;
-                    }
-                }
-            }
             &-price {
                 .left {
                     display: none;
@@ -148,20 +138,6 @@
                         span:last-child {
                             order: 1;
                         }
-                    }
-                }
-            }
-            &-desc {
-                display: flex;
-                .label {
-                    margin-right: 10px;
-                    font-size: 12px;
-                }
-                .value {
-                    margin-right: 15px;
-                    font-size: 20px;
-                    @media screen and (min-width: 992px) and (max-width: 1024px) {
-                        font-size: 16px;
                     }
                 }
             }

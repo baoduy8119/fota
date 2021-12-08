@@ -4,6 +4,11 @@
             .list-view-bg {
                 display: none;
             }
+            .card-item {
+                @media screen and (min-width: 1024px) and (max-width: 1366px) {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -30,6 +35,12 @@
                     .top-info {
                         margin-top: 10px;
                         margin-left: 0;
+                        @media screen and (max-width: 991px) {
+                            justify-content: center;
+                            .card-class {
+                                text-align: center;
+                            }
+                        }
                     }
                 }
                 &-promotion {
