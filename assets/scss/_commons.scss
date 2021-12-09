@@ -97,6 +97,9 @@ body {
     @media screen and (min-width: 992px) {
         padding-top: 70px;
     }
+    .label-tooltip .label {
+        opacity: 0.6;
+    }
     .nav {
         width: 495px;
         height: 72px;
@@ -931,7 +934,7 @@ button {
                     transform: translateX(-50%);
                     z-index: 1;
                 }
-                @media screen and (min-width: 768px) and (max-width: 1366px){
+                @media screen and (min-width: 768px) and (max-width: 1366px) {
                     position: static;
                     transform: translateY(0);
                     margin-top: 30px;
@@ -944,7 +947,7 @@ button {
                 @media screen and (max-width: 991px) {
                     padding-bottom: 40px;
                 }
-                @media screen and (min-width: 768px) and (max-width: 1366px){
+                @media screen and (min-width: 768px) and (max-width: 1366px) {
                     padding-right: 0;
                 }
             }
@@ -975,6 +978,15 @@ button {
             margin-top: 30px;
             padding: 0 40px;
             color: $light-yellow;
+        }
+    }
+    .user-info {
+        margin-top: 20px;
+        .nft-id {
+            font-size: 16px;
+        }
+        a {
+            line-height: 16px;
         }
     }
     .thumb {
@@ -1893,7 +1905,7 @@ button {
         opacity: 0;
         transition: all 0.3s;
         line-height: 40px;
-        z-index: 1;
+        z-index: 10;
         &.bottom {
             left: 50%;
             transform: translateX(-50%);
@@ -1923,7 +1935,7 @@ button {
     font-size: 21px !important;
 }
 .range-slider .input-range {
-    @media screen and (max-width: 991px){
+    @media screen and (max-width: 991px) {
         width: calc(100% - 35px);
     }
 }
