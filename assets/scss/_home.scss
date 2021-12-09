@@ -268,6 +268,50 @@
                 }
             }
         }
+        &.hero-list {
+            .card-price {
+                height: 130px;
+                padding-right: 0;
+                .inner {
+                    width: 100%;
+                    padding: 0 20px;
+                    .top-price {
+                        margin-top: 10px;
+                        justify-content: space-between;
+                    }
+                }
+                .label {
+                    display: block;
+                }
+                .unit-price {
+                    display: flex;
+                    flex-direction: column;
+                    span:first-child {
+                        font-size: 12px;
+                        text-align: center;
+                    }
+                    span:last-child {
+                        line-height: 20px;
+                    }
+
+                    @media screen and (min-width: 992px) {
+                        font-size: 24px;
+                        span:last-child {
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .buy-btn {
+                    top: inherit;
+                    bottom: -26px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    span {
+                        margin-top: 17px;
+                    }
+                }
+            }
+        }
     }
     &.list-view {
         .card {
@@ -292,6 +336,9 @@
                     justify-content: start !important;
                     .inner {
                         display: flex;
+                        .top-price {
+                            width: initial !important;
+                        }
                         .buy-btn {
                             margin: 5px 0 0 20px;
                         }
@@ -366,7 +413,7 @@
             &-image {
                 width: 100%;
                 @media screen and (min-width: 992px) {
-                    width: 77%;
+                    width: 80%;
                     .market-trend & {
                         width: 100%;
                     }
@@ -440,8 +487,11 @@
                     display: flex;
                     align-items: center;
                     margin: 8px 0;
-                    flex: 0 0 33.33%;
+                    flex: 0 0 50%;
                     width: auto;
+                    @media screen and (min-width: 1200px) and (max-width: 1599px) {
+                        flex: 0 0 33.33%;
+                    }
                     @media screen and (max-width: 991px) {
                         flex: 0 0 50%;
                         justify-content: center;
@@ -485,7 +535,7 @@
                     z-index: 1;
                 }
                 @media screen and (min-width: 992px) {
-                    width: 23%;
+                    width: 20%;
                     position: static;
                     transform: none;
                     text-align: center;
@@ -577,6 +627,35 @@
                 }
                 &-name {
                     text-transform: uppercase;
+                }
+            }
+        }
+        &.hero-list {
+            .card {
+                &-spec {
+                    margin-top: 10px;
+                }
+                &-info {
+                    .card-id {
+                        margin-left: 0;
+                    }
+                }
+                &-price {
+                    @media screen and (max-width: 991px) {
+                        align-items: center;
+                    }
+                    .top-price {
+                        justify-content: center;
+                        @media screen and (max-width: 991px) {
+                            .unit-price {
+                                display: flex;
+                            }
+                            .currency-unit {
+                                margin-left: 5px;
+                                order: 2;
+                            }
+                        }
+                    }
                 }
             }
         }
