@@ -102,11 +102,11 @@
             }
         }
         &-summary {
-            padding: 170px 30px 80px;
+            padding: 80px 30px 80px;
             text-align: center;
             z-index: 2;
             @media screen and (max-width: 991px) {
-                padding-top: 150px;
+                padding-top: 40px;
             }
             .thumb {
                 position: absolute;
