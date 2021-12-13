@@ -50,6 +50,9 @@
             right: -5px;
             height: 20px;
             color: $grey;
+            .page-holder & {
+                content: none;
+            }
             @media screen and (max-width: 991px) {
                 top: 10px;
                 font-size: 14px;
@@ -141,7 +144,7 @@
         margin: 5px 0;
     }
     &-currency {
-        .icon-currency {
+        i {
             margin: 0 10px;
         }
         .fa-chevron-down {
@@ -160,10 +163,15 @@
         }
     }
 }
-.icon-currency {
+.icon-binance {
     width: 18px;
     height: 18px;
     background: url('../images/icon-currency.png') no-repeat;
+}
+.icon-usdt {
+    width: 18px;
+    height: 18px;
+    background: url('../images/t-icon.png') no-repeat;
 }
 .top-navbar-custom {
     bottom: 35px;

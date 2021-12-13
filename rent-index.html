@@ -79,25 +79,27 @@
                             </div>
                             <div class="lg-mr-20 text-end order-1">
                                 <div class="account-user-name text-uppercase">Player001</div>
-                                <div class="account-currency txt-light-yellow fw-7 d-lg-flex align-items-center">
-                                    <div class="d-flex align-items-center justify-content-end">
+                                <div class="account-currency fw-7 d-lg-flex align-items-center">
+                                    <div class="d-flex txt-light-green align-items-center justify-content-end">
                                         <span>
-                                            100.534 BUSD
+                                            100.534 USDT
                                         </span>
-                                        <i class="icon-currency d-inline-block"></i>
+                                        <i class="icon-usdt d-inline-block"></i>
+                                    </div>
+                                    <div class="d-flex txt-light-yellow align-items-center justify-content-end">
+                                        <span>
+                                            99.534 BUSD
+                                        </span>
+                                        <i class="icon-binance d-inline-block"></i>
                                     </div>
                                     <div class="position-relative fota-dropdown">
                                         <a class="fota-toggle d-none d-lg-block" href="#">
-                                            <i class="fa fa-chevron-down text-white"></i>
+                                            <i class="fa fa-chevron-down text-white m-0"></i>
                                         </a>
                                         <div class="fota-dropdown-menu animate slideIn text-end">
                                             <div href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
-                                                <span class="txt-light-green">1,421.524300 USDT</span>
-                                                <div><img src="assets/images/t-icon.png" alt=""></div>
-                                            </div>
-                                            <div href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
-                                                <span class="txt-light-grey">4,500.524300 USDT</span>
-                                                <img src="assets/images/f-icon.png" alt="">
+                                                <span class="txt-light-green">123,421 BUSD</span>
+                                                <i class="icon-binance d-inline-block m-0"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -117,12 +119,39 @@
                     <a href="/fota" class="trade-link link text-uppercase"><i class="icon-gold-bars d-block"></i>Trade</a>
                     <a href="rent-index.html" class="rent-link link active text-uppercase"><i class="icon-lease d-block"></i>Rent</a>
                 </div>
-                <div class="navbar-custom d-lg-flex position-relative justify-content-end">
-                    <ul class="nav justify-content-center align-items-center">
-                        <li><a href="rent-index.html" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
-                        <li><a href="rent-item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
-                        <li><a href="rent-land.html" class="nav-link txt-grey txt-green-hover">Lands</a></li>
+                <div class="navbar-custom d-lg-flex justify-content-center">
+                    <ul class="nav long-type justify-content-center align-items-center">
+                        <li>
+                            <a href="javascript:;" class="nav-link txt-grey txt-green-hover label-tooltip">
+                                <span class="label">Market</span>
+                                <div class="tooltip-content bottom">
+                                    Coming Soon
+                                </div>
+                            </a>
+                        </li>
+                        <li><a href="index.html" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
+                        <li><a href="item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
+                        <li>
+                            <a href="javascript:;" class="nav-link txt-grey txt-green-hover label-tooltip">
+                                <span class="label">FotaLands</span>
+                                <div class="tooltip-content bottom">
+                                    Coming Soon
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="nav-link txt-grey txt-green-hover label-tooltip">
+                                <span class="label">Skins</span>
+                                <div class="tooltip-content bottom">
+                                    Coming Soon
+                                </div>
+                            </a>
+                        </li>
                     </ul>
+                </div>
+            </div>
+            <div class="main-content d-lg-flex align-items-stretch ">
+                <div id="sidebar" class="sidebar">
                     <div class="search-block">
                         <form>
                             <div class="search-container position-relative">
@@ -131,10 +160,6 @@
                             </div>
                         </form>
                     </div>
-                </div>
-            </div>
-            <div class="main-content d-lg-flex align-items-stretch ">
-                <div id="sidebar" class="sidebar">
                     <div class="filters">
                         <div class="d-flex justify-content-between align-items-center mb-15">
                             <div class="label-1 toggle-filter"><i class="fa fa-chevron-down text-white d-lg-none"></i>Filters (3)</div>
@@ -161,15 +186,39 @@
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
                                         </div>
-                                        <img src="assets/images/human-icon.png" alt="">
-                                        Human
+                                        <img src="assets/images/race-keen.png" alt="">
+                                        Keen
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <img src="assets/images/race-orge.png" alt="">
+                                        Orge
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox" checked="checked">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <img src="assets/images/race-elf.png" alt="">
+                                        Elf
                                     </label>
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        <img src="assets/images/monster-icon.png" alt="">
+                                        <img src="assets/images/race-omni.png" alt="">
+                                        Omni
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <img src="assets/images/race-monster.png" alt="">
                                         Monster
                                     </label>
                                     <label class="checkbox-container">
@@ -177,7 +226,23 @@
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        <img src="assets/images/beast-icon.png" alt="">
+                                        <img src="assets/images/race-dragon.png" alt="">
+                                        Dragon
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <img src="assets/images/race-human.png" alt="">
+                                        Human
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <img src="assets/images/race-beats.png" alt="">
                                         Beast
                                     </label>
                                 </div>
@@ -194,7 +259,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="filter-item class">
+                            <div class="filter-item">
                                 <div class="label">Class</div>
                                 <div class="check-list">
                                     <label class="checkbox-container">
@@ -202,27 +267,15 @@
                                             <input type="checkbox" checked="checked">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Mage
+                                        <img src="assets/images/class-chemist.png" alt="">
+                                        Chemist
                                     </label>
                                     <label class="checkbox-container">
                                         <div class="custom-checkbox">
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Hunter
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Durid
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
+                                        <img src="assets/images/class-warrior.png" alt="">
                                         Warrior
                                     </label>
                                     <label class="checkbox-container">
@@ -230,20 +283,7 @@
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Demon
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Assassin
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
+                                        <img src="assets/images/class-mech.png" alt="">
                                         Mech
                                     </label>
                                     <label class="checkbox-container">
@@ -251,6 +291,23 @@
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
+                                        <img src="assets/images/class-hunter.png" alt="">
+                                        Hunter
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <img src="assets/images/class-assassin.png" alt="">
+                                        Assassin
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <img src="assets/images/class-warlock.png" alt="">
                                         Warlock
                                     </label>
                                     <label class="checkbox-container">
@@ -258,7 +315,16 @@
                                             <input type="checkbox">
                                             <span class="checkmark"></span>
                                         </div>
-                                        Knight
+                                        <img src="assets/images/class-priest.png" alt="">
+                                        Priest
+                                    </label>
+                                    <label class="checkbox-container">
+                                        <div class="custom-checkbox">
+                                            <input type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </div>
+                                        <img src="assets/images/class-mage.png" alt="">
+                                        Mage
                                     </label>
                                 </div>
                             </div>
@@ -374,18 +440,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Cyril
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -423,10 +485,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -450,18 +515,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Ciara
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -499,10 +560,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -526,18 +590,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Orson
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -575,10 +635,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -602,18 +665,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Zel
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -651,10 +710,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -678,18 +740,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Keisha
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -727,10 +785,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -755,18 +816,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Eira
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -804,10 +861,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -831,18 +891,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Aprum
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -880,10 +936,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -907,18 +966,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Alva
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -956,10 +1011,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -983,18 +1041,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Kyla
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -1032,10 +1086,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1059,18 +1116,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Farrer
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -1108,10 +1161,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1135,18 +1191,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Gideon
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -1184,10 +1236,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1211,18 +1266,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Adeus
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -1260,10 +1311,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1287,18 +1341,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Grimm
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -1336,10 +1386,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1363,18 +1416,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Amaltheus
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -1412,10 +1461,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1439,18 +1491,14 @@
                                                             <div class="info">
                                                                 <div class="card-name">
                                                                     Octonus
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div class="card-id">
+                                                            #MD0001
+                                                        </div>
                                                         <div class="card-desc">
                                                             <div><span class="label txt-dark-grey">Level</span><span class="value fw-6">0</span></div>
-                                                            <div><span class="label txt-dark-grey">Purchases</span><span class="value fw-6">10,000</span></div>
                                                             <div><span class="label txt-dark-grey grid-view-hide">Renting Count</span><span class="value fw-6">10,000</span></div>
                                                         </div>
                                                         <div class="card-spec">
@@ -1488,10 +1536,13 @@
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price d-flex justify-content-center">
                                                 <div class="inner">
-                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn"><span class="d-block text-center">BUY</span></a>
+                                                    <div class="top-price d-flex w-100">
+                                                        <div class="list-view-hide"><span class="label txt-dark-grey fs-12">Level</span><span class="value fw-6">0</span></div>
+                                                        <div class="unit-price txt-green"><span class="currency-unit">USDT</span><span class="fw-7">100,000</span></div>
+                                                    </div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -1556,7 +1607,7 @@
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content medium-modal">
                         <div class="modal-header">
-                            <h5 class="modal-title">Buy<br>
+                            <h5 class="modal-title">Rent<br>
                                 Kronok
                             </h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
@@ -1594,7 +1645,7 @@
                                     <div class="text-center fs-30 fw-7 text-uppercase">100.00 FOTA</div>
                                 </div>
                                 <div>
-                                    <a href="#" class="modal-btn d-flex align-items-center text-center sink-effect"><span>BUY</span></a>
+                                    <a href="#" class="modal-btn d-flex align-items-center text-center sink-effect"><span>RENT</span></a>
                                 </div>
                             </form>
                         </div>

@@ -633,6 +633,9 @@ button {
         text-transform: uppercase;
         font-weight: bold;
         font-size: 30px;
+        .page-rent & {
+            background: url('../images/rent-bg.png') no-repeat;
+        }
         #registerModal & {
             width: 186px;
             height: 99px;
@@ -1469,6 +1472,7 @@ button {
 }
 .fota-table {
     width: 100%;
+    text-align: left;
     thead {
         background-color: #055148;
         color: white;
