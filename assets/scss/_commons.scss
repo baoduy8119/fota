@@ -1943,3 +1943,68 @@ button {
         width: calc(100% - 35px);
     }
 }
+.clock {
+    display: inline-block;
+    position: relative;
+    transform: scale(2);
+    border-radius: 50%;
+    border: 2px solid;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.clock:after {
+    position: absolute;
+    width: 0px;
+    height: 20px;
+    display: block;
+    border-left: 2px solid #000;
+    content: '';
+    left: 22px;
+    top: 4px;
+    animation-duration: 1s;
+}
+
+.clock:before {
+    position: absolute;
+    width: 0px;
+    height: 20px;
+    display: block;
+    border-left: 2px solid #000;
+    content: '';
+    left: 22px;
+    top: 5px;
+    animation-duration: 60s;
+}
+
+.clock:before,
+.clock:after {
+    transform-origin: bottom;
+    animation-name: dial;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes dial {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.text-effect {
+    animation: textEffect 1.5s ease infinite;
+}
+@keyframes textEffect {
+    0% {
+        text-shadow: 0 0 4px rgba(252, 253, 204, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 8px rgba(252, 253, 204, 1);
+    }
+    100% {
+        text-shadow: 0 0 4px rgba(252, 253, 204, 0.5);
+    }
+}

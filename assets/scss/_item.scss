@@ -62,6 +62,26 @@
                 }
             }
         }
+        .card-desc {
+            > div,
+            > div > div {
+                @media screen and (min-width: 992px) {
+                    margin-right: 10px;
+                }
+            }
+            @media screen and (max-width: 991px) {
+                justify-content: center;
+                > div {
+                    justify-content: center;
+                }
+                .content {
+                    text-align: center;
+                }
+            }
+            .icon-alarm {
+                font-size: 14px;
+            }
+        }
     }
     &.grid-view {
         &.items {
