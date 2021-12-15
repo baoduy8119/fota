@@ -57,6 +57,10 @@
                     .unit-price {
                         @media screen and (max-width: 991px) {
                             display: flex;
+                            .currency-unit {
+                                order: 2;
+                                margin-left: 5px;
+                            }
                         }
                     }
                 }
@@ -65,9 +69,7 @@
         .card-desc {
             > div,
             > div > div {
-                @media screen and (min-width: 992px) {
-                    margin-right: 10px;
-                }
+                margin-right: 10px;
             }
             @media screen and (max-width: 991px) {
                 justify-content: center;
@@ -190,9 +192,6 @@
                                 text-align: center;
                                 @media screen and (min-width: 992px) and (max-width: 1600px) {
                                     font-size: 10px;
-                                }
-                                @media screen and (max-width: 991px) {
-                                    order: 2;
                                 }
                             }
                             &:last-child {

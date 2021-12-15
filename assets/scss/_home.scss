@@ -522,6 +522,9 @@
                 .label {
                     margin-right: 10px;
                     font-size: 12px;
+                    @media screen and (max-width: 991px) {
+                        margin-right: 5px;
+                    }
                 }
                 .value {
                     margin-right: 8px;
