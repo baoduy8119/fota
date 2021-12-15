@@ -9,6 +9,13 @@
                     width: 100%;
                 }
             }
+            .card-info {
+                .top-info .info {
+                    @media screen and (max-width: 991px) {
+                        text-align: center;
+                    }
+                }
+            }
             .card-desc {
                 margin-top: 0;
                 .content {
@@ -22,11 +29,28 @@
                 @media screen and (min-width: 992px) and (max-width: 1024px) {
                     margin-left: 250px;
                 }
+                @media screen and (max-width: 991px) {
+                    align-items: center;
+                }
+                &.rent {
+                    .inner {
+                        .right {
+                            @media screen and (min-width: 1366px) {
+                                margin-top: 35px;
+                            }
+                        }
+                    }
+                }
             }
         }
         .card-price {
             &.rent {
                 .inner {
+                    .right {
+                        @media screen and (min-width: 992px) and (max-width: 1365px) {
+                            display: flex;
+                        }
+                    }
                     .unit-price {
                         @media screen and (max-width: 991px) {
                             display: flex;
@@ -61,7 +85,12 @@
             }
         }
         .card-price {
+            .label {
+                display: block;
+            }
             &.rent {
+                height: 130px !important;
+                padding: 0;
                 @media screen and (min-width: 992px) and (max-width: 1600px) {
                     height: 100px !important;
                 }
@@ -69,17 +98,26 @@
                     height: 118px !important;
                 }
                 .inner {
+                    color: white;
+                    width: 100%;
                     display: flex;
                     justify-content: space-between;
+                    padding: 0 20px;
                     @media screen and (min-width: 992px) and (max-width: 1600px) {
                         padding: 0 12px;
-                        .buy-btn {
+                    }
+                    .buy-btn {
+                        top: inherit;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: -18px;
+                        span {
+                            margin-top: 17px;
+                        }
+                        @media screen and (min-width: 992px) and (max-width: 1600px) {
                             width: 83px;
                             height: 60px;
                             font-size: 16px;
-                            @media screen and (min-width: 992px) and (max-width: 1600px) {
-                                bottom: -18px;
-                            }
                             span {
                                 margin-top: 12px;
                             }
@@ -105,6 +143,9 @@
                         }
                     }
                     .unit-price {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
                         @media screen and (min-width: 992px) and (max-width: 1600px) {
                             font-size: 20px;
                         }
@@ -113,6 +154,8 @@
                         }
                         span {
                             &:first-child {
+                                font-size: 12px;
+                                text-align: center;
                                 @media screen and (min-width: 992px) and (max-width: 1600px) {
                                     font-size: 10px;
                                 }
@@ -289,7 +332,6 @@
                     }
                 }
                 &-price {
-                    color: red;
                     height: 50px;
                     &.item-price {
                         .inner {

@@ -288,8 +288,6 @@
                     display: block;
                 }
                 .unit-price {
-                    display: flex;
-                    flex-direction: column;
                     span:first-child {
                         font-size: 12px;
                         text-align: center;
@@ -308,11 +306,6 @@
                 .buy-btn {
                     top: inherit;
                     bottom: -26px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    span {
-                        margin-top: 17px;
-                    }
                 }
             }
         }
@@ -519,7 +512,7 @@
                 }
                 .value {
                     margin-right: 8px;
-                    font-size: 20px;
+                    font-size: 18px;
                     @media screen and (min-width: 992px) and (max-width: 1024px) {
                         font-size: 16px;
                     }
@@ -565,9 +558,9 @@
                     @media screen and (min-width: 992px) {
                         font-size: 30px;
                     }
-                    @media screen and (min-width: 1400px) and (max-width: 1600px) {
-                        font-size: 20px;
-                    }
+                    // @media screen and (min-width: 1400px) and (max-width: 1600px) {
+                    //     font-size: 20px;
+                    // }
                 }
                 .currency-unit {
                     @media screen and (min-width: 992px) {
@@ -590,9 +583,6 @@
                         .page-rent & {
                             background-image: url('../images/rent-button-active-bg.png');
                         }
-                    }
-                    @media screen and (min-width: 1400px) and (max-width: 1600px) {
-                        transform: scale(0.8);
                     }
                     @media screen and (min-width: 992px) {
                         position: static;
