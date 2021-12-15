@@ -24,6 +24,30 @@
                 }
             }
         }
+        .card-price {
+            &.rent {
+                .inner {
+                    .unit-price {
+                        @media screen and (max-width: 991px) {
+                            display: flex;
+                        }
+                        span {
+                            &:first-child {
+                                @media screen and (max-width: 991px) {
+                                    order: 2;
+                                }
+                            }
+                            &:last-child {
+                                @media screen and (max-width: 991px) {
+                                    order: 1;
+                                    margin-right: 5px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     &.grid-view {
         &.items {
@@ -33,6 +57,80 @@
                 }
                 @media screen and (min-width: 1440px) and (max-width: 1600px) {
                     width: 280px;
+                }
+            }
+        }
+        .card-price {
+            &.rent {
+                @media screen and (min-width: 992px) and (max-width: 1600px) {
+                    height: 100px !important;
+                }
+                @media screen and (max-width: 991px) {
+                    height: 118px !important;
+                }
+                .inner {
+                    display: flex;
+                    justify-content: space-between;
+                    @media screen and (min-width: 992px) and (max-width: 1600px) {
+                        padding: 0 12px;
+                        .buy-btn {
+                            width: 83px;
+                            height: 60px;
+                            font-size: 16px;
+                            @media screen and (min-width: 992px) and (max-width: 1600px) {
+                                bottom: -18px;
+                            }
+                            span {
+                                margin-top: 12px;
+                            }
+                        }
+                    }
+                    > div {
+                        padding-top: 10px;
+                        &.right {
+                            @media screen and (max-width: 1600px) {
+                                padding-top: 6px;
+                            }
+                        }
+                    }
+                    .right {
+                        position: relative;
+                    }
+                    .left {
+                        @media screen and (min-width: 992px) and (max-width: 1600px) {
+                            font-size: 12px;
+                        }
+                        > div {
+                            padding-bottom: 6px;
+                        }
+                    }
+                    .unit-price {
+                        @media screen and (min-width: 992px) and (max-width: 1600px) {
+                            font-size: 20px;
+                        }
+                        @media screen and (max-width: 991px) {
+                            display: flex;
+                        }
+                        span {
+                            &:first-child {
+                                @media screen and (min-width: 992px) and (max-width: 1600px) {
+                                    font-size: 10px;
+                                }
+                                @media screen and (max-width: 991px) {
+                                    order: 2;
+                                }
+                            }
+                            &:last-child {
+                                line-height: 30px;
+                                @media screen and (min-width: 992px) and (max-width: 1600px) {
+                                    line-height: 24px;
+                                }
+                                @media screen and (max-width: 991px) {
+                                    order: 1;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -191,6 +289,7 @@
                     }
                 }
                 &-price {
+                    color: red;
                     height: 50px;
                     &.item-price {
                         .inner {

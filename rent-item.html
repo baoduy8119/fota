@@ -87,8 +87,8 @@
                                         </a>
                                         <div class="fota-dropdown-menu animate slideIn text-end">
                                             <div href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
-                                                <span class="txt-light-green">123,421 BUSD</span>
-                                                <i class="icon-binance d-inline-block m-0"></i>
+                                                <span class="txt-light-yellow">123,421 BNB</span>
+                                                <i class="icon-bnb d-inline-block m-0"></i>
                                             </div>
                                         </div>
                                     </div>
@@ -105,15 +105,42 @@
         <div class="fota-container">
             <div class="top-content position-relative">
                 <div class="top-navbar-custom d-flex">
-                    <a href="/fota" class="trade-link link text-uppercase"><i class="icon-gold-bars d-block"></i>Trade</a>
-                    <a href="rent-index.html" class="rent-link link text-uppercase active"><i class="icon-lease d-block"></i>Rent</a>
+                    <a href="#" class="trade-link link active text-uppercase"><i class="icon-gold-bars d-block"></i>Trade</a>
+                    <a href="rent-index.html" class="rent-link link text-uppercase"><i class="icon-lease d-block"></i>Rent</a>
                 </div>
-                <div class="navbar-custom d-lg-flex position-relative justify-content-end">
-                    <ul class="nav justify-content-center align-items-center">
+                <div class="navbar-custom d-lg-flex justify-content-center">
+                    <ul class="nav long-type justify-content-center align-items-center">
+                        <li>
+                            <a href="javascript:;" class="nav-link txt-grey txt-green-hover label-tooltip">
+                                <span class="label">Market</span>
+                                <div class="tooltip-content bottom">
+                                    Coming Soon
+                                </div>
+                            </a>
+                        </li>
                         <li><a href="rent-index.html" class="nav-link txt-grey txt-green-hover">Heroes</a></li>
                         <li><a href="rent-item.html" class="nav-link txt-grey txt-green-hover active">Items</a></li>
-                        <li><a href="rent-land.html" class="nav-link txt-grey txt-green-hover">Lands</a></li>
+                        <li>
+                            <a href="javascript:;" class="nav-link txt-grey txt-green-hover label-tooltip">
+                                <span class="label">FotaLands</span>
+                                <div class="tooltip-content bottom">
+                                    Coming Soon
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="nav-link txt-grey txt-green-hover label-tooltip">
+                                <span class="label">Skins</span>
+                                <div class="tooltip-content bottom">
+                                    Coming Soon
+                                </div>
+                            </a>
+                        </li>
                     </ul>
+                </div>
+            </div>
+            <div class="main-content d-lg-flex align-items-stretch ">
+                <div id="sidebar" class="sidebar">
                     <div class="search-block">
                         <form>
                             <div class="search-container position-relative">
@@ -122,10 +149,6 @@
                             </div>
                         </form>
                     </div>
-                </div>
-            </div>
-            <div class="main-content d-lg-flex align-items-stretch ">
-                <div id="sidebar" class="sidebar">
                     <div class="filters">
                         <div class="d-flex justify-content-between align-items-center mb-15">
                             <div class="label-1 toggle-filter"><i class="fa fa-chevron-down text-white d-lg-none"></i>Filters (3)</div>
@@ -270,59 +293,78 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="rent-item-detail.html">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
                                                     <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/soul-taker.png" alt="">
+                                                        <img class="img-fluid image" src="assets/images/items/cannon.png" alt="">
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
                                                             <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
                                                                 <div class="card-name">
-                                                                    Desert Zone A
+                                                                    Canon
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Desert Land
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
                                                         </div>
-                                                        <div class="card-spec d-flex">
+                                                        <div class="card-spec">
                                                             <span>
                                                                 <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
                                                                 100
                                                             </span>
-                                                        </div>
-                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
-                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
-                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
-                                                            <p>+15% HP Up for owner’s training team on this land.</p>
                                                         </div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
                                                 <div class="inner">
                                                     <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -330,59 +372,78 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="rent-item-detail.html">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
                                                     <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/leather-cuirass.png" alt="">
+                                                        <img class="img-fluid image" src="assets/images/items/cresent-axe.png" alt="">
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
                                                             <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
                                                                 <div class="card-name txt-blue">
-                                                                    Leather Cuirass
+                                                                    Cresent Axe
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Rare Armor
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
                                                         </div>
-                                                        <div class="card-spec d-flex">
+                                                        <div class="card-spec">
                                                             <span>
                                                                 <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
                                                                 100
                                                             </span>
-                                                        </div>
-                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
-                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
-                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
-                                                            <p>+15% HP Up for owner’s training team on this land.</p>
                                                         </div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
                                                 <div class="inner">
                                                     <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -390,59 +451,69 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="rent-item-detail.html">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
                                                     <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/soul-taker-2.png" alt="">
+                                                        <img class="img-fluid image" src="assets/images/items/dark-eyes.png" alt="">
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
                                                             <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
                                                                 <div class="card-name txt-pink">
-                                                                    Soul Taker
+                                                                    dark eyes
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Epic Weapon
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
                                                         </div>
-                                                        <div class="card-spec d-flex">
+                                                        <div class="card-spec flex-wrap">
                                                             <span>
                                                                 <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">DMG</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">DEF</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">SPD</span>
                                                                 100
                                                             </span>
-                                                        </div>
-                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
-                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
-                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
-                                                            <p>+15% HP Up for owner’s training team on this land.</p>
                                                         </div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
                                                 <div class="inner">
                                                     <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -450,59 +521,78 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="rent-item-detail.html">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
                                                     <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/apollo-tear.png" alt="">
+                                                        <img class="img-fluid image" src="assets/images/items/deathly-chain.png" alt="">
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
                                                             <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
                                                                 <div class="card-name txt-light-yellow">
-                                                                    Apollo Tear
+                                                                    deathly chain
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Legendary Ring
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
                                                         </div>
-                                                        <div class="card-spec d-flex">
+                                                        <div class="card-spec">
                                                             <span>
                                                                 <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
                                                                 100
                                                             </span>
-                                                        </div>
-                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
-                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
-                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
-                                                            <p>+15% HP Up for owner’s training team on this land.</p>
                                                         </div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
                                                 <div class="inner">
                                                     <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -510,59 +600,78 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="rent-item-detail.html">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
                                                     <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/hp-potion.png" alt="">
+                                                        <img class="img-fluid image" src="assets/images/items/defensive-belt.png" alt="">
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
                                                             <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
                                                                 <div class="card-name">
-                                                                    HP Position
+                                                                    defensive belt
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
                                                         </div>
-                                                        <div class="card-spec d-flex">
+                                                        <div class="card-spec">
                                                             <span>
                                                                 <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
                                                                 100
                                                             </span>
-                                                        </div>
-                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
-                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
-                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
-                                                            <p>+15% HP Up for owner’s training team on this land.</p>
                                                         </div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
                                                 <div class="inner">
                                                     <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -570,120 +679,869 @@
                                     <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
                                             <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="rent-item-detail.html">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
                                                     <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/atk-potion.png" alt="">
+                                                        <img class="img-fluid image" src="assets/images/items/flame-spirit.png" alt="">
                                                     </div>
                                                     <div class="card-info txt-dark-grey">
                                                         <div class="top-info">
                                                             <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
                                                                 <div class="card-name txt-yellow">
-                                                                    Atk. Up Potion
+                                                                    flame spirit
                                                                 </div>
                                                                 <div class="card-class">
                                                                     Legendary Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
                                                         </div>
-                                                        <div class="card-spec d-flex">
+                                                        <div class="card-spec">
                                                             <span>
                                                                 <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
                                                                 100
                                                             </span>
                                                             <span>
                                                                 <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
                                                                 100
                                                             </span>
-                                                        </div>
-                                                        <div class="card-promotion txt-light-yellow d-block d-lg-none">
-                                                            <div class="fw-7 mb-1">Ownership Profits:</div>
-                                                            <p class="m-0">+5% spoils of any player’s training team on this land.</p>
-                                                            <p>+15% HP Up for owner’s training team on this land.</p>
                                                         </div>
                                                     </div>
                                                 </a>
                                             </div>
-                                            <div class="card-price d-flex align-items-center justify-content-center">
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
                                                 <div class="inner">
                                                     <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
-                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">BUY</span></a>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
-                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="#">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/items/gladius-shield.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-yellow">
+                                                                    gladius shield
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Legendary Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
+                                                        </div>
+                                                        <div class="card-spec">
+                                                            <span>
+                                                                <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                        </div>
+                                                    </div>
                                                 </a>
+                                            </div>
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
+                                                <div class="inner">
+                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
-                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="#">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/items/golden-armor.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-yellow">
+                                                                    golden armor
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Legendary Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
+                                                        </div>
+                                                        <div class="card-spec">
+                                                            <span>
+                                                                <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                        </div>
+                                                    </div>
                                                 </a>
+                                            </div>
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
+                                                <div class="inner">
+                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
-                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="#">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/items/gladius-shield.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-yellow">
+                                                                    gladius shield
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Legendary Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
+                                                        </div>
+                                                        <div class="card-spec">
+                                                            <span>
+                                                                <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                        </div>
+                                                    </div>
                                                 </a>
+                                            </div>
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
+                                                <div class="inner">
+                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
-                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="#">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/items/golden-armor.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-yellow">
+                                                                    golden armor
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Legendary Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
+                                                        </div>
+                                                        <div class="card-spec">
+                                                            <span>
+                                                                <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                        </div>
+                                                    </div>
                                                 </a>
+                                            </div>
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
+                                                <div class="inner">
+                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
-                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="#">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/items/gladius-shield.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-yellow">
+                                                                    gladius shield
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Legendary Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
+                                                        </div>
+                                                        <div class="card-spec">
+                                                            <span>
+                                                                <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                        </div>
+                                                    </div>
                                                 </a>
+                                            </div>
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
+                                                <div class="inner">
+                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item no-item">
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
                                         <div class="card sink-effect">
-                                            <img class="list-view-no-item" src="assets/images/fota-bg.png" alt="">
                                             <div class="card-image">
-                                                <a href="#">
-                                                    <img class="img-fluid image grid-view-no-item" src="assets/images/hero-thumbnail.png" alt="">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/items/golden-armor.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-yellow">
+                                                                    golden armor
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Legendary Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
+                                                        </div>
+                                                        <div class="card-spec">
+                                                            <span>
+                                                                <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                        </div>
+                                                    </div>
                                                 </a>
+                                            </div>
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
+                                                <div class="inner">
+                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
+                                        <div class="card sink-effect">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/items/ruby-stone.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-yellow">
+                                                                    ruby stone
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Legendary Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
+                                                        </div>
+                                                        <div class="card-spec">
+                                                            <span>
+                                                                <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
+                                                <div class="inner">
+                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
+                                        <div class="card sink-effect">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/items/power-foil.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-yellow">
+                                                                    power foil
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Legendary Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
+                                                        </div>
+                                                        <div class="card-spec">
+                                                            <span>
+                                                                <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
+                                                <div class="inner">
+                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
+                                        <div class="card sink-effect">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/items/magical-crossbow.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-yellow">
+                                                                    magical crossbow
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Legendary Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
+                                                        </div>
+                                                        <div class="card-spec">
+                                                            <span>
+                                                                <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
+                                                <div class="inner">
+                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-xl-4 col-xxl-4 card-item">
+                                        <div class="card sink-effect">
+                                            <div class="card-image">
+                                                <img class="list-view-bg w-100" src="assets/images/trend-item-grid-bg.png" alt="">
+                                                <a href="item-detail.html">
+                                                    <div class="thumb">
+                                                        <img class="img-fluid image" src="assets/images/items/lighting-bolt.png" alt="">
+                                                    </div>
+                                                    <div class="card-info txt-dark-grey">
+                                                        <div class="top-info">
+                                                            <div class="info">
+                                                                <div class="card-id list-view-hide">
+                                                                    #MD0001
+                                                                </div>
+                                                                <div class="card-name txt-yellow">
+                                                                    lighting bolt
+                                                                </div>
+                                                                <div class="card-class">
+                                                                    Legendary Consumable
+                                                                    <span class="card-id grid-view-hide">
+                                                                        #MD0001
+                                                                    </span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="card-desc d-block grid-view-hide">
+                                                            <div class="text-center text-lg-start">
+                                                                <span class="label txt-dark-grey grid-view-hide">Renting Count</span>
+                                                                <span class="value fw-6">10,000</span>
+                                                            </div>
+                                                            <div class="content">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.</div>
+                                                        </div>
+                                                        <div class="card-spec">
+                                                            <span>
+                                                                <i class="icon-heart"></i>
+                                                                <span class="spec color-heart">HP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-blur"></i>
+                                                                <span class="spec color-blur">MP</span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-sword"></i>
+                                                                <span class="spec color-sword">
+                                                                    <span class="d-none d-lg-block">DMG</span>
+                                                                    <span class="d-lg-none">DAMAGE</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-shield"></i>
+                                                                <span class="spec color-shield">
+                                                                    <span class="d-none d-lg-block">DEF</span>
+                                                                    <span class="d-lg-none">ARMOR</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                            <span>
+                                                                <i class="icon-exercise"></i>
+                                                                <span class="spec color-exercise">
+                                                                    <span class="d-none d-lg-block">SPD</span>
+                                                                    <span class="d-lg-none">SPEED</span>
+                                                                </span>
+                                                                100
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="card-price align-items-center item-price d-flex justify-content-center">
+                                                <div class="inner">
+                                                    <div class="unit-price txt-green">100,000 <span class="currency-unit">USDT</span></div>
+                                                    <a href="#" class="buy-btn" data-bs-toggle="modal" data-bs-target="#buyModal"><span class="d-block text-center">RENT</span></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
