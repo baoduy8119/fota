@@ -2,6 +2,9 @@
     background: #06302b url(../images/content-bg.png) no-repeat 0 -150px;
     background-size: cover;
     color: $light-grey;
+    .hero-list {
+        margin-top: 15px;
+    }
     .illustration {
         margin-top: 90px;
         background-size: cover;
@@ -167,20 +170,51 @@
     }
     .card-wrapper {
         &.items {
-            &.grid-view .card-price {
-                padding: 0;
+            &.grid-view {
+                .card-price {
+                    padding: 0;
+                }
             }
-            &.list-view .card-price {
-                padding: 0;
-                .amount {
+            &.list-view {
+                .card-image {
                     @media screen and (min-width: 992px) {
-                        font-size: 30px;
+                        padding: 35px 20px;
                     }
-                    span {
+                    @media screen and (max-width: 991px) {
+                        padding: 40px 15px 10px;
+                    }
+                }
+                .card-price {
+                    padding: 0;
+                    margin-top: 0;
+                    .amount {
                         @media screen and (min-width: 992px) {
-                            display: block;
+                            font-size: 30px;
                         }
-                        font-size: 14px;
+                        span {
+                            @media screen and (min-width: 992px) {
+                                display: block;
+                            }
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        &.hero-list {
+            &.list-view {
+                .card {
+                    @media screen and (min-width: 992px) {
+                        padding: 35px 20px 20px;
+                    }
+                    @media screen and (max-width: 991px) {
+                        padding: 35px 15px 15px;
+                        margin-top: 40px;
+                    }
+                    &-image {
+                        @media screen and (max-width: 991px) {
+                            position: static;
+                        }
                     }
                 }
             }
@@ -244,7 +278,7 @@
     padding: 0 10px;
     @media screen and (min-width: 992px) {
         padding: 40px 10px;
-        height: 511px;
+        height: 560px;
         background: url('../images/nav-dashboard-bg.png');
     }
     li {
@@ -282,6 +316,15 @@
                         margin: 0 0 0 10px;
                         order: 2;
                         font-size: 18px;
+                    }
+                    &.icon-hammer {
+                        font-size: 22px;
+                        margin-left: 6px;
+                        transform: rotate(45deg);
+                        @media screen and (min-width: 992px) {
+                            margin-left: -4px;
+                            font-size: 32px;
+                        }
                     }
                 }
             }

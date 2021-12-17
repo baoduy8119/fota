@@ -274,7 +274,7 @@
                 height: 130px;
                 padding-right: 0;
                 .dashboard & {
-                    height: 50px;
+                    height: 60px;
                 }
                 .inner {
                     width: 100%;
@@ -282,6 +282,9 @@
                     .top-price {
                         margin-top: 10px;
                         justify-content: space-between;
+                        .dashboard & {
+                            margin-top: 0;
+                        }
                     }
                 }
                 .label {

@@ -36,6 +36,9 @@
 .txt-green-2 {
     color: #5fdd13;
 }
+.txt-red {
+    color: red;
+}
 body {
     font-family: 'Lora', serif;
     color: $grey;
@@ -1434,6 +1437,10 @@ button {
     font-weight: 700;
     border: none;
 
+    &.small-green {
+        background: url('../images/fota-green-medium-btn-bg.png') no-repeat;
+    }
+
     &.fota-small-btn {
         width: 84px;
         height: 40px;
@@ -2006,5 +2013,39 @@ button {
     }
     100% {
         text-shadow: 0 0 4px rgba(252, 253, 204, 0.5);
+    }
+}
+.card-wrapper {
+    .card-badge {
+        position: absolute;
+        left: 50%;
+        top: -25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 50px;
+        background: url('../images/badge-bg.png') no-repeat;
+        background-size: 100%;
+        text-transform: uppercase;
+    }
+    &:not(.items) {
+        .card-badge {
+            @media screen and (min-width: 1366px) and (max-width: 1600px) {
+                top: -20px;
+                width: 96px;
+                height: 40px;
+                font-size: 14px;
+            }
+        }
+    }
+    &.list-view {
+        .card-badge {
+            @media screen and (min-width: 992px) {
+                left: 120px;
+            }
+        }
     }
 }

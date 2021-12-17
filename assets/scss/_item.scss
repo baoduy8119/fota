@@ -44,6 +44,24 @@
                         }
                     }
                 }
+                .unit-price {
+                    @media screen and (max-width: 991px) {
+                        display: flex;
+                        .currency-unit {
+                            order: 2;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .amount {
+                    display: block;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    @media screen and (min-width: 992px) {
+                        width: 120px;
+                    }
+                }
             }
         }
         .card-price {
@@ -98,6 +116,11 @@
                     min-width: 110px;
                     @media screen and (min-width: 992px) and (max-width: 1599px) {
                         min-width: 83px;
+                    }
+                    display: flex;
+                    .currency-unit {
+                        order: 2;
+                        margin-left: 5px;
                     }
                     span {
                         &:first-child {
