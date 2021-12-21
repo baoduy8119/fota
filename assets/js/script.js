@@ -46,5 +46,14 @@ $(function () {
         rangeV.html(`<span>${$(this).val()}</span>`);
         rangeV.css('left', `calc(${newValue}% + (${newPosition}px))`);
     })
-
+    var upgradeStatus = [
+        'failedUpgrade',
+        'successfulUpgrade'
+    ];
+    $('.upgrade-btn').on('click', function (e) {
+        e.preventDefault()
+        var randomStatus = upgradeStatus[Math.floor(Math.random() * upgradeStatus.length)];
+        console.log(randomStatus);
+        $('#' + randomStatus).modal('show');
+    })
 });

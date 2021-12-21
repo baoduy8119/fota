@@ -361,7 +361,8 @@
                                         <span class="txt-light-yellow price">Enhance Price: 5,000.00 USDT</span>
                                     </div>
                                     <div class="upgrade-button">
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#changeAvatarModal" class="primary-btn"><span class="d-block text-center">enhance</span></a>
+                                        <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#successfulUpgrade" class="primary-btn"><span class="d-block text-center">enhance</span></a> -->
+                                        <a href="#" class="primary-btn upgrade-btn"><span class="d-block text-center">enhance</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -369,7 +370,7 @@
                     </div>
                 </div>
             </div>
-            <div class="modal fade" id="changeAvatarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="successfulUpgrade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog large-dialog modal-dialog-centered">
                     <div class="modal-content transparent-modal">
                         <div class="modal-body">
@@ -382,7 +383,29 @@
                                 <div class="position-relative">
                                     <div class="item-name">Rare Soul Taker</div>
                                     <div class="item-id txt-green">#M09120</div>
-                                    <div class="btn"><a href="#" class="secondary-btn">Continue</a></div>
+                                    <div class="btn"><button data-bs-dismiss="modal" class="secondary-btn">Continue</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="failedUpgrade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog large-dialog modal-dialog-centered">
+                    <div class="modal-content transparent-modal">
+                        <div class="modal-body">
+                            <div class="upgrade-result failed">
+                                <h3 class="title text-uppercase">THE ENHANCEMENT HAS BEEN FAILED...</h3>
+                                <span class="subtext">You’ve recieved:</span>
+                                <div class="item-image">
+                                    <img src="assets/images/items/sigillum.png" alt="">
+                                </div>
+                                <div class="position-relative">
+                                    <div class="item-name">Rare Soul Taker</div>
+                                    <div class="item-id txt-green">#M09120</div>
+                                    <div class="item-desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                                        inventore veritatis et quasi architecto.</div>
+                                    <div class="btn"><button data-bs-dismiss="modal" class="secondary-btn">Continue</button></div>
                                 </div>
                             </div>
                         </div>
