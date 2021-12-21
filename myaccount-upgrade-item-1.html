@@ -361,7 +361,7 @@
                                         <span class="txt-light-yellow price">Enhance Price: 5,000.00 USDT</span>
                                     </div>
                                     <div class="upgrade-button">
-                                        <a href="#" class="primary-btn"><span class="d-block text-center">enhance</span></a>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#changeAvatarModal" class="primary-btn"><span class="d-block text-center">enhance</span></a>
                                     </div>
                                 </div>
                             </div>
@@ -370,33 +370,17 @@
                 </div>
             </div>
             <div class="modal fade" id="changeAvatarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content account-modal">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Change Avatar</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
-                        </div>
+                <div class="modal-dialog large-dialog modal-dialog-centered">
+                    <div class="modal-content transparent-modal">
                         <div class="modal-body">
-                            <form action="">
-                                <div class="mb-3">
-                                    <label class="fota-form-label">
-                                        <span>Browse file direction:: </span>
-                                    </label>
-                                    <div class="custom-file-input">
-                                        <input type="file">
-                                        <input type="text" class="fota-form-control">
-                                        <input type="button" class="button" value="Browse">
-                                    </div>
+                            <div class="upgrade-result successful">
+                                <h3 class="title text-uppercase">THE ENHANCEMENT HAS BEEN SUCCESSFULLY!</h3>
+                                <span class="subtext">You’ve recieved:</span>
+                                <div class="item-image">
+                                    <img src="assets/images/items/flame-spirit.png" alt="">
                                 </div>
-                                <div class="mb-5 mt-5">
-                                    <div class="avatar-overlay">
-                                        <img src="assets/images/avatar-1.png" alt="">
-                                    </div>
-                                </div>
-                                <div>
-                                    <a href="#" class="modal-btn d-flex align-items-center text-center sink-effect"><span>Change</span></a>
-                                </div>
-                            </form>
+                                <div class="item-name">Rare Soul Taker</div>
+                            </div>
                         </div>
                     </div>
                 </div>

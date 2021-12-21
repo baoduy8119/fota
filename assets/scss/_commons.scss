@@ -511,6 +511,11 @@ button {
         height: 433px;
         background: url('../images/modal-mb-bg.png') no-repeat;
     }
+    &.transparent-modal {
+        background: none;
+        width: 700px;
+        height: auto;
+    }
     &.medium-modal {
         width: 466px;
         height: 550px;
