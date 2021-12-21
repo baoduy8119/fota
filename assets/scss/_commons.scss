@@ -2086,3 +2086,17 @@ button {
     padding-top: 20px;
     text-transform: uppercase;
 }
+.secondary-btn {
+    display: inline-block;
+    padding: 0 20px;
+    background: #055139;
+    border: 2px solid #26de8e;
+    color: white;
+    border-radius: 20px;
+    height: 30px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    &:hover {
+        filter: saturate(2);
+    }
+}

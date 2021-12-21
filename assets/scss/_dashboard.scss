@@ -787,10 +787,16 @@
     .item-name {
         position: relative;
         z-index: 1;
-        margin-top: 20px;
+        margin-top: 30px;
         font-size: 26px;
         color: #f0b90b;
         font-weight: 700;
+    }
+    .btn {
+        margin-top: 30px;
+    }
+    .item-id {
+        font-size: 16px;
     }
     .item-image {
         position: relative;
@@ -803,19 +809,17 @@
             transform: translate(-50%, -50%);
         }
         &::before {
-            width: 300px;
-            height: 300px;
-            background: url('../images/success-bow-effect.png');
+            width: 886px;
+            height: 608px;
+            background: url('../images/success-effect.png');
             background-size: 100%;
-            animation: rotating-2 4s linear infinite;
-            transform-origin: center center;
         }
         &::after {
-            width: 300px;
-            height: 300px;
+            width: 450px;
+            height: 450px;
             background: url('../images/success-bow-effect.png');
             background-size: 100%;
-            animation: rotating-1 4s linear infinite;
+            animation: rotating 4s linear infinite;
             transform-origin: center center;
         }
         img {
@@ -825,19 +829,17 @@
         }
     }
 }
-@keyframes rotating-1 {
-    from {
+@keyframes rotating {
+    0% {
+        opacity: 0.4;
         transform: translate(-50%, -50%) rotate(0deg);
     }
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
-}
-@keyframes rotating-2 {
-    from {
+    50% {
+        opacity: 1;
         transform: translate(-50%, -50%) rotate(180deg);
     }
-    to {
-        transform: translate(-50%, -50%) rotate(540deg);
+    100% {
+        opacity: 0.4;
+        transform: translate(-50%, -50%) rotate(360deg);
     }
 }
