@@ -263,6 +263,9 @@ textarea {
 .fs-30 {
     font-size: 30px;
 }
+.fs-40 {
+    font-size: 40px;
+}
 .fs-20 {
     font-size: 20px;
 }
@@ -480,6 +483,21 @@ button {
             }
             &.next-link {
                 right: 0;
+            }
+        }
+    }
+    &.light-mode {
+        .previous-link,
+        .next-link {
+            background: #055139;
+            border: 2px solid #26de8e;
+            color: white;
+            border-radius: 20px;
+            height: 30px;
+            width: 90px;
+            transition: all 0.2s;
+            &:hover {
+                filter: saturate(2);
             }
         }
     }
@@ -1240,6 +1258,7 @@ button {
             width: 213px;
             height: 24px;
             background: url('../images/large-arrow.png');
+            background-size: 100%;
             @media screen and (max-width: 991px) {
                 top: -25px;
                 width: 76px;
@@ -1287,6 +1306,12 @@ button {
         width: 114px;
         font-size: 20px;
         font-weight: 700;
+    }
+    .level-1 {
+        text-align: center;
+        .label {
+            width: inherit;
+        }
     }
     .item {
         &.disabled {
@@ -2045,4 +2070,14 @@ button {
             }
         }
     }
+}
+.primary-btn {
+    display: block;
+    width: 137px;
+    height: 99px;
+    background: url('../images/trade-bg.png');
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-transform: uppercase;
 }

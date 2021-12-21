@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <title>Fota</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="fota-container">
+            <div class="header-inner d-flex">
+                <a href="/fota" class="d-flex align-items-center text-white text-decoration-none">
+                    <img class="logo" src="assets/images/logo.png" alt="FOTA">
+                </a>
+
+                <div class="d-flex align-items-center top-currency justify-content-end d-lg-none txt-light-yellow fw-7">
+                    <span>
+                        100.534 BUSD
+                    </span>
+                    <i class="icon-currency d-inline-block ml-10"></i>
+                </div>
+
+                <a href="#" class="toggle-menu d-block d-lg-none">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <div class="nav-mobile d-lg-flex align-items-center w-100">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li>
+                            <a href="myaccount.html" class="nav-link txt-grey txt-green-hover text-uppercase active">My Account</a>
+                            <div class="nav-dashboard d-lg-none">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center txt-green-hover level-1">
+                                            <i class="icon-noticeboard"></i>
+                                            Dashboard
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="myaccount-profit-pending.html" class="txt-green-hover">Profit</a></li>
+                                            <li><a href="myaccount-transaction-rent.html" class="txt-green-hover">Transaction</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-hero-farming.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-footman"></i>
+                                            Hero Farming
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount.html" class="d-flex align-items-center txt-green-hover active">
+                                            <i class="icon-user"></i>
+                                            Account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-inventory-heroes.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-chest"></i>
+                                            Inventory
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-hammer"></i>
+                                            Enhance Items
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-history.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-history"></i>
+                                            History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-old-shop"></i>
+                                            Clan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-chat.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-mail"></i>
+                                            <span>Contact</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="trend-market.html" class="nav-link txt-grey txt-green-hover text-uppercase">Market Trend</a></li>
+                        <li><a href="/fota" class="nav-link txt-grey txt-green-hover text-uppercase">Marketplace</a></li>
+                    </ul>
+
+                    <div class="d-block d-lg-none language-mobile">
+                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
+                            <span>English</span>
+                            <img src="assets/images/usa-icon.png" alt="">
+                        </a>
+                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
+                            <span>Tiếng Việt</span>
+                            <img src="assets/images/vn-icon.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="notification-list">
+                        <!-- <div class="text-end">
+                            <button type="button" class="btn btn-login text-white fade-effect" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                        </div> -->
+                        <div class="account d-lg-flex align-items-center">
+                            <div class="account-user-avatar order-2">
+                                <img src="assets/images/user-avatar.png" alt="">
+                                <div class="position-relative fota-dropdown language d-none d-lg-block">
+                                    <a class="language-icon fota-toggle d-none d-lg-block" href="#">
+                                        <img src="assets/images/language-icon.png" alt="">
+                                    </a>
+                                    <div class="fota-dropdown-menu animate slideIn text-end">
+                                        <a href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                            <span>English</span>
+                                            <img src="assets/images/usa-icon.png" alt="">
+                                        </a>
+                                        <a href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                            <span>Tiếng Việt</span>
+                                            <img src="assets/images/vn-icon.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lg-mr-20 text-end order-1">
+                                <div class="account-user-name text-uppercase">Player001</div>
+                                <div class="account-currency fw-7 d-lg-flex align-items-center">
+                                    <div class="d-flex txt-light-green align-items-center justify-content-end">
+                                        <span>
+                                            100.534 USDT
+                                        </span>
+                                        <i class="icon-usdt d-inline-block"></i>
+                                    </div>
+                                    <div class="d-flex txt-light-yellow align-items-center justify-content-end">
+                                        <span>
+                                            99.534 BUSD
+                                        </span>
+                                        <i class="icon-binance d-inline-block"></i>
+                                    </div>
+                                    <div class="position-relative fota-dropdown">
+                                        <a class="fota-toggle d-none d-lg-block" href="#">
+                                            <i class="fa fa-chevron-down text-white m-0"></i>
+                                        </a>
+                                        <div class="fota-dropdown-menu animate slideIn text-end">
+                                            <div href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                                <span class="txt-light-yellow">123,421 BNB</span>
+                                                <i class="icon-bnb d-inline-block m-0"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="page-content dashboard">
+        <div class="fota-container">
+            <div class="main-content d-lg-flex align-items-stretch ">
+                <div id="sidebar" class="sidebar">
+                    <div class="nav-dashboard d-none d-lg-block">
+                        <ul class="nav">
+                            <li>
+                                <a href="#" class="d-flex align-items-center txt-green-hover level-1">
+                                    <i class="icon-noticeboard"></i>
+                                    Dashboard
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="myaccount-profit-pending.html" class="txt-green-hover">Profit</a></li>
+                                    <li><a href="myaccount-transaction-rent.html" class="txt-green-hover">Transaction</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="myaccount-hero-farming.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-footman"></i>
+                                    Hero Farming
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount.html" class="d-flex align-items-center txt-green-hover active">
+                                    <i class="icon-user"></i>
+                                    Account
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-inventory-heroes.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-chest"></i>
+                                    Inventory
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-hammer"></i>
+                                    Enhance Items
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-history.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-history"></i>
+                                    History
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-old-shop"></i>
+                                    Clan
+                                </a>
+                            </li>
+                            <li>
+                                <a href="myaccount-chat.html" class="d-flex align-items-center txt-green-hover">
+                                    <i class="icon-mail"></i>
+                                    <span>Contact</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-holder upgrade-items">
+                    <div class="container-fluid overflow-hidden">
+                        <div class="row mt-60">
+                            <div class="col-xxl-6">
+                                <div class="half-box">
+                                    <h3 class="title fs-40 fw-7 text-center mt-40">All Items</h3>
+                                    <div class="nav-item d-flex">
+                                        <ul class="d-flex px-0 m-auto">
+                                            <li><a href="#" class="link grey active">Common</a></li>
+                                            <li><a href="#" class="link blue">Race</a></li>
+                                            <li><a href="#" class="link pink">Epic</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-list d-flex flex-wrap">
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id txt-green">#M00212</div>
+                                        </a>
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id id txt-green">#M00212</div>
+                                        </a>
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id id txt-green">#M00212</div>
+                                        </a>
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id id txt-green">#M00212</div>
+                                        </a>
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id id txt-green">#M00212</div>
+                                        </a>
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id id txt-green">#M00212</div>
+                                        </a>
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id id txt-green">#M00212</div>
+                                        </a>
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id id txt-green">#M00212</div>
+                                        </a>
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id id txt-green">#M00212</div>
+                                        </a>
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id id txt-green">#M00212</div>
+                                        </a>
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id id txt-green">#M00212</div>
+                                        </a>
+                                        <a class="item" href="#">
+                                            <div class="image"><img src="/assets/images/items/aurum-heart.png" alt=""></div>
+                                            <div class="name text-truncate">Cresent Axe</div>
+                                            <div class="id id txt-green">#M00212</div>
+                                        </a>
+                                    </div>
+                                    <nav class="d-flex justify-content-center w-100">
+                                        <ul class="fota-pagination light-mode">
+                                            <li class="page-item"><a class="page-link previous-link" href="#">Prev</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                            <li class="page-item"><a class="page-link next-link" href="#">Next</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xxl-6">
+                                <div class="half-box upgrade">
+                                    <h3 class="title fs-40 fw-7 text-center mt-40">Enhance Requirement</h3>
+                                    <p class="required-text text-center">Required items for the enchanment:</p>
+                                    <div class="combination-list d-flex justify-content-center flex-column align-items-center">
+                                        <div class="level-1">
+                                            <div class="image-shadow">
+                                                <img src="assets/images/rare-soul-taker-200x200.png" alt="">
+                                            </div>
+                                            <div class="label mt-10">Rare Soul Taker</div>
+                                        </div>
+                                        <div class="level-2 d-flex justify-content-between">
+                                            <div class="item">
+                                                <span></span>
+                                                <div class="image-shadow">
+                                                    <img src="assets/images/weapon-200x200.png" alt="">
+                                                </div>
+                                                <div class="label mt-10">Soul Taker</div>
+                                            </div>
+                                            <div class="item disabled"><span></span><img src="assets/images/combine-item-2-200x200.png" alt="">
+                                                <div class="label mt-10">Rare Soul Taker</div>
+                                            </div>
+                                            <div class="item">
+                                                <span></span>
+                                                <div class="position-relative">
+                                                    <img src="assets/images/receipt-200x200.png" alt="">
+                                                    <div class="quantity">99</div>
+                                                </div>
+                                                <div class="label mt-10">Receipt</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rate">
+                                        <span class="text-center label">Success Rate:</span>
+                                        <div class="range-slider">
+                                            <input type="range" class="form-range" id="customRange1">
+                                            <div class="d-flex justify-content-between">
+                                                <span class="min">0</span>
+                                                <span class="max">99</span>
+                                            </div>
+                                        </div>
+                                        <span class="txt-light-yellow price">Enhance Price: 5,000.00 USDT</span>
+                                    </div>
+                                    <div class="upgrade-button">
+                                        <a href="#" class="primary-btn"><span class="d-block text-center">enhance</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="changeAvatarModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content account-modal">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Change Avatar</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="">
+                                <div class="mb-3">
+                                    <label class="fota-form-label">
+                                        <span>Browse file direction:: </span>
+                                    </label>
+                                    <div class="custom-file-input">
+                                        <input type="file">
+                                        <input type="text" class="fota-form-control">
+                                        <input type="button" class="button" value="Browse">
+                                    </div>
+                                </div>
+                                <div class="mb-5 mt-5">
+                                    <div class="avatar-overlay">
+                                        <img src="assets/images/avatar-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#" class="modal-btn d-flex align-items-center text-center sink-effect"><span>Change</span></a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
