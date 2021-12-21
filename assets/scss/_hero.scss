@@ -396,6 +396,31 @@
                         width: 100%;
                     }
                 }
+                &-price {
+                    // &.inventory {
+                    //     .inner {
+                    //         @media screen and (max-width: 991px) {
+                    //             width: 100%;
+                    //         }
+                    //     }
+                    //     .unit-price {
+                    //         @media screen and (max-width: 991px) {
+                    //             padding: 0 20px;
+                    //             width: 100%;
+                    //             justify-content: space-between;
+                    //         }
+                    //         @media screen and (min-width: 992px) {
+                    //             margin-top: -25px;
+                    //             flex-direction: column;
+                    //         }
+                    //         span {
+                    //             &.label {
+                    //                 font-size: 16px;
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                }
             }
             .card-image {
                 .thumb {
@@ -438,6 +463,29 @@
             .card {
                 &-name {
                     margin-top: 7px;
+                }
+                &-price {
+                    &.inventory {
+                        .unit-price {
+                            font-size: 16px;
+                            span {
+                                text-align: right;
+                                font-size: 16px;
+                                line-height: initial;
+                                &.label {
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    line-height: 18px;
+                                }
+                                &.currency-unit {
+                                    margin-left: 5px;
+                                }
+                            }
+                            .price {
+                                text-align: right;
+                            }
+                        }
+                    }
                 }
             }
         }

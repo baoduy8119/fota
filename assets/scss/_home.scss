@@ -199,9 +199,6 @@
                 &.inventory {
                     padding: 5px 0 0;
                     height: 64px;
-                    > div {
-                        width: 50%;
-                    }
                     &::before {
                         background: url('../images/price-left-60-bg.png') 0 100%;
                     }
@@ -266,6 +263,23 @@
                     .card-id {
                         margin: 7px 0;
                     }
+                }
+                &-price {
+                    &.inventory {
+                        .inner {
+                            width: 100%;
+                            .unit-price {
+                                padding: 0 15px;
+                                width: 100%;
+                                justify-content: space-between;
+                            }
+                        }
+                        .label {
+                            font-size: 14px;
+                            line-height: 30px;
+                        }
+                    }
+                    justify-content: center;
                 }
             }
         }
@@ -338,6 +352,7 @@
                 right: -2px;
                 height: 8px;
             }
+            flex-direction: column;
             @media screen and (min-width: 992px) and (max-width: 1365px) {
                 flex-direction: column;
                 &-image {
@@ -348,12 +363,8 @@
                     margin-left: 170px;
                     justify-content: start !important;
                     .inner {
-                        display: flex;
                         .top-price {
                             width: initial !important;
-                        }
-                        .buy-btn {
-                            margin: 5px 0 0 20px;
                         }
                     }
                 }
@@ -426,7 +437,6 @@
             &-image {
                 width: 100%;
                 @media screen and (min-width: 992px) {
-                    width: 80%;
                     .market-trend & {
                         width: 100%;
                     }
@@ -500,11 +510,8 @@
                     display: flex;
                     align-items: center;
                     margin: 8px 0;
-                    flex: 0 0 50%;
+                    flex: 0 0 33.33%;
                     width: auto;
-                    @media screen and (min-width: 1200px) and (max-width: 1599px) {
-                        flex: 0 0 33.33%;
-                    }
                     @media screen and (max-width: 991px) {
                         flex: 0 0 50%;
                         justify-content: center;
@@ -547,33 +554,60 @@
             }
             &-price {
                 @media screen and (max-width: 991px) {
+                    justify-content: center;
                     top: 44px;
+                    display: flex;
                     z-index: 1;
                 }
                 @media screen and (min-width: 992px) {
-                    width: 20%;
+                    padding-top: 0;
+                    margin-left: 170px;
                     position: static;
                     transform: none;
-                    text-align: center;
                     height: inherit;
                     padding-right: inherit;
-                    padding-top: inherit;
                     background: none;
                     &::before {
                         display: none;
                     }
                 }
+                @media screen and (min-width: 1366px) {
+                    margin-left: 250px;
+                }
                 &.inventory {
-                    flex-direction: column;
-                    justify-content: space-evenly;
                     .amount {
                         font-size: 30px;
                         span {
                             display: block;
                         }
                     }
+                    .inner {
+                        @media screen and (max-width: 991px) {
+                            width: 100%;
+                        }
+                    }
+                    .unit-price {
+                        @media screen and (max-width: 991px) {
+                            padding: 0 20px;
+                            width: 100%;
+                            justify-content: space-between;
+                        }
+                        @media screen and (min-width: 992px) {
+                            margin-top: -25px;
+                            flex-direction: column;
+                        }
+                        span {
+                            &.label {
+                                font-size: 16px;
+                            }
+                        }
+                    }
                 }
                 .unit-price {
+                    display: flex;
+                    .currency-unit {
+                        order: 2;
+                    }
                     @media screen and (min-width: 992px) {
                         font-size: 30px;
                     }
@@ -583,8 +617,7 @@
                 }
                 .currency-unit {
                     @media screen and (min-width: 992px) {
-                        display: block;
-                        font-size: 20px;
+                        margin-left: 5px;
                     }
                 }
                 .buy-btn {
@@ -633,9 +666,17 @@
         }
         &.items.card-overview {
             .card {
+                @media screen and (min-width: 992px) {
+                    padding-bottom: 20px;
+                }
                 &-price {
                     @media screen and (max-width: 991px) {
                         top: 28px;
+                    }
+                    &.inventory {
+                        @media screen and (min-width: 992px) {
+                            margin-left: 250px;
+                        }
                     }
                 }
                 &-name {
@@ -658,7 +699,6 @@
                         align-items: center;
                     }
                     .top-price {
-                        justify-content: center;
                         @media screen and (max-width: 991px) {
                             .unit-price {
                                 display: flex;
@@ -668,6 +708,9 @@
                                 order: 2;
                             }
                         }
+                    }
+                    @media screen and (min-width: 992px) {
+                        margin-left: 225px;
                     }
                 }
             }

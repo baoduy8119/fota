@@ -576,9 +576,6 @@ button {
         min-height: 489px;
         height: inherit;
         border: none;
-        @media screen and (min-width: 992px) {
-            width: 466px;
-        }
         .btn-close {
             top: 3px;
         }
