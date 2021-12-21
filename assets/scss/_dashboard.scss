@@ -856,13 +856,16 @@
     0% {
         opacity: 0.5;
         transform: translate(-50%, -50%) rotate(0deg);
+        filter: saturate(1);
     }
     50% {
         opacity: 1;
         transform: translate(-50%, -50%) rotate(180deg);
+        filter: saturate(3);
     }
     100% {
         opacity: 0.5;
         transform: translate(-50%, -50%) rotate(360deg);
+        filter: saturate(1);
     }
 }
