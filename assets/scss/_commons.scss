@@ -129,6 +129,7 @@ body {
             }
         }
         li {
+            position: relative;
             &::after {
                 content: none;
             }
@@ -138,6 +139,12 @@ body {
                     .label-tooltip {
                         color: white;
                     }
+                }
+            }
+            &:hover {
+                .level-2 {
+                    visibility: visible;
+                    opacity: 1;
                 }
             }
         }
@@ -158,6 +165,31 @@ body {
     .search-block {
         @media screen and (min-width: 992px) {
             // float: right;
+        }
+    }
+    .level-2 {
+        position: absolute;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 3px;
+        visibility: hidden;
+        opacity: 0;
+        background: url('../images/dropdown-bottom-bg.png') 0 100% no-repeat;
+        background-size: 100%;
+        transition: all 0.3s;
+        z-index: 1;
+        ul {
+            background: rgba($color: #010e0e, $alpha: 0.9);
+            li {
+                margin: 8px 0;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            padding: 10px;
+            @media screen and (max-width: 991px) {
+                padding: 5px 10px;
+            }
         }
     }
 }

@@ -664,6 +664,20 @@
                 font-size: 14px;
             }
         }
+        .quantity {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            font-size: 14px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #055139;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            z-index: 1;
+        }
     }
     .required-text {
         margin: 30px 0 30px;
