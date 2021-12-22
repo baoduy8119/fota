@@ -8,6 +8,16 @@
         position: relative;
         padding-top: 5px;
         background: #090c00;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -3px;
+            height: 3px;
+            background: url('../images/card-price-bg.png');
+            background-size: 100%;
+        }
         .amount {
             font-size: 20px;
             font-weight: bold;
