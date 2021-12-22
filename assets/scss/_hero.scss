@@ -102,7 +102,7 @@
             }
         }
         &-summary {
-            padding: 80px 30px 80px;
+            padding: 80px 30px 40px;
             text-align: center;
             z-index: 2;
             @media screen and (max-width: 991px) {
@@ -218,18 +218,6 @@
             @media screen and (min-width: 992px) {
                 top: 40px;
                 width: 340px;
-                .buy-btn {
-                    font-size: 30px;
-                    width: 137px;
-                    height: 99px;
-                    background: url('../images/trade-bg.png');
-                    .page-rent & {
-                        background-image: url('../images/rent-bg.png');
-                    }
-                    span {
-                        margin-top: 20px;
-                    }
-                }
             }
             @media screen and (max-width: 991px) {
                 top: 47px;
@@ -356,7 +344,10 @@
         &.list-view {
             .card {
                 min-height: auto;
-                padding: 15px;
+                padding: 20px;
+                @media screen and (max-width: 991px) {
+                    padding: 20px 0 0;
+                }
                 &-name {
                     margin-left: 10px;
                     text-transform: uppercase;
@@ -458,6 +449,7 @@
                     bottom: 0;
                     background: url('../images/fgame.png') no-repeat;
                     background-size: 100%;
+                    z-index: 1;
                 }
             }
             .card {

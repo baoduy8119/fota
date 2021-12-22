@@ -131,7 +131,7 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
-            bottom: -40px;
+            bottom: -30px;
             background: transparent;
             padding: 0;
             @media screen and (max-width: 991px) {
@@ -144,26 +144,15 @@
             .inner {
                 display: flex;
             }
-            .buy-btn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 0 15px;
-                padding-bottom: 38px;
-                position: static;
-                font-size: 24px;
-                @media screen and (max-width: 767px) {
-                    margin: 0 10px;
-                    font-size: 20px;
-                    padding-bottom: 6px;
-                    span {
-                        margin-top: 0;
-                    }
-                }
-                i {
-                    display: block;
-                    margin-bottom: 5px;
-                    font-size: 16px;
+            .fota-primary-btn {
+                margin: 0 10px;
+            }
+            @media screen and (max-width: 575px) {
+                .fota-primary-btn {
+                    margin: 0 5px;
+                    font-size: 15px;
+                    height: 60px;
+                    min-width: 110px;
                 }
             }
         }
@@ -172,7 +161,9 @@
         &.items {
             &.grid-view {
                 .card-price {
-                    padding: 0;
+                    .top-price {
+                        margin-bottom: 0;
+                    }
                 }
             }
             &.list-view {
