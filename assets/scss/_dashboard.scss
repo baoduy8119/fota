@@ -669,6 +669,9 @@
     .rate {
         margin: 20px auto 30px;
         max-width: 400px;
+        @media screen and (max-width: 991px) {
+            padding: 0 20px;
+        }
         .label {
             display: block;
             text-align: center;
@@ -690,11 +693,7 @@
         }
     }
     .upgrade-button {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: -50px;
-        z-index: 1;
+        text-align: center;
         .primary-btn {
             padding-top: 25px;
             font-size: 18px;
@@ -717,6 +716,12 @@
                 width: 150px;
                 height: 18px;
             }
+        }
+    }
+    .select-balance {
+        margin-top: 10px;
+        .input-group {
+            width: initial;
         }
     }
 }
