@@ -494,6 +494,9 @@ button {
         border: none;
         background: transparent;
         color: $dark-grey;
+        &.active {
+            color: $green;
+        }
         &.previous-link,
         &.next-link {
             display: flex;
@@ -509,6 +512,10 @@ button {
             margin: 0 12px;
             &:hover {
                 filter: saturate(2);
+            }
+            &.disabled {
+                opacity: 0.5;
+                pointer-events: none;
             }
             @media screen and (max-width: 991px) {
                 position: absolute;
@@ -1051,7 +1058,9 @@ button {
             }
         }
         .fota-primary-btn {
-            width: 300px;
+            @media screen and (min-width: 992px) {
+                width: 300px;
+            }
         }
     }
 }
@@ -2069,7 +2078,6 @@ button {
 }
 .fota-primary-btn {
     display: inline-block;
-    height: 60px;
     position: relative;
     border: 1px solid #7f6744;
     font-size: 30px;
@@ -2082,7 +2090,7 @@ button {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 0 20px;
+        padding: 2px 20px;
         height: 100%;
         border: 5px solid #3d3501;
         text-transform: uppercase;
