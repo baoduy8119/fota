@@ -496,6 +496,7 @@
         > .level-col {
             &:first-child {
                 margin-bottom: 71px;
+                align-self: flex-end;
             }
         }
         > .level-col.two-branch {
