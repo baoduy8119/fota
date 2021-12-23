@@ -145,7 +145,7 @@
                 <div class="price-box d-flex align-items-center justify-content-center">
                     <div class="inner">
                         <a href="#" class="fota-primary-btn green disabled sink-effect" data-bs-target="#sellModal"><span>SELL</span></a>
-                        <a href="#" class="fota-primary-btn blue sink-effect"><span>FOR RENT</span></a>
+                        <a href="#" class="fota-primary-btn blue sink-effect" data-bs-toggle="modal" data-bs-target="#rentModal"><span>FOR RENT</span></a>
                         <a href="#" class="fota-primary-btn red sink-effect"><span>LOCK</span></a>
                     </div>
                 </div>
@@ -515,6 +515,75 @@
                 <div class="toast warming">
                     <i class="icon-spam"></i>
                     <span>This item needs to be at least level 10 to start selling/renting</span>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="rentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content auto-height-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sell<br>
+                            Kronok
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <nav>
+                                <div class="nav modal-nav-tabs" id="nav-tab" role="tablist">
+                                    <div class="nav-link active" id="fixed-tab" data-bs-toggle="tab" data-bs-target="#fixed" type="button" role="tab" aria-controls="nav-1" aria-selected="true">Fixed
+                                    </div>
+                                    <div class="nav-link" id="trailing-tab" data-bs-toggle="tab" data-bs-target="#trailing" type="button" role="tab" aria-controls="nav-2" aria-selected="false">Traling
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="modal-tab-content tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="fixed" role="tabpanel" aria-labelledby="nav-2-tab">
+                                    <div class="mb-3 currency-input">
+                                        <label class="fota-form-label">
+                                            Start Price:
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <input type="email" class="fota-form-control">
+                                            <span class="unit txt-green">USDT</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 currency-input">
+                                        <label class="fota-form-label">
+                                            End Price:
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <input type="email" class="fota-form-control">
+                                            <span class="unit txt-green">USDT</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 currency-input">
+                                        <label class="fota-form-label">
+                                            Duration
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <input type="email" class="fota-form-control">
+                                            <span class="unit txt-light-grey">Days</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="trailing" role="tabpanel" aria-labelledby="nav-3-tab">
+                                    <div class="mb-3 currency-input">
+                                        <label class="fota-form-label">
+                                            Price:
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <input type="email" class="fota-form-control">
+                                            <span class="unit txt-green">USDT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="fota-primary-btn blue sink-effect"><span>FOR RENT</span></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

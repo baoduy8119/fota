@@ -664,6 +664,13 @@ button {
         .modal-header {
             z-index: 1;
         }
+        .fota-primary-btn {
+            margin-top: 20px;
+            font-size: 26px;
+            @media screen and (max-width: 991px) {
+                font-size: 24px;
+            }
+        }
     }
     .select-balance {
         @media screen and (max-width: 991px) {
@@ -1058,7 +1065,7 @@ button {
             }
         }
         .fota-primary-btn {
-            @media screen and (min-width: 992px) {
+            @media screen and (min-width: 1366px) {
                 width: 300px;
             }
         }
@@ -1693,10 +1700,14 @@ button {
     width: 321px;
     height: 42px;
     background: url('../images/modal-title-bg.png') no-repeat;
+    background-size: 100%;
     .nav-link {
         position: relative;
         padding: 8px 35px;
         color: #e3e6d5;
+        @media screen and (max-width: 991px) {
+            padding: 6px 35px;
+        }
         &.active {
             color: $green;
         }
