@@ -2033,6 +2033,7 @@ button {
         background: url('../images/badge-bg.png') no-repeat;
         background-size: 100%;
         text-transform: uppercase;
+        z-index: 2;
     }
     &:not(.items) {
         .card-badge {
@@ -2085,6 +2086,9 @@ button {
     letter-spacing: 1px;
     min-width: 210px;
     transition: all 0.2s;
+    &.disabled {
+        opacity: 0.6;
+    }
     span {
         color: white;
         display: flex;
