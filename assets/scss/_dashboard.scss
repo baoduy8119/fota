@@ -865,6 +865,11 @@
             z-index: 1;
         }
     }
+    &.animation {
+        img {
+            width: inherit;
+        }
+    }
 }
 @keyframes rotating {
     0% {

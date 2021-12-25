@@ -52,8 +52,11 @@ $(function () {
     ];
     $('.upgrade-btn').on('click', function (e) {
         e.preventDefault()
-        var randomStatus = upgradeStatus[Math.floor(Math.random() * upgradeStatus.length)];
-        console.log(randomStatus);
-        $('#' + randomStatus).modal('show');
+        $('#animationUpgrade').modal('show');
+        setTimeout(() => {
+            var randomStatus = upgradeStatus[Math.floor(Math.random() * upgradeStatus.length)];
+            $('#' + randomStatus).modal('show');
+            $('#animationUpgrade').modal('hide');
+        }, 3000);
     })
 });
