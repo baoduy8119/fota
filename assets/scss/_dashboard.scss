@@ -134,14 +134,23 @@
             }
             .inner {
                 display: flex;
+                @media screen and (max-width: 400px) {
+                    flex-direction: column;
+                    .fota-primary-btn {
+                        margin: 10px 0;
+                        min-width: 160px;
+                        font-size: 18px;
+                    }
+                }
             }
             .fota-primary-btn {
                 margin: 0 10px;
-            }
-            @media screen and (max-width: 575px) {
-                .fota-primary-btn {
-                    margin: 0 5px;
+                @media screen and (max-width: 768px) {
                     font-size: 16px;
+                    min-width: 145px;
+                }
+                @media screen and (max-width: 575px) {
+                    margin: 0 5px;
                     min-width: 110px;
                 }
             }
@@ -703,18 +712,23 @@
         @media screen and (max-width: 1600px) {
             padding: 40px 10px;
         }
-        @media screen and (max-width: 1365px) {
+        @media screen and (max-width: 1400px) {
             margin-top: 40px;
         }
     }
     .container-fluid {
         padding-bottom: 50px;
     }
-    .equipment-upgrade .upgrade-rate {
-        &::before {
-            @media screen and (min-width: 1366px) and (max-width: 1600px) {
-                width: 150px;
-                height: 18px;
+    .equipment-upgrade {
+        @media screen and (min-width: 1025px) and (max-width: 1400px) {
+            padding: 0 180px;
+        }
+        .upgrade-rate {
+            &::before {
+                @media screen and (min-width: 1366px) and (max-width: 1600px) {
+                    width: 150px;
+                    height: 18px;
+                }
             }
         }
     }

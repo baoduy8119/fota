@@ -11,7 +11,7 @@
     }
     .header-inner {
         height: 90px;
-        @media screen and (max-width: 991px) {
+        @media screen and (max-width: 1366px) {
             justify-content: space-between;
             align-items: center;
             height: 60px;
@@ -180,10 +180,10 @@
     background: url('../images/t-icon.png') no-repeat;
 }
 .top-navbar-custom {
-    bottom: 35px;
+    top: 7px;
     position: absolute;
     @media screen and (min-width: 992px) and (max-width: 1600px) {
-        bottom: 40px;
+        top: 1px;
     }
     @media screen and (max-width: 991px) {
         top: 1px;
@@ -240,7 +240,7 @@
     }
 }
 .notification-list {
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1366px) {
         position: relative;
         &::before {
             content: '';
@@ -251,9 +251,14 @@
             background-color: #1f2323;
         }
     }
+    .account-info {
+        @media screen and (min-width: 1367px) {
+            margin-right: 20px;
+        }
+    }
 }
 .nav-mobile {
-    @media screen and (max-width: 991px) {
+    @media screen and (max-width: 1366px) {
         position: fixed;
         top: 0;
         right: 0;
@@ -263,6 +268,7 @@
         background-color: $dark-green;
         transition: all 0.3s;
         z-index: 10;
+        overflow-y: auto;
         &.show {
             transform: translateX(0);
         }
@@ -309,7 +315,7 @@
             }
         }
         .account-user-name {
-            padding: 30px 20px 30px 0;
+            padding: 30px 80px 30px 0;
             font-size: 16px;
         }
     }
