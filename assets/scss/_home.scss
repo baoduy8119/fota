@@ -39,6 +39,16 @@
             font-size: 18px;
         }
     }
+    .card-class {
+        img:first-child {
+            width: 48px;
+            height: 40px;
+        }
+        img.card-class {
+            width: 40px;
+            height: 40px;
+        }
+    }
 }
 .card-wrapper {
     &.grid-view {
@@ -106,12 +116,6 @@
                 line-height: 28px;
                 text-transform: uppercase;
                 text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
-            }
-            &-class {
-                img.card-class {
-                    width: 40px;
-                    height: 40px;
-                }
             }
             &-spec {
                 display: none;
@@ -591,12 +595,6 @@
                     .fota-primary-btn {
                         display: inline-block;
                     }
-                }
-            }
-            .card-class {
-                img.card-class {
-                    width: 40px;
-                    height: 40px;
                 }
             }
         }

@@ -11,7 +11,7 @@
     }
     .header-inner {
         height: 90px;
-        @media screen and (max-width: 1366px) {
+        @media screen and (max-width: 1399px) {
             justify-content: space-between;
             align-items: center;
             height: 60px;
@@ -258,7 +258,7 @@
     }
 }
 .nav-mobile {
-    @media screen and (max-width: 1366px) {
+    @media screen and (max-width: 1399px) {
         position: fixed;
         top: 0;
         right: 0;
