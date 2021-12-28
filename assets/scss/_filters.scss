@@ -150,7 +150,8 @@
         margin-top: 10px;
     }
 
-    .checkbox-container {
+    .checkbox-container,
+    .radio-button-container {
         flex: 0 0 50%;
         margin: 10px 0;
         @media screen and (max-width: 991px) {
@@ -220,6 +221,7 @@
         width: 16px;
         background-color: #0c433b;
         border: 2px solid white;
+        transition: all 0.2s;
 
         &:after {
             content: '';
@@ -233,6 +235,54 @@
             border-width: 0 2px 2px 0;
             -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
+        }
+    }
+}
+
+.radio-button-container {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    user-select: none;
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+    }
+    &:hover {
+        input ~ .checkmark {
+            border-color: #00f4c9;
+            background-color: black;
+        }
+    }
+    input:checked ~ .checkmark {
+        border-color: #00f4c9;
+    }
+    input:checked ~ .checkmark:after {
+        display: block;
+    }
+    .checkmark {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        height: 18px;
+        width: 18px;
+        border: 2px solid white;
+        border-radius: 50%;
+        transition: all 0.2s;
+        &::after {
+            content: '';
+            position: absolute;
+            display: none;
+            top: 4px;
+            left: 4px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #00f4c9;
         }
     }
 }
