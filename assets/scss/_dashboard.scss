@@ -2,6 +2,13 @@
     background: #06302b url(../images/content-bg.png) no-repeat 0 -150px;
     background-size: cover;
     color: $light-grey;
+    .fota-table {
+        thead th {
+            @media screen and (max-width: 1440px) {
+                padding: 18px 10px;
+            }
+        }
+    }
     .hero-list {
         margin-top: 15px;
     }
