@@ -431,6 +431,12 @@
                 .item-class {
                     position: relative;
                     margin: 0 5px;
+                    &:first-child {
+                        img {
+                            width: 36px;
+                            height: 30px;
+                        }
+                    }
                     &:hover {
                         .tooltip-class {
                             opacity: 1;
@@ -439,6 +445,7 @@
                     }
                     img {
                         width: 30px;
+                        height: 30px;
                     }
                     .tooltip-class {
                         position: absolute;
