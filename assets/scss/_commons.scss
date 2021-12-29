@@ -1131,6 +1131,9 @@ button {
                 }
             }
         }
+        @media screen and (max-width: 375px) {
+            padding: 8px;
+        }
     }
 }
 .card {
@@ -2121,6 +2124,7 @@ button {
     transition: all 0.2s;
     &.disabled {
         opacity: 0.6;
+        pointer-events: none;
     }
     span {
         color: white;
