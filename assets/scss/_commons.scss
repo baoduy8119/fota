@@ -2164,3 +2164,23 @@ button {
         }
     }
 }
+.fota-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color: #000000, $alpha: 0.8);
+    z-index: 999;
+    &::after {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        content: '';
+        width: 100px;
+        height: 100px;
+        background: url('../images/fota-loading.gif');
+        background-size: 100%;
+    }
+}
