@@ -53,10 +53,19 @@ $(function () {
     $('.upgrade-btn').on('click', function (e) {
         e.preventDefault()
         $('#animationUpgrade').modal('show');
+        $('.upgrade-modal').modal('hide');
         setTimeout(() => {
             var randomStatus = upgradeStatus[Math.floor(Math.random() * upgradeStatus.length)];
             $('#' + randomStatus).modal('show');
             $('#animationUpgrade').modal('hide');
         }, 3000);
     })
+    if ($(window).width() < 1400) {
+        $('.inventory-item').on('click', function () {
+            $('#upgradeModal1').modal('show')
+        })
+        $('.upgrade-item').on('click', function () {
+            $('#upgradeModal2').modal('show')
+        })
+    }
 });

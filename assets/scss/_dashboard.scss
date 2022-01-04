@@ -727,9 +727,6 @@
         padding-bottom: 50px;
     }
     .equipment-upgrade {
-        @media screen and (min-width: 1025px) and (max-width: 1400px) {
-            padding: 0 180px;
-        }
         .upgrade-rate {
             &::before {
                 @media screen and (min-width: 1366px) and (max-width: 1600px) {
@@ -893,5 +890,93 @@
         opacity: 0.5;
         transform: translate(-50%, -50%) rotate(360deg);
         filter: saturate(1);
+    }
+}
+.upgrade-modal.fade {
+    @media screen and (min-width: 1400px) {
+        position: static;
+        opacity: 1;
+        overflow-y: inherit;
+        overflow-x: inherit;
+    }
+    .modal-dialog {
+        @media screen and (min-width: 1400px) {
+            min-height: initial;
+            max-width: initial;
+            display: block;
+            transform: none;
+            margin: 0;
+            height: 100%;
+        }
+        .modal-content {
+            display: block;
+            @media screen and (min-width: 1400px) {
+                width: 100%;
+                background: none;
+                height: 100%;
+                &.auto-height-modal {
+                    &::before,
+                    &::after {
+                        content: none;
+                    }
+                }
+            }
+            @media screen and (min-width: 768px) and (max-width: 1399px) {
+                width: 100%;
+            }
+            .half-box {
+                @media screen and (max-width: 1399px) {
+                    background: none;
+                    &::after,
+                    &::before {
+                        content: none;
+                    }
+                }
+                @media screen and (max-width: 575px) {
+                    margin-top: 30px;
+                    padding: 10px 0;
+                }
+            }
+        }
+        .modal-body {
+            @media screen and (min-width: 1400px) {
+                height: 100%;
+                padding: 0;
+            }
+            @media screen and (max-width: 991px) {
+                padding: 0 10px;
+                .fota-primary-btn {
+                    margin: 0 0 20px;
+                }
+            }
+        }
+        .modal-header {
+            padding: 0;
+            @media screen and (min-width: 1400px) {
+                display: none;
+            }
+        }
+    }
+    .combination-list {
+        @media screen and (max-width: 575px) {
+            img {
+                width: 80px;
+            }
+            .label {
+                font-size: 16px;
+            }
+            .item .quantity {
+                width: 30px;
+                height: 30px;
+                font-size: 16px;
+                right: 14px;
+                bottom: -5px;
+            }
+        }
+    }
+    .equipment-upgrade img {
+        @media screen and (max-width: 575px) {
+            width: 80px;
+        }
     }
 }
