@@ -674,8 +674,9 @@ button {
         .fota-primary-btn {
             margin-top: 20px;
             font-size: 26px;
+            width: 100%;
             @media screen and (max-width: 991px) {
-                font-size: 24px;
+                font-size: 20px;
             }
         }
     }
@@ -1294,9 +1295,6 @@ button {
     }
     @media screen and (min-width: 992px) {
         margin-top: 30px;
-    }
-    @media screen and (max-width: 375px) {
-        transform: scale(0.7) translateX(-23%);
     }
     img {
         width: 100px;
@@ -2126,12 +2124,22 @@ button {
 .fota-primary-btn {
     display: inline-block;
     position: relative;
+    padding: 3px;
     border: 1px solid #7f6744;
     font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
     min-width: 210px;
     transition: all 0.2s;
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border: 3px solid #3d3501;
+    }
     &.disabled {
         opacity: 0.6;
         pointer-events: none;
@@ -2192,5 +2200,31 @@ button {
         height: 100px;
         background: url('../images/fota-loading.gif');
         background-size: 100%;
+    }
+}
+.page-static {
+    @media screen and (min-width: 768px) {
+        min-height: 100vh;
+    }
+    .title {
+        padding: 80px 0 130px;
+        font-size: 90px;
+        text-align: center;
+        color: #fcfdcc;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+        @media screen and (max-width: 991px) {
+            padding: 60px 0 110px;
+            font-size: 50px;
+        }
+    }
+    .full-box {
+        .fota-primary-btn {
+            min-width: 270px;
+        }
+        @media screen and (min-width: 992px) {
+            padding: 40px 120px;
+        }
     }
 }
