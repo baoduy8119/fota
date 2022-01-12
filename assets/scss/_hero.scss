@@ -109,10 +109,13 @@
                 .quote-content {
                     width: 450px;
                     font-size: 40px;
-                    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+                    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
                     font-style: italic;
                     text-align: left;
                     color: #e9eabd;
+                    font-family: 'Friz Quadrata Pro', sans-serif;
+                    font-style: italic;
+                    font-weight: bold;
                     @media screen and (min-width: 768px) and (max-width: 1366px) {
                         font-size: 26px;
                         width: 350px;
