@@ -139,6 +139,12 @@
             &::before {
                 content: none;
             }
+            .price {
+                margin-bottom: 30px;
+                .failure-cost {
+                    margin-top: 5px;
+                }
+            }
             .inner {
                 display: flex;
                 @media screen and (max-width: 400px) {

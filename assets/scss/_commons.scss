@@ -1036,6 +1036,9 @@ button {
         margin-top: 20px;
         @media screen and (max-width: 991px) {
             margin-top: 30px;
+            .page-detail & {
+                margin-top: 20px;
+            }
         }
     }
     .promotion {
