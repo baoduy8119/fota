@@ -100,6 +100,33 @@
             .video {
                 width: 100%;
             }
+            .quote-container {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 3;
+                .quote-content {
+                    width: 450px;
+                    font-size: 40px;
+                    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+                    font-style: italic;
+                    text-align: left;
+                    color: #e9eabd;
+                    @media screen and (min-width: 768px) and (max-width: 1366px) {
+                        font-size: 26px;
+                        width: 350px;
+                    }
+                    @media screen and (max-width: 767px) {
+                        font-size: 10px;
+                        width: 145px;
+                    }
+                    &.right-block {
+                        float: right;
+                        text-align: right;
+                    }
+                }
+            }
         }
         &-summary {
             padding: 80px 30px 40px;
@@ -152,6 +179,7 @@
             margin-top: 40px;
             @media screen and (max-width: 991px) {
                 font-size: 40px;
+                margin-top: 0;
             }
         }
         &-class {

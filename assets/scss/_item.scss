@@ -17,7 +17,6 @@
                 }
             }
             .card-desc {
-                margin-top: 0;
                 .content {
                     margin-top: 10px;
                 }
@@ -26,9 +25,14 @@
                 margin-top: 10px;
             }
             .item-desc {
-                margin: 10px 0;
+                margin: 10px 0 0;
+                font-size: 14px;
                 @media screen and (max-width: 991px) {
+                    margin: 5px 0 15px;
                     text-align: center;
+                }
+                .dashboard & {
+                    margin-bottom: 15px;
                 }
             }
             .card-price {
@@ -90,7 +94,7 @@
         .card-desc {
             > div,
             > div > div {
-                margin-right: 10px;
+                margin-right: 8px;
             }
             @media screen and (max-width: 991px) {
                 justify-content: center;

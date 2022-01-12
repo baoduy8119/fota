@@ -395,6 +395,7 @@
                 }
                 .card-id {
                     margin-left: 10px;
+                    font-size: 14px;
                 }
                 .top-info {
                     display: flex;
@@ -404,12 +405,11 @@
                         text-align: left;
                         flex-direction: column;
                         .card-name {
-                            order: 2;
                             font-size: 30px;
                             font-weight: 700;
                         }
                         .card-class {
-                            order: 1;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -459,10 +459,7 @@
                 }
                 .value {
                     margin-right: 8px;
-                    font-size: 18px;
-                    @media screen and (min-width: 992px) and (max-width: 1024px) {
-                        font-size: 16px;
-                    }
+                    font-size: 14px;
                 }
                 @media screen and (max-width: 991px) {
                     justify-content: center;
