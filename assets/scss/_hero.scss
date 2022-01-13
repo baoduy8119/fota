@@ -344,6 +344,42 @@
                 }
             }
         }
+        &-abstract {
+            margin: 0 auto;
+            font-size: 14px;
+            color: #afb3a2;
+            @media screen and (min-width: 1400px) {
+                max-width: 1000px;
+            }
+        }
+        &-quote {
+            margin: 0 auto 40px;
+            font-size: 24px;
+            font-weight: 600;
+            font-style: italic;
+            color: white;
+            @media screen and (max-width: 575px) {
+                margin-bottom: 30px;
+                font-size: 20px;
+            }
+            @media screen and (min-width: 992px) {
+                max-width: 800px;
+            }
+        }
+    }
+    .full-box {
+        .more-content {
+            margin-top: 20px;
+            @media screen and (max-width: 575px) {
+                margin-top: 10px;
+            }
+            .load-more {
+                margin-top: 30px;
+                @media screen and (max-width: 575px) {
+                    margin-top: 10px;
+                }
+            }
+        }
     }
     .tab-content {
         .sub-title {

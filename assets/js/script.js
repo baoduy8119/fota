@@ -68,4 +68,12 @@ $(function () {
             $('#upgradeModal2').modal('show')
         })
     }
+    $('.more-content .load-more').on('click', function () {
+        $(this).parent().toggleClass('show')
+        if ($(this).parent().hasClass('show')) {
+            $(this).html('Less Story')
+        } else {
+            $(this).html('Full Story')
+        }
+    })
 });
