@@ -102,7 +102,7 @@
             }
         }
         &-summary {
-            padding: 80px 30px 40px;
+            padding: 40px 30px;
             text-align: center;
             z-index: 2;
             @media screen and (max-width: 991px) {
@@ -149,10 +149,8 @@
             line-height: 40px;
             font-weight: bold;
             text-transform: uppercase;
-            margin-top: 40px;
             @media screen and (max-width: 991px) {
                 font-size: 40px;
-                margin-top: 0;
             }
         }
         &-class {
