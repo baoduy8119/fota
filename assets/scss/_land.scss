@@ -4,14 +4,12 @@
             .card {
                 &-desc {
                     @media screen and (max-width: 991px) {
-                        position: absolute;
-                        top: 20px;
-                        left: 205px;
-                        right: 15px;
+                        text-align: center;
                     }
                 }
                 &-price {
                     padding: 0;
+                    margin-bottom: 20px;
                     .amount {
                         @media screen and (min-width: 992px) {
                             font-size: 30px;
@@ -60,6 +58,11 @@
     }
     &.grid-view {
         &.lands {
+            &.inventory {
+                .card-price .top-price {
+                    margin-bottom: 0;
+                }
+            }
             .card {
                 &-desc {
                     display: none !important;

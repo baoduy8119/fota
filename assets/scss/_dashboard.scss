@@ -227,58 +227,58 @@
                 }
             }
         }
-        &.lands {
-            &.list-view {
-                .card {
-                    @media screen and (max-width: 991px) {
-                        padding-bottom: 50px;
-                    }
-                    &-amount {
-                        font-size: 26px;
-                        color: $green;
-                        @media screen and (max-width: 991px) {
-                            font-size: 20px;
-                        }
-                    }
-                    &-promotion {
-                        margin: 0 0 10px;
-                        .total-reward > div {
-                            display: block;
-                        }
-                    }
-                    &-desc {
-                        @media screen and (min-width: 992px) {
-                            display: none;
-                        }
-                    }
-                }
-            }
-            &.grid-view {
-                .card {
-                    @media screen and (max-width: 991px) {
-                        margin: 20px 0 60px;
-                    }
-                    &-image {
-                        .thumb {
-                            @media screen and (min-width: 1200px) and (max-width: 1440px) {
-                                margin-top: 40px;
-                            }
-                        }
-                    }
-                    &-price {
-                        padding: 0;
-                    }
-                    &-item {
-                        @media screen and (min-width: 992px) {
-                            margin: 30px 0 40px;
-                            .card {
-                                margin: 0;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        // &.lands {
+        //     &.list-view {
+        //         .card {
+        //             @media screen and (max-width: 991px) {
+        //                 padding-bottom: 50px;
+        //             }
+        //             &-amount {
+        //                 font-size: 26px;
+        //                 color: $green;
+        //                 @media screen and (max-width: 991px) {
+        //                     font-size: 20px;
+        //                 }
+        //             }
+        //             &-promotion {
+        //                 margin: 0 0 10px;
+        //                 .total-reward > div {
+        //                     display: block;
+        //                 }
+        //             }
+        //             &-desc {
+        //                 @media screen and (min-width: 992px) {
+        //                     display: none;
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     &.grid-view {
+        //         .card {
+        //             @media screen and (max-width: 991px) {
+        //                 margin: 20px 0 60px;
+        //             }
+        //             &-image {
+        //                 .thumb {
+        //                     @media screen and (min-width: 1200px) and (max-width: 1440px) {
+        //                         margin-top: 40px;
+        //                     }
+        //                 }
+        //             }
+        //             &-price {
+        //                 padding: 0;
+        //             }
+        //             &-item {
+        //                 @media screen and (min-width: 992px) {
+        //                     margin: 30px 0 40px;
+        //                     .card {
+        //                         margin: 0;
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
 .nav-dashboard {
@@ -306,6 +306,7 @@
                 font-weight: 600;
                 letter-spacing: 1px;
                 line-height: 22px;
+                padding: 8px 24px;
                 @media screen and (max-width: 991px) {
                     padding: 5px 20px;
                     justify-content: end;
@@ -613,6 +614,9 @@
 .upgrade-items {
     .half-box {
         height: 100%;
+        @media screen and (max-width: 1600px) {
+            padding: 40px 20px;
+        }
         @media screen and (max-width: 767px) {
             padding: 20px 10px;
         }
@@ -658,7 +662,7 @@
                 max-width: 130px;
             }
             @media screen and (max-width: 1600px) {
-                font-size: 16px;
+                font-size: 15px;
             }
         }
         .id {
@@ -965,11 +969,16 @@
     }
     .combination-list {
         @media screen and (max-width: 575px) {
+            .item {
+                width: 114px;
+            }
             img {
                 width: 80px;
             }
             .label {
-                font-size: 16px;
+                font-size: 14px;
+                width: 90px;
+                margin: 10px auto 0;
             }
             .item .quantity {
                 width: 30px;
