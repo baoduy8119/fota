@@ -151,3 +151,81 @@
         }
     }
 }
+.land-map {
+    display: inline-block;
+    position: relative;
+    margin-top: 60px;
+    img {
+        max-width: 100%;
+    }
+    .pointer {
+        position: absolute;
+        width: 80px;
+        height: 101px;
+        background: url('../images/lands/land-pointer.png') no-repeat;
+        background-size: cover;
+        z-index: 1;
+        cursor: pointer;
+        transition: all 0.1s;
+        @media screen and (max-width: 768px) {
+            width: 60px;
+            height: 76px;
+        }
+        @media screen and (max-width: 575px) {
+            width: 40px;
+            height: 51px;
+        }
+        &.active {
+            background: url('../images/lands/land-pointer-active.png') no-repeat;
+            background-size: cover;
+            transform: translateY(-10px);
+        }
+        &.pointer-1 {
+            top: 45%;
+            left: 26%;
+        }
+        &.pointer-2 {
+            top: 36%;
+            left: 7%;
+        }
+        &.pointer-3 {
+            top: 33%;
+            left: 38%;
+        }
+        &.pointer-4 {
+            top: 47%;
+            right: 39%;
+        }
+        &.pointer-5 {
+            top: 39%;
+            right: 20%;
+        }
+        &.pointer-6 {
+            top: 24%;
+            right: 3%;
+        }
+        &.pointer-7 {
+            top: 23%;
+            left: 58%;
+        }
+        &.pointer-8 {
+            top: 12%;
+            left: 23%;
+        }
+        &.pointer-9 {
+            top: 0%;
+            left: 49%;
+        }
+        &.pointer-10 {
+            top: 2%;
+            right: 11%;
+        }
+    }
+}
+.page-detail {
+    &.land {
+        padding-top: 0;
+        background: #06302b url(../images/lands/land-detail-bg.png) no-repeat top center;
+        background-size: cover;
+    }
+}

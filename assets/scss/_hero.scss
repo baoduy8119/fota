@@ -3,6 +3,9 @@
 }
 .page-detail {
     text-align: center;
+    @media screen and (max-width: 1366px) {
+        min-height: 100vh;
+    }
     &.hero-detail {
         padding-top: 0;
         .hero-video-bg::after {

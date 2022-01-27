@@ -23,34 +23,45 @@
                     <img class="logo" src="assets/images/logo.png" alt="FOTA">
                 </a>
 
-                <div class="d-flex align-items-center top-currency justify-content-end d-lg-none txt-light-yellow fw-7">
+                <div class="d-flex align-items-center top-currency justify-content-end d-xxl-none txt-light-yellow fw-7">
                     <span>
                         100.534 BUSD
                     </span>
                     <i class="icon-currency d-inline-block ml-10"></i>
                 </div>
 
-                <a href="#" class="toggle-menu d-block d-lg-none">
+                <a href="#" class="toggle-menu d-block d-xxl-none">
                     <i class="fas fa-bars"></i>
                 </a>
 
-                <div class="nav-mobile d-lg-flex align-items-center w-100">
+                <div class="nav-mobile d-xxl-flex align-items-center w-100">
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                         <li><a href="myaccount.html" class="nav-link txt-grey txt-green-hover text-uppercase">My Account</a></li>
-                        <li><a href="trend-market.html" class="nav-link txt-grey txt-green-hover text-uppercase">Market Trend</a></li>
-                        <li><a href="/fota" class="nav-link txt-grey txt-green-hover text-uppercase active">Marketplace</a></li>
+                        <li><a href="trend-market.html" class="nav-link txt-grey txt-green-hover text-uppercase active">Market Trend</a></li>
+                        <li><a href="/fota" class="nav-link txt-grey txt-green-hover text-uppercase">Marketplace</a></li>
                         <li><a href="/events" class="nav-link txt-grey txt-green-hover text-uppercase">Events</a></li>
                         <li><a href="/notification" class="nav-link txt-grey txt-green-hover text-uppercase">Notification</a></li>
                     </ul>
+
+                    <div class="d-block d-xxl-none language-mobile">
+                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
+                            <span>English</span>
+                            <img src="assets/images/usa-icon.png" alt="">
+                        </a>
+                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
+                            <span>Tiếng Việt</span>
+                            <img src="assets/images/vn-icon.png" alt="">
+                        </a>
+                    </div>
 
                     <div class="notification-list">
                         <!-- <div class="text-end">
                             <button type="button" class="btn btn-login text-white fade-effect" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
                         </div> -->
-                        <div class="account d-lg-flex align-items-center">
-                            <div class="account-user-avatar order-2 position-relative">
+                        <div class="account d-xxl-flex align-items-center">
+                            <div class="account-user-avatar order-2">
                                 <img src="assets/images/user-avatar.png" alt="">
-                                <div class="position-relative fota-dropdown language">
+                                <div class="position-relative fota-dropdown language d-none d-xxl-block">
                                     <a class="language-icon fota-toggle d-none d-lg-block" href="#">
                                         <img src="assets/images/language-icon.png" alt="">
                                     </a>
@@ -66,9 +77,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="lg-mr-20 text-end order-1">
+                            <div class="account-info text-end order-1">
                                 <div class="account-user-name text-uppercase">Player001</div>
-                                <div class="account-currency fw-7 d-lg-flex align-items-center">
+                                <a href="#" class="logout-btn">Logout</a>
+                                <div class="account-currency fw-7 d-xxl-flex align-items-center">
                                     <div class="d-flex txt-light-green align-items-center justify-content-end">
                                         <span>
                                             100.534 USDT
@@ -82,7 +94,7 @@
                                         <i class="icon-binance d-inline-block"></i>
                                     </div>
                                     <div class="position-relative fota-dropdown">
-                                        <a class="fota-toggle d-none d-lg-block" href="#">
+                                        <a class="fota-toggle d-none d-xxl-block" href="#">
                                             <i class="fa fa-chevron-down text-white m-0"></i>
                                         </a>
                                         <div class="fota-dropdown-menu animate slideIn text-end">
@@ -101,12 +113,61 @@
             </div>
         </div>
     </header>
-    <div class="page-content page-detail trend-item">
+    <div class="page-content page-detail land">
         <div class="container position-relative">
-            <div class="breadcrumb sink-left-effect"><a href="#"><i class="icon-back-arrow"></i>Back</a></div>
+            <div class="navbar-custom xs-pd-40 d-lg-flex justify-content-center">
+                <ul class="nav long-type justify-content-center align-items-center">
+                    <li>
+                        <a href="javascript:;" class="nav-link txt-grey txt-green-hover label-tooltip">
+                            <span class="label">Market</span>
+                            <div class="tooltip-content bottom">
+                                Coming Soon
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="trend-hero.html" class="nav-link txt-grey txt-green-hover active">Heroes</a></li>
+                    <li>
+                        <a href="javascript:;" class="nav-link txt-grey txt-green-hover">
+                            <span class="label">Items</span>
+                        </a>
+                        <div class="level-2">
+                            <ul class="list-unstyled">
+                                <li><a href="trend-item.html">Items</a></li>
+                                <li><a href="trend-item-diagrams.html">Diagrams</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="nav-link txt-grey txt-green-hover">
+                            <span class="label">FotaLands</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="nav-link txt-grey txt-green-hover label-tooltip">
+                            <span class="label">Skins</span>
+                            <div class="tooltip-content bottom">
+                                Coming Soon
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="land-map">
+                <img src="assets/images/lands/nightmare/nightmare-10.png" alt="">
+                <span class="pointer-1 pointer" data-src="assets/images/lands/nightmare/nightmare-1.png"></span>
+                <span class="pointer-2 pointer" data-src="assets/images/lands/nightmare/nightmare-2.png"></span>
+                <span class="pointer-3 pointer" data-src="assets/images/lands/nightmare/nightmare-3.png"></span>
+                <span class="pointer-4 pointer" data-src="assets/images/lands/nightmare/nightmare-4.png"></span>
+                <span class="pointer-5 pointer" data-src="assets/images/lands/nightmare/nightmare-5.png"></span>
+                <span class="pointer-6 pointer" data-src="assets/images/lands/nightmare/nightmare-6.png"></span>
+                <span class="pointer-7 pointer" data-src="assets/images/lands/nightmare/nightmare-7.png"></span>
+                <span class="pointer-8 pointer" data-src="assets/images/lands/nightmare/nightmare-8.png"></span>
+                <span class="pointer-9 pointer" data-src="assets/images/lands/nightmare/nightmare-9.png"></span>
+                <span class="pointer-10 pointer" data-src="assets/images/lands/nightmare/nightmare-10.png"></span>
+            </div>
             <div class="full-box summary position-relative text-center">
                 <div class="thumb">
-                    <img class="img-fluid image sink-effect" src="assets/images/desert-zone-a.png" alt="">
+                    <img class="img-fluid image sink-effect" src="assets/images/lands/help-gate.png" alt="">
                 </div>
                 <h2 class="name txt-light-grey fs-30 fw-7">
                     Desert Zone A
@@ -116,32 +177,17 @@
                 </div>
                 <div class="user-info">
                     <div class="nft-id txt-green">#M0002</div>
+                    <div class="fs-16 d-flex align-items-center justify-content-center">
+                        <span class="text-uppercase txt-l-grey d-inline-block mx-3">USER001</span>
+                        <span class="text-truncate text-white">0xdsa2SDAdewdsfa2qesd...DASD14</span>
+                        <a href="#" class="mx-1"><i class="icon-copy fs-18 text-white"></i></a>
+                    </div>
                 </div>
-                <div class="mt-20 txt-yellow">
-                    <div>Holder: Marketplace</div>
-                    <div>Total Rewards: 5,000.00 FOTA</div>
-                </div>
-            </div>
-            <div class="full-box mt-40">
-                <h3 class="txt-light-grey">Story:</h3>
-                <div class="hero-abstract text-justify">
+                <div class="desc text-justify text-white">
                     <p>
                         Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
                         quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
                     </p>
-                </div>
-                <div class="more-content">
-                    <div class="content">
-                        <div class="hero-abstract text-justify">
-                            <p>
-                                As the Human fell for the dark power that Silver inspired and became so powerful that slowly they began to renounce their faith in gods. Some even despised and judged
-                                that only fools believed in gods. With the rise of dark magic, the Earth fell into long and painful wars for power occurring everywhere. So, the balance of order
-                                collapsed. At that time, there was a small group, including Cyril, who believed that sooner or later, all creatures on the Earth would be corrupted and needed to be
-                                removed in order to restore peace and prevent further dangers to the universe.
-                            </p>
-                        </div>
-                    </div>
-                    <button class="btn load-more">Full Story</button>
                 </div>
             </div>
         </div>
