@@ -158,67 +158,199 @@
     img {
         max-width: 100%;
     }
-    .pointer {
-        position: absolute;
-        width: 80px;
-        height: 101px;
-        background: url('../images/lands/land-pointer.png') no-repeat;
-        background-size: cover;
-        z-index: 1;
-        cursor: pointer;
-        transition: all 0.1s;
-        @media screen and (max-width: 768px) {
-            width: 60px;
-            height: 76px;
-        }
-        @media screen and (max-width: 575px) {
-            width: 40px;
-            height: 51px;
-        }
-        &.active {
-            background: url('../images/lands/land-pointer-active.png') no-repeat;
+    &.nightmare {
+        .pointer {
+            position: absolute;
+            width: 80px;
+            height: 101px;
+            background: url('../images/lands/land-pointer.png') no-repeat;
             background-size: cover;
-            transform: translateY(-10px);
+            z-index: 1;
+            cursor: pointer;
+            transition: all 0.1s;
+            @media screen and (max-width: 768px) {
+                width: 60px;
+                height: 76px;
+            }
+            @media screen and (max-width: 575px) {
+                width: 40px;
+                height: 51px;
+            }
+            &.active {
+                background: url('../images/lands/land-pointer-active.png') no-repeat;
+                background-size: cover;
+                transform: translateY(-10px);
+            }
+            &.pointer-1 {
+                top: 45%;
+                left: 26%;
+            }
+            &.pointer-2 {
+                top: 36%;
+                left: 7%;
+            }
+            &.pointer-3 {
+                top: 33%;
+                left: 38%;
+            }
+            &.pointer-4 {
+                top: 47%;
+                right: 39%;
+            }
+            &.pointer-5 {
+                top: 39%;
+                right: 20%;
+            }
+            &.pointer-6 {
+                top: 24%;
+                right: 3%;
+            }
+            &.pointer-7 {
+                top: 23%;
+                left: 58%;
+            }
+            &.pointer-8 {
+                top: 12%;
+                left: 23%;
+            }
+            &.pointer-9 {
+                top: 0%;
+                left: 49%;
+            }
+            &.pointer-10 {
+                top: 2%;
+                right: 11%;
+            }
         }
-        &.pointer-1 {
-            top: 45%;
-            left: 26%;
+    }
+    &.greenland {
+        .pointer {
+            position: absolute;
+            width: 80px;
+            height: 101px;
+            background: url('../images/lands/land-pointer.png') no-repeat;
+            background-size: cover;
+            z-index: 1;
+            cursor: pointer;
+            transition: all 0.1s;
+            @media screen and (max-width: 768px) {
+                width: 60px;
+                height: 76px;
+            }
+            @media screen and (max-width: 575px) {
+                width: 40px;
+                height: 51px;
+            }
+            &.active {
+                background: url('../images/lands/land-pointer-active.png') no-repeat;
+                background-size: cover;
+                transform: translateY(-10px);
+            }
+            &.pointer-1 {
+                top: 48%;
+                left: 55%;
+            }
+            &.pointer-2 {
+                top: 53%;
+                left: 21%;
+            }
+            &.pointer-3 {
+                top: 44%;
+                right: 16%;
+            }
+            &.pointer-4 {
+                top: 29%;
+                right: 6%;
+            }
+            &.pointer-5 {
+                top: 11%;
+                right: 11%;
+            }
+            &.pointer-6 {
+                top: 22%;
+                right: 28%;
+            }
+            &.pointer-7 {
+                top: 30%;
+                left: 35%;
+            }
+            &.pointer-8 {
+                top: 35%;
+                left: 7%;
+            }
+            &.pointer-9 {
+                top: 20%;
+                left: 12%;
+            }
+            &.pointer-10 {
+                top: 5%;
+                left: 34%;
+            }
         }
-        &.pointer-2 {
-            top: 36%;
-            left: 7%;
-        }
-        &.pointer-3 {
-            top: 33%;
-            left: 38%;
-        }
-        &.pointer-4 {
-            top: 47%;
-            right: 39%;
-        }
-        &.pointer-5 {
-            top: 39%;
-            right: 20%;
-        }
-        &.pointer-6 {
-            top: 24%;
-            right: 3%;
-        }
-        &.pointer-7 {
-            top: 23%;
-            left: 58%;
-        }
-        &.pointer-8 {
-            top: 12%;
-            left: 23%;
-        }
-        &.pointer-9 {
-            top: 0%;
-            left: 49%;
-        }
-        &.pointer-10 {
-            top: 2%;
-            right: 11%;
+    }
+    &.earth {
+        .pointer {
+            position: absolute;
+            width: 80px;
+            height: 101px;
+            background: url('../images/lands/land-pointer.png') no-repeat;
+            background-size: cover;
+            z-index: 1;
+            cursor: pointer;
+            transition: all 0.1s;
+            @media screen and (max-width: 768px) {
+                width: 60px;
+                height: 76px;
+            }
+            @media screen and (max-width: 575px) {
+                width: 40px;
+                height: 51px;
+            }
+            &.active {
+                background: url('../images/lands/land-pointer-active.png') no-repeat;
+                background-size: cover;
+                transform: translateY(-10px);
+            }
+            &.pointer-1 {
+                top: 50%;
+                left: 34%;
+            }
+            &.pointer-2 {
+                top: 43%;
+                left: 6%;
+            }
+            &.pointer-3 {
+                top: 21%;
+                left: 25%;
+            }
+            &.pointer-4 {
+                top: 32%;
+                left: 44%;
+            }
+            &.pointer-5 {
+                top: 49%;
+                right: 15%;
+            }
+            &.pointer-6 {
+                top: 36%;
+                right: 6%;
+            }
+            &.pointer-7 {
+                top: 30%;
+                right: 28%;
+            }
+            &.pointer-8 {
+                top: 13%;
+                left: 48%;
+            }
+            &.pointer-9 {
+                top: 11%;
+                right: 11%;
+            }
+            &.pointer-10 {
+                top: 5%;
+                left: 34%;
+            }
         }
     }
 }
