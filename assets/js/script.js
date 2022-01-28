@@ -38,9 +38,13 @@ $(function () {
         e.preventDefault();
         $('.toast').toast('show')
     });
-    $(document).on('mouseover', '.toast-hover', function (e) {
+    $(document).on('mouseover', '.question-icon', function (e) {
         e.preventDefault();
-        $(this).next().find('.toast').toast('show')
+        $('.fotaFarming').toast('show')
+    });
+    $(document).on('click', '.check-in-btn', function (e) {
+        e.preventDefault();
+        $('.checkInToast').toast('show')
     });
     var range = $('.range-slider input');
     range.on('input', function (e) {
