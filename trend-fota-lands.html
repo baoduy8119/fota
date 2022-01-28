@@ -102,499 +102,100 @@
         </div>
     </header>
     <div class="page-content">
-        <div class="fota-container">
-            <div class="top-content position-relative">
-                <div class="top-navbar-custom d-flex">
-                    <a href="#" class="trade-link link active text-uppercase"><i class="icon-gold-bars d-block"></i>Trade</a>
-                    <a href="rent-index.html" class="rent-link link text-uppercase"><i class="icon-lease d-block"></i>Rent</a>
-                </div>
-                <div class="navbar-custom d-lg-flex justify-content-center">
-                    <ul class="nav long-type justify-content-center align-items-center">
-                        <li><a href="/fota" class="nav-link txt-grey txt-green-hover">Market</a></li>
-                        <li><a href="index.html" class="nav-link txt-grey txt-green-hover ">Heroes</a></li>
-                        <li><a href="item.html" class="nav-link txt-grey txt-green-hover">Items</a></li>
-                        <li><a href="land.html" class="nav-link txt-grey txt-green-hover active">FotaLands</a></li>
-                        <li><a href="trend-skins.html" class="nav-link txt-grey txt-green-hover">Skins</a></li>
-                    </ul>
-                </div>
+        <div class="container position-relative">
+            <div class="navbar-custom xs-pd-40 d-lg-flex justify-content-center">
+                <ul class="nav long-type justify-content-center align-items-center">
+                    <li>
+                        <a href="javascript:;" class="nav-link txt-grey txt-green-hover label-tooltip">
+                            <span class="label">Market</span>
+                            <div class="tooltip-content bottom">
+                                Coming Soon
+                            </div>
+                        </a>
+                    </li>
+                    <li><a href="trend-hero.html" class="nav-link txt-grey txt-green-hover">Heroes</a></li>
+                    <li>
+                        <a href="javascript:;" class="nav-link txt-grey txt-green-hover">
+                            <span class="label">Items</span>
+                        </a>
+                        <div class="level-2">
+                            <ul class="list-unstyled">
+                                <li><a href="trend-item.html">Items</a></li>
+                                <li><a href="trend-item-diagrams.html">Diagrams</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="nav-link txt-grey txt-green-hover active">
+                            <span class="label">FotaLands</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="nav-link txt-grey txt-green-hover label-tooltip">
+                            <span class="label">Skins</span>
+                            <div class="tooltip-content bottom">
+                                Coming Soon
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="main-content d-lg-flex align-items-stretch ">
-                <div id="sidebar" class="sidebar">
-                    <div class="search-block">
-                        <form>
-                            <div class="search-container position-relative">
-                                <input type="text" class="search-box" placeholder="Search by Name, ID..." aria-label="Search">
-                                <i class="icon-search position-absolute text-white"></i>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="filters">
-                        <div class="d-flex justify-content-between align-items-center mb-15">
-                            <div class="label-1 toggle-filter"><i class="fa fa-chevron-down text-white d-lg-none"></i>Filters (3)</div>
-                            <div><a href="#" class="text-white fs-14">Clear All</a></div>
+            <div class="land-list d-flex justify-content-center flex-wrap">
+                <div class="land-item">
+                    <a href="trend-nightmare-lands-detail.html">
+                        <img class="img-fluid" src="assets/images/lands/nightmare.png" alt="">
+                        <h4 class="name">Nightmare</h4>
+                        <div class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris...
                         </div>
-                        <div class="filter-list">
-                            <div class="filter-item">
-                                <div class="label">Price</div>
-                                <div class="content">
-                                    <div class="range-slider">
-                                        <input type="range" class="form-range" id="customRange1">
-                                        <div class="d-flex justify-content-between">
-                                            <span class="min">1 USDT</span>
-                                            <span class="max">10,000 USDT</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="filter-item">
-                                <div class="label">Land</div>
-                                <div class="check-list">
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox" checked="checked">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Desert Land
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Forest Land
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Arctic Land
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Grass Land
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Lava Land
-                                    </label>
-                                    <label class="checkbox-container">
-                                        <div class="custom-checkbox">
-                                            <input type="checkbox">
-                                            <span class="checkmark"></span>
-                                        </div>
-                                        Crystal Kingdom
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </a>
+                    <button class="btn load-more" data-bs-toggle="modal" data-bs-target="#buyModal">Full Story</button>
                 </div>
-                <div class="page-holder">
-                    <div class="container-fluid overflow-hidden">
-                        <section>
-                            <div class="row">
-                                <div class="col">
-                                    <div class="page-title-box d-lg-flex align-items-center justify-content-between">
-                                        <div class="label-1">1,200 results</div>
-                                        <div class="layout-select d-flex">
-                                            <ul class="list-unstyled d-flex">
-                                                <li><a href="" class="txt-dark-grey d-flex align-items-center grid-view"><i class="icon-view-module"></i>Grid</a></li>
-                                                <li><a href="" class="txt-dark-grey d-flex align-items-center list-view"><i class="icon-bulleted-list"></i>List</a></li>
-                                            </ul>
-                                            <div class="sort-by position-relative fota-dropdown">
-                                                <a class="sort-box fota-toggle green-hover d-flex justify-content-between align-items-center" href="javascript:;">
-                                                    Sort by Newest <i class="icon-sort"></i>
-                                                </a>
-                                                <div class="sort-dropdown fota-dropdown-menu animate slideIn">
-                                                    <a href="#" class="sort-item downdown-item green-hover">Newest</a>
-                                                    <a href="#" class="sort-item downdown-item green-hover">Highest Price</a>
-                                                    <a href="#" class="sort-item downdown-item green-hover">Lowest Price</a>
-                                                    <a href="#" class="sort-item downdown-item green-hover">Best Selling</a>
-                                                    <a href="#" class="sort-item downdown-item green-hover">Discount</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section>
-                            <div class="card-wrapper lands card-overview grid-view">
-                                <div class="row">
-                                    <div class="col-sm-6 col-xxl-4 card-item">
-                                        <div class="card sink-effect">
-                                            <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="trend-fota-lands-detail.html">
-                                                    <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/desert-zone-a.png" alt="">
-                                                    </div>
-                                                    <div class="card-info txt-dark-grey">
-                                                        <div class="top-info">
-                                                            <div class="info">
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
-                                                                </div>
-                                                                <div class="card-name">
-                                                                    Desert Zone A
-                                                                </div>
-                                                                <div class="card-class">
-                                                                    Desert Land
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-xxl-4 card-item">
-                                        <div class="card sink-effect">
-                                            <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="trend-fota-lands-detail.html">
-                                                    <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/forest-zone-a.png" alt="">
-                                                    </div>
-                                                    <div class="card-info txt-dark-grey">
-                                                        <div class="top-info">
-                                                            <div class="info">
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
-                                                                </div>
-                                                                <div class="card-name">
-                                                                    Forest Zone A
-                                                                </div>
-                                                                <div class="card-class">
-                                                                    Forest Land
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-xxl-4 card-item">
-                                        <div class="card sink-effect">
-                                            <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="trend-fota-lands-detail.html">
-                                                    <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/arctic-zone-a.png" alt="">
-                                                    </div>
-                                                    <div class="card-info txt-dark-grey">
-                                                        <div class="top-info">
-                                                            <div class="info">
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
-                                                                </div>
-                                                                <div class="card-name">
-                                                                    Arctic Zone A
-                                                                </div>
-                                                                <div class="card-class">
-                                                                    Arctic Land
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-xxl-4 card-item">
-                                        <div class="card sink-effect">
-                                            <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="trend-fota-lands-detail.html">
-                                                    <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/grass-zone-a.png" alt="">
-                                                    </div>
-                                                    <div class="card-info txt-dark-grey">
-                                                        <div class="top-info">
-                                                            <div class="info">
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
-                                                                </div>
-                                                                <div class="card-name">
-                                                                    Grass Zone A
-                                                                </div>
-                                                                <div class="card-class">
-                                                                    Grass Land
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-xxl-4 card-item">
-                                        <div class="card sink-effect">
-                                            <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="trend-fota-lands-detail.html">
-                                                    <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/lava-zone-a.png" alt="">
-                                                    </div>
-                                                    <div class="card-info txt-dark-grey">
-                                                        <div class="top-info">
-                                                            <div class="info">
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
-                                                                </div>
-                                                                <div class="card-name">
-                                                                    Lava Zone A
-                                                                </div>
-                                                                <div class="card-class">
-                                                                    Lava Land
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-xxl-4 card-item">
-                                        <div class="card sink-effect">
-                                            <div class="card-image">
-                                                <img class="list-view-bg w-100" src="assets/images/land-grid-bg.png" alt="">
-                                                <a href="trend-fota-lands-detail.html">
-                                                    <div class="thumb">
-                                                        <img class="img-fluid image" src="assets/images/crystal-zone-a.png" alt="">
-                                                    </div>
-                                                    <div class="card-info txt-dark-grey">
-                                                        <div class="top-info">
-                                                            <div class="info">
-                                                                <div class="card-id list-view-hide">
-                                                                    #MD0001
-                                                                </div>
-                                                                <div class="card-name">
-                                                                    Crystal Zone A
-                                                                </div>
-                                                                <div class="card-class">
-                                                                    Crystal Land
-                                                                    <span class="card-id grid-view-hide">
-                                                                        #MD0001
-                                                                    </span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-desc">
-                                                            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <nav class="d-flex justify-content-center w-100">
-                                <ul class="fota-pagination">
-                                    <li class="page-item"><a class="page-link previous-link" href="#">Prev</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">...</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">6</a></li>
-                                    <li class="page-item"><a class="page-link next-link" href="#">Next</a></li>
-                                </ul>
-                            </nav>
-                        </section>
-                    </div>
+                <div class="land-item">
+                    <a href="trend-green-lands-detail.html">
+                        <img class="img-fluid" src="assets/images/lands/green-land.png" alt="">
+                        <h4 class="name">GreenLand</h4>
+                        <div class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris...
+                        </div>
+                    </a>
+                    <button class="btn load-more" data-bs-toggle="modal" data-bs-target="#buyModal">Full Story</button>
                 </div>
-            </div>
-            <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class=" modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Register</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
+                <div class="land-item">
+                    <a href="trend-earth-lands-detail.html">
+                        <img class="img-fluid" src="assets/images/lands/the-earth.png" alt="">
+                        <h4 class="name">The Earth</h4>
+                        <div class="desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation
+                            ullamco laboris...
                         </div>
-                        <div class="modal-body">
-                            <form action="">
-                                <div class="mb-3">
-                                    <label class="fota-form-label">
-                                        <span>Username: </span>
-                                        <span class="txt-green help-text">View naming rules</span>
-                                        <div class="help-text-content animate slideIn">
-                                            <span class="d-block txt-orange mb-2">A username must be followed these rules:</span>
-                                            <div>Must be unique.<br>
-                                                4 to 15 characters.<br>
-                                                Must be uppercased ( A to Z).<br>
-                                                Can not start with numbers.<br>
-                                                No special characters.<br>
-                                                No space between characters.
-                                            </div>
-                                        </div>
-                                    </label>
-                                    <input type="email" class="fota-form-control">
-                                </div>
-                                <div class="mb-3">
-                                    <label class="fota-form-label">Ref. ID: </label>
-                                    <input type="email" class="fota-form-control">
-                                    <div class="invalid-message txt-orange"><i class="icon-spam"></i>Wanring message goes here.</div>
-                                </div>
-                                <div>
-                                    <a href="#" class="modal-btn d-flex align-items-center text-center sink-effect"><span>create account</span></a>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+                    </a>
+                    <button class="btn load-more" data-bs-toggle="modal" data-bs-target="#buyModal">Full Story</button>
                 </div>
             </div>
             <div class="modal fade" id="buyModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content large-modal">
+                    <div class="modal-content auto-height-modal">
                         <div class="modal-header">
-                            <h5 class="modal-title">Buy<br>
-                                Desert Zone A
-                            </h5>
+                            <h5 class="modal-title">Story</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
                         </div>
                         <div class="modal-body">
-                            <form action="">
-                                <div>
-                                    <div class="select-balance text-center fs-14 mb-10">
-                                        Conditions to buy:
-                                    </div>
-                                    <div class="group-content-1 m-auto">
-                                        <div class="txt-green fs-14"><i class="icon-checkmark"></i>Rank > 5</div>
-                                        <div class="txt-green fs-14"><i class=" icon-checkmark"></i>1 max leved Hero locked</div>
-                                        <div class="txt-orange fs-14"><i class=" icon-delete"></i>Out Clan</div>
-                                    </div>
-                                    <div class="select-balance text-center xs-mt-20 fs-14 mt-30 mb-10">
-                                        Select balance:
-                                    </div>
-                                    <div class="input-group">
-                                        <label class="radio-container">
-                                            <span class="txt-green">500.00 USDT</span>
-                                            <input type="radio" checked="checked" name="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="input-group">
-                                        <label class="radio-container">
-                                            <span class="txt-light-yellow">500.00 BUSD</span>
-                                            <input type="radio" name="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="input-group">
-                                        <label class="radio-container">
-                                            <span>500.00 FOTA</span>
-                                            <input type="radio" name="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="mb-3 mt-3">
-                                        <div class="text-center fs-14">
-                                            Total Price:
-                                        </div>
-                                        <div class="text-center fs-30 fw-7 text-uppercase">100.00 FOTA</div>
-                                        <div class="invalid-message txt-orange justify-content-center"><i class="icon-spam"></i>Wanring message goes here.</div>
-                                    </div>
-                                    <div>
-                                        <a href="#" data-bs-toggle="modal" data-bs-target="#buyModal2" class="modal-btn d-flex align-items-center text-center sink-effect"><span>BUY</span></a>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal fade" id="buyModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content large-modal">
-                        <div class="modal-header">
-                            <h5 class="modal-title mt-40">Get 1% share of<br>
-                                Desert Zone A
-                            </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
-                        </div>
-                        <div class="modal-body">
-                            <form action="">
-                                <div>
-                                    <div class="select-balance text-center fs-14 mb-10">
-                                        Conditions to be shared:
-                                    </div>
-                                    <div class="group-content-2 m-auto">
-                                        <div class="txt-green fs-14"><i class="icon-checkmark"></i>Join Clan <span class="d-none d-lg-inline-block">(which for sell this land 1%)</span></div>
-                                    </div>
-                                    <div class="select-balance text-center fs-14 mt-30 mb-10">
-                                        Select balance:
-                                    </div>
-                                    <div class="input-group">
-                                        <label class="radio-container">
-                                            <span class="txt-green">500.00 USDT</span>
-                                            <input type="radio" checked="checked" name="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="input-group">
-                                        <label class="radio-container">
-                                            <span class="txt-light-yellow">500.00 BUSD</span>
-                                            <input type="radio" name="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="input-group">
-                                        <label class="radio-container">
-                                            <span>500.00 FOTA</span>
-                                            <input type="radio" name="radio">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="mb-3 mt-3">
-                                        <div class="text-center fs-14">
-                                            Total Price:
-                                        </div>
-                                        <div class="text-center fs-30 fw-7 text-uppercase">100.00 FOTA</div>
-                                    </div>
-                                    <div>
-                                        <a href="#" class="modal-btn d-flex align-items-center text-center sink-effect"><span>BUY</span></a>
-                                    </div>
-                                </div>
-                            </form>
+                            <div class="text-justify">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud
+                                    exercitation ullamco laboris.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud
+                                    exercitation ullamco laboris.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

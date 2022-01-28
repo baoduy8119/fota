@@ -361,3 +361,41 @@
         background-size: cover;
     }
 }
+.land-list {
+    margin-top: 20px;
+    .land-item {
+        margin: 20px 0;
+        text-align: center;
+        @media screen and (min-width: 992px) {
+            flex: 0 0 50%;
+        }
+        a {
+            color: white;
+            img {
+                transition: all 0.2s;
+            }
+            &:hover {
+                img {
+                    filter: saturate(1.7);
+                    transform: translateY(-10px);
+                }
+            }
+        }
+        .name {
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: 400;
+            @media screen and (max-width: 991px) {
+                font-size: 32px;
+            }
+        }
+        .desc {
+            margin: 20px auto;
+            font-size: 14px;
+            max-width: 500px;
+            @media screen and (max-width: 991px) {
+                padding: 0 20px;
+            }
+        }
+    }
+}
