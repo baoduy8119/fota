@@ -62,6 +62,9 @@ body {
 .page-content {
     padding-bottom: 60px;
     background: #06302b url('../images/content-bg.png') no-repeat top center;
+    &.land {
+        background: #06302b url('../images/lands/land-detail-bg.png') no-repeat top center;
+    }
     background-size: cover;
 }
 .sidebar {

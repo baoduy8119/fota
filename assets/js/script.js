@@ -89,5 +89,9 @@ $(function () {
         $('.land-map .pointer').removeClass('active')
         $('.land-map img').attr('src', imgSrc);
         $(this).addClass('active')
+    }).on('click', function () {
+        $('html, body').animate({
+            'scrollTop': $("#land-summary").offset().top - 100
+        }, 100, 'swing');
     })
 });

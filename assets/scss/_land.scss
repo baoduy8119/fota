@@ -224,6 +224,9 @@
         }
     }
     &.greenland {
+        @media screen and (max-width: 991px) {
+            margin-bottom: 80px;
+        }
         .pointer {
             position: absolute;
             width: 80px;
@@ -289,6 +292,9 @@
         }
     }
     &.earth {
+        @media screen and (max-width: 991px) {
+            margin-bottom: 80px;
+        }
         .pointer {
             position: absolute;
             width: 80px;
@@ -358,7 +364,12 @@
     &.land {
         padding-top: 0;
         background: #06302b url(../images/lands/land-detail-bg.png) no-repeat top center;
-        background-size: cover;
+        background-size: 100%;
+        .navbar-custom {
+            @media screen and (max-width: 991px) {
+                padding-top: 70px;
+            }
+        }
     }
 }
 .land-list {
