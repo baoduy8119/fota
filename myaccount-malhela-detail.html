@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+        crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <title>Fota</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="fota-container">
+            <div class="header-inner d-flex">
+                <a href="/fota" class="d-flex align-items-center text-white text-decoration-none">
+                    <img class="logo" src="assets/images/logo.png" alt="FOTA">
+                </a>
+
+                <div class="d-flex align-items-center top-currency justify-content-end d-lg-none txt-light-yellow fw-7">
+                    <span>
+                        100.534 BUSD
+                    </span>
+                    <i class="icon-currency d-inline-block ml-10"></i>
+                </div>
+
+                <a href="#" class="toggle-menu d-block d-xxl-none">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <div class="nav-mobile d-xxl-flex align-items-center w-100">
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li>
+                            <a href="myaccount.html" class="nav-link txt-grey txt-green-hover text-uppercase active">My Account</a>
+                            <div class="nav-dashboard d-lg-none">
+                                <ul class="nav">
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center txt-green-hover level-1">
+                                            <i class="icon-noticeboard"></i>
+                                            Dashboard
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="myaccount-profit-pending.html" class="txt-green-hover">Profit</a></li>
+                                            <li><a href="myaccount-transaction-rent.html" class="txt-green-hover">Transaction</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-hero-farming.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-footman"></i>
+                                            Farming Planet
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount.html" class="d-flex align-items-center txt-green-hover active">
+                                            <i class="icon-user"></i>
+                                            Account
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-inventory-heroes.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-chest"></i>
+                                            Inventory
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-upgrade-item-1.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-hammer"></i>
+                                            Enhance Items
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-history.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-history"></i>
+                                            History
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-old-shop"></i>
+                                            Clan
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="myaccount-chat.html" class="d-flex align-items-center txt-green-hover">
+                                            <i class="icon-mail"></i>
+                                            <span>Contact</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="trend-market.html" class="nav-link txt-grey txt-green-hover text-uppercase">Market Trend</a></li>
+                        <li><a href="/fota" class="nav-link txt-grey txt-green-hover text-uppercase">Marketplace</a></li>
+                    </ul>
+
+                    <div class="d-block d-xxl-none language-mobile">
+                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
+                            <span>English</span>
+                            <img src="assets/images/usa-icon.png" alt="">
+                        </a>
+                        <a href="#" class="downdown-item text-white d-flex justify-content-end align-items-center">
+                            <span>Tiếng Việt</span>
+                            <img src="assets/images/vn-icon.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="notification-list">
+                        <!-- <div class="text-end">
+                            <button type="button" class="btn btn-login text-white fade-effect" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+                        </div> -->
+                        <div class="account d-xxl-flex align-items-center">
+                            <div class="account-user-avatar order-2">
+                                <img src="assets/images/user-avatar.png" alt="">
+                                <div class="position-relative fota-dropdown language d-none d-xxl-block">
+                                    <a class="language-icon fota-toggle d-none d-lg-block" href="#">
+                                        <img src="assets/images/language-icon.png" alt="">
+                                    </a>
+                                    <div class="fota-dropdown-menu animate slideIn text-end">
+                                        <a href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                            <span>English</span>
+                                            <img src="assets/images/usa-icon.png" alt="">
+                                        </a>
+                                        <a href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                            <span>Tiếng Việt</span>
+                                            <img src="assets/images/vn-icon.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="account-info text-end order-1">
+                                <div class="account-user-name text-uppercase">Player001</div>
+                                <div class="account-currency fw-7 d-xxl-flex align-items-center">
+                                    <div class="d-flex txt-light-green align-items-center justify-content-end">
+                                        <span>
+                                            100.534 USDT
+                                        </span>
+                                        <i class="icon-usdt d-inline-block"></i>
+                                    </div>
+                                    <div class="d-flex txt-light-yellow align-items-center justify-content-end">
+                                        <span>
+                                            99.534 BUSD
+                                        </span>
+                                        <i class="icon-binance d-inline-block"></i>
+                                    </div>
+                                    <div class="position-relative fota-dropdown">
+                                        <a class="fota-toggle d-none d-xxl-block" href="#">
+                                            <i class="fa fa-chevron-down text-white m-0"></i>
+                                        </a>
+                                        <div class="fota-dropdown-menu animate slideIn text-end">
+                                            <div href="#" class="downdown-item green-hover d-flex justify-content-end align-items-center">
+                                                <span class="txt-light-yellow">123,421 BNB</span>
+                                                <i class="icon-bnb d-inline-block m-0"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="page-content hero-detail bg-blue page-detail market-trend dashboard">
+        <div class="position-relative container">
+            <div class="breadcrumb sink-left-effect"><a href="#"><i class="icon-back-arrow"></i>Back</a></div>
+        </div>
+        <div class="hero-video-bg">
+            <!-- <video class="video" autoplay loop muted playsinline>
+                <source src="assets/images/heroes/grimm-bg.mp4" type="video/mp4">
+            </video> -->
+            <div class="video">
+                <img class="img-fluid" src="assets/images/heroes/malhela-bg.jpg" alt="">
+            </div>
+        </div>
+        <div class="container hero-container">
+            <div class="full-box hero-summary position-relative">
+                <div class="hero-name txt-light-grey">
+                    Malhela
+                </div>
+                <div class="text-white fw-6 mt-1">Level 1 - Renting Duration 7 days</div>
+                <div class="hero-alliances d-flex justify-content-center"><a href="#" class="sink-effect d-block">
+                    </a>
+                    <div class="item-class"><a href="#" class="sink-effect d-block">
+                        </a><a href="#"><img src="assets/images/race-monster.png" alt=""></a>
+                        <div class="tooltip-class">Monster</div>
+                    </div>
+                    <div class="item-class">
+                        <a href="#"><img src="assets/images/class-warlock.png" alt=""></a>
+                        <div class="tooltip-class">Warlock</div>
+                    </div>
+                </div>
+                <div class="user-info">
+                    <div class="nft-id txt-green">#M0002</div>
+                    <div class="fs-16 d-flex align-items-center justify-content-center">
+                        <span class="text-uppercase txt-l-grey d-inline-block mx-3">USER001</span>
+                        <span class="text-truncate text-white">0xdsa2SDAdewdsfa2qesd...DASD14</span>
+                        <a href="#" class="mx-1"><i class="icon-copy fs-18 text-white"></i></a>
+                    </div>
+                </div>
+                <div class="price-box d-flex flex-column align-items-center justify-content-center">
+                    <div class="price">
+                        <div class="txt-light-yellow fs-30 fw-7">100,000 BUSD</div>
+                        <div class="failure-cost"><span>Failure Upgrade Cost: </span><span class="txt-light-yellow">100 BUSD</span></div>
+                    </div>
+                    <div class="inner">
+                        <a href="#" class="fota-primary-btn green disabled sink-effect" data-bs-target="#sellModal"><span>SELL</span></a>
+                        <a href="#" class="fota-primary-btn blue sink-effect" data-bs-toggle="modal" data-bs-target="#rentModal"><span>FOR RENT</span></a>
+                        <a href="#" class="fota-primary-btn red sink-effect"><span>LOCK</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="full-box mt-40">
+                <blockquote class="hero-quote">“ Life is not a fairy tale. No happily ever after. Life’s gonna make Humans wish for death, they didn’t even realize death has already come, these fresh
+                    tortures are all that remain ”</blockquote>
+                <h3 class="txt-light-grey">Abstract:</h3>
+                <div class="hero-abstract text-justify">
+                    Malhela is Aedus’s twin. The two brothers were rescued by the Elf after Aedus exploded his magical power. With natural gift, Aedus quickly mastered the complex skills taught by the
+                    Elf whereas it was not that luck for Malhela, he would never stand where his twin’s standing. Malhela could hardly be a greater mage as he could do no more than he could, the magic
+                    that he learned and possessed was extremely limited. But Malhela somehow was not discouraged, he worked very hard and became Aedus' right-hand man in his pursuit of justice and for
+                    the Sun Temple.
+                </div>
+                <div class="more-content">
+                    <div class="content">
+                        <h3 class="txt-light-grey">Story:</h3>
+                        <div class="hero-abstract text-justify">
+                            <p>
+                                After the event changed the fortunes of the twin, together with Aedus, Malhela established The Sun Temple. He here met Silver Serpent, a young teenager, who wished to
+                                unite Middle Earth and create a prosperous and peaceful world. Malhela, unlike his brother, was more like Silver’s partner since he found in Silver his reflection, for
+                                having the same starting points and the desire to be a peacebuilder. He was a victim of tribal wars so he didn’t want any child to suffer those painful things like him.
+                                For that, Malhela became Silver’s mastermind in the Silver Dragon forces. With incredible ingenuity, bravery from Silver and wisdom and strategy from Malhela, the
+                                Silver Dragon forces gained countless victories and greatly impeded all the invasion plans. This turned the Human, once looked down on by other races, were finally
+                                earning people’s trust and recognition, conquering Middle Earth except for the Shadow Fortress of the Alken.
+                            </p>
+                            <p>
+                                And shortly after, bowing to the overwhelming power of the Alken in their ambush, the Silver Dragon forces had to admit defeat. More than ⅔ of the forces perished and
+                                became food for those bloodlust cannibals. Witnessing that bloody scene, Malhela’s hate rose, fast and volcanic. Even Silver also couldn’t handle his anger that their
+                                hope and dream for justice had collapsed. Silver and Malhela got to the Sun Temple asking for help from other great mages in order to turn the tide of war. But all
+                                Malhela had was a “no” for an answer from Aedus. Aedus believed that the magic bestowed from the Omnis was just for developing life, not for war. This enraged Malhela
+                                as he considered Aedus as a weak man because Aedus always yearned for peace and prosperity but had never fought for it..
+                            </p>
+                            <p>
+                                But those obstacles could not make Malhela give up. Together with Silver, they determined to investigate the power of the Alken. Despite being limited by their magical
+                                abilities, they detected some mysterious energy generated when those Alken ate people and then found out cannibalism was one of the ways to indirectly absorb Aether’s
+                                power. The Alken were as powerful as the demon because they had unwittingly absorbed too much Aether. And just like that, Malhela and Silver dived into how to capture
+                                souls from the living and turn them into their power.
+                            </p>
+                            <p>
+                                These plans immediately reached Aedus’ ears but it was too late. Both Silver and Malhela were then expelled from the Sun Temple but this didn’t make sense to them
+                                anymore. By the devastating power they had captured, the Silver Dragon suddenly became more powerful than ever. Malhela is now as strong as his brother and can even
+                                open his own Space Bridge.
+                            </p>
+                            <p>
+                                Taking advantage of that tremendous power, Aedus and Silver quickly avenged their loss and annihilated all the Alken. Since then, most of Middle Earth has been unified
+                                under the Silver Serpent. A new dynasty has begun, marking the beginning of a never-ending tragedy.
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn load-more">Full Story</button>
+                </div>
+            </div>
+            <div class="full-box mt-40">
+                <h3 class="txt-light-grey">Stats</h3>
+                <div class="hero-spec d-flex">
+                    <span class="text-center">
+                        <span class="d-flex align-items-center">
+                            <i class="icon-heart"></i>
+                            <span class="spec">HP</span>
+                        </span>
+                        <span class="fs-24 xs-fs-20 fw-7">9,999K</span>
+                    </span>
+                    <span class="text-center">
+                        <span class="d-flex align-items-center">
+                            <i class="icon-blur"></i>
+                            <span class="spec">MP</span>
+                        </span>
+                        <span class="fs-24 xs-fs-20 fw-7">9,999K</span>
+                    </span>
+                    <span class="text-center">
+                        <span class="d-flex align-items-center">
+                            <i class="icon-sword"></i>
+                            <span class="spec">Damage</span>
+                        </span>
+                        <span class="fs-24 xs-fs-20 fw-7">9,999K</span>
+                    </span>
+                    <span class="text-center">
+                        <span class="d-flex align-items-center">
+                            <i class="icon-shield"></i>
+                            <span class="spec">Armor</span>
+                        </span>
+                        <span class="fs-24 xs-fs-20 fw-7">9,999K</span>
+                    </span>
+                    <span class="text-center">
+                        <span class="d-flex align-items-center">
+                            <i class="icon-exercise"></i>
+                            <span class="spec">Movement Speed</span>
+                        </span>
+                        <span class="fs-24 xs-fs-20 fw-7">9,999K</span>
+                    </span>
+                    <span class="text-center">
+                        <span class="d-flex align-items-center">
+                            <i class="icon-attack"></i>
+                            <span class="spec">Attack Speed</span>
+                        </span>
+                        <span class="fs-24 xs-fs-20 fw-7">9,999K</span>
+                    </span>
+                </div>
+            </div>
+            <div class="full-box mt-40">
+                <h3 class="txt-light-grey mt-30">Recommended Equipments</h3>
+                <div class="hero-equipment">
+                    <div class="equipment-item sink-effect">
+                        <div class="img-shadow">
+                            <img src="assets/images/items/lighting-bolt.png" alt="">
+                        </div>
+                        <div class="label fw-6">Weapon</div>
+                    </div>
+                    <div class="equipment-item sink-effect">
+                        <div class="img-shadow">
+                            <img src="assets/images/items/blue-stone.png" alt="">
+                        </div>
+                        <div class="label fw-6">Armor</div>
+                    </div>
+                    <div class="equipment-item sink-effect">
+                        <div class="img-shadow">
+                            <img src="assets/images/items/harquebus.png" alt="">
+                        </div>
+                        <div class="label fw-6">Cape</div>
+                    </div>
+                    <div class="equipment-item sink-effect">
+                        <div class="img-shadow">
+                            <img src="assets/images/items/cannon.png" alt="">
+                        </div>
+                        <div class="label fw-6">Accessories</div>
+                    </div>
+                    <div class="equipment-item sink-effect">
+                        <div class="img-shadow">
+                            <img src="assets/images/items/chainmail-hauberk.png" alt="">
+                        </div>
+                        <div class="label fw-6">Accessories</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-40">
+                <div class="col-lg-6">
+                    <div class="half-box hero-related">
+                        <h3>Related Heroes</h3>
+                        <h4 class="txt-green mt-30">Strong against</h4>
+                        <div class="d-flex hero-related-list flex-wrap justify-content-center">
+                            <div class="item">
+                                <a href="#" class="sink-effect d-block">
+                                    <div class="d-inline-block img-shadow">
+                                        <img class="img-fluid img" src="assets/images/kronok-200x200.png" alt="">
+                                    </div>
+                                    <div class="hero-name">
+                                        Ciryl
+                                    </div>
+                                    <div class="hero-alliances d-flex justify-content-center">
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/race-monster.png" alt=""></a>
+                                            <div class="tooltip-class">Monster</div>
+                                        </div>
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/class-warlock.png" alt=""></a>
+                                            <div class="tooltip-class">Warlock</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="sink-effect d-block">
+                                    <div class="d-inline-block img-shadow">
+                                        <img class="img-fluid img" src="assets/images/kronok-200x200.png" alt="">
+                                    </div>
+                                    <div class="hero-name">
+                                        Ciryl
+                                    </div>
+                                    <div class="hero-alliances d-flex justify-content-center">
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/race-monster.png" alt=""></a>
+                                            <div class="tooltip-class">Monster</div>
+                                        </div>
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/class-warlock.png" alt=""></a>
+                                            <div class="tooltip-class">Warlock</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="sink-effect d-block">
+                                    <div class="d-inline-block img-shadow">
+                                        <img class="img-fluid img" src="assets/images/kronok-200x200.png" alt="">
+                                    </div>
+                                    <div class="hero-name">
+                                        Ciryl
+                                    </div>
+                                    <div class="hero-alliances d-flex justify-content-center">
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/race-monster.png" alt=""></a>
+                                            <div class="tooltip-class">Monster</div>
+                                        </div>
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/class-warlock.png" alt=""></a>
+                                            <div class="tooltip-class">Warlock</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="sink-effect d-block">
+                                    <div class="d-inline-block img-shadow">
+                                        <img class="img-fluid img" src="assets/images/kronok-200x200.png" alt="">
+                                    </div>
+                                    <div class="hero-name">
+                                        Ciryl
+                                    </div>
+                                    <div class="hero-alliances d-flex justify-content-center">
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/race-monster.png" alt=""></a>
+                                            <div class="tooltip-class">Monster</div>
+                                        </div>
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/class-warlock.png" alt=""></a>
+                                            <div class="tooltip-class">Warlock</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="sink-effect d-block">
+                                    <div class="d-inline-block img-shadow">
+                                        <img class="img-fluid img" src="assets/images/kronok-200x200.png" alt="">
+                                    </div>
+                                    <div class="hero-name">
+                                        Ciryl
+                                    </div>
+                                    <div class="hero-alliances d-flex justify-content-center">
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/race-monster.png" alt=""></a>
+                                            <div class="tooltip-class">Monster</div>
+                                        </div>
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/class-warlock.png" alt=""></a>
+                                            <div class="tooltip-class">Warlock</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <h4 class="txt-light-yellow mt-40">Weak against</h4>
+                        <div class="d-flex hero-related-list justify-content-center">
+                            <div class="item">
+                                <a href="#" class="sink-effect d-block">
+                                    <div class="d-inline-block img-shadow">
+                                        <img class="img-fluid img" src="assets/images/kronok-200x200.png" alt="">
+                                    </div>
+                                    <div class="hero-name">
+                                        Ciryl
+                                    </div>
+                                    <div class="hero-alliances d-flex justify-content-center">
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/race-monster.png" alt=""></a>
+                                            <div class="tooltip-class">Monster</div>
+                                        </div>
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/class-warlock.png" alt=""></a>
+                                            <div class="tooltip-class">Warlock</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="sink-effect d-block">
+                                    <div class="d-inline-block img-shadow">
+                                        <img class="img-fluid img" src="assets/images/kronok-200x200.png" alt="">
+                                    </div>
+                                    <div class="hero-name">
+                                        Ciryl
+                                    </div>
+                                    <div class="hero-alliances d-flex justify-content-center">
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/race-monster.png" alt=""></a>
+                                            <div class="tooltip-class">Monster</div>
+                                        </div>
+                                        <div class="item-class">
+                                            <a href="#"><img src="assets/images/class-warlock.png" alt=""></a>
+                                            <div class="tooltip-class">Warlock</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="half-box hero-skills">
+                        <h3 class="txt-light-grey">Skills</h3>
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-1-tab" data-bs-toggle="tab" data-bs-target="#nav-1" type="button" role="tab" aria-controls="nav-1" aria-selected="true"><img
+                                        src="assets/images/skills/malhela-skill-1.png" alt=""></button>
+                                <button class="nav-link" id="nav-2-tab" data-bs-toggle="tab" data-bs-target="#nav-2" type="button" role="tab" aria-controls="nav-2" aria-selected="false"><img
+                                        src="assets/images/skills/malhela-skill-2.png" alt=""></button>
+                                <button class="nav-link" id="nav-3-tab" data-bs-toggle="tab" data-bs-target="#nav-3" type="button" role="tab" aria-controls="nav-3" aria-selected="false"><img
+                                        src="assets/images/skills/malhela-skill-3.png" alt=""></button>
+                            </div>
+                        </nav>
+                        <div class="tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-1" role="tabpanel" aria-labelledby="nav-1-tab">
+                                <div class="sub-title">1st Skill</div>
+                                <div class="title text-white fs-30 fw-7">Raven's Wrath</div>
+                                <div class="desc txt-grey text-justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                    ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                    fugit, sed quia consequuntur magni dolores eos qui ratione.</div>
+                                <img class="img-fluid" src="assets/images/tab-content-1.png" alt="">
+                            </div>
+                            <div class="tab-pane fade" id="nav-2" role="tabpanel" aria-labelledby="nav-2-tab">
+                                <div class="sub-title">2nd Skill</div>
+                                <div class="title text-white fs-30 fw-7">Evil Spell</div>
+                                <div class="desc txt-grey text-justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                    ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                    fugit, sed quia consequuntur magni dolores eos qui ratione.</div>
+                                <img class="img-fluid" src="assets/images/tab-content-1.png" alt="">
+                            </div>
+                            <div class="tab-pane fade" id="nav-3" role="tabpanel" aria-labelledby="nav-3-tab">
+                                <div class="sub-title">Ultimate</div>
+                                <div class="title text-white fs-30 fw-7">Deadly Silence</div>
+                                <div class="desc txt-grey text-justify">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                                    ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                                    fugit, sed quia consequuntur magni dolores eos qui ratione.</div>
+                                <img class="img-fluid" src="assets/images/tab-content-1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="full-box mt-40">
+                <h3 class="txt-light-grey">History</h3>
+                <div class="table-responsive mt-30">
+                    <table class="fota-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Type</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">From</th>
+                                <th scope="col">To</th>
+                                <th scope="col">Hash</th>
+                                <th scope="col">Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Main Owner 1st</td>
+                                <td>10,000.00 FOTA </td>
+                                <td>ABC12345</td>
+                                <td>ABC12345</td>
+                                <td>0xwqas12sda4AAsd...2314AADS</td>
+                                <td>22/09/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Main Owner 1st</td>
+                                <td>10,000.00 FOTA </td>
+                                <td>ABC12345</td>
+                                <td>ABC12345</td>
+                                <td>0xwqas12sda4AAsd...2314AADS</td>
+                                <td>22/09/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Main Owner 1st</td>
+                                <td>10,000.00 FOTA </td>
+                                <td>ABC12345</td>
+                                <td>ABC12345</td>
+                                <td>0xwqas12sda4AAsd...2314AADS</td>
+                                <td>22/09/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Main Owner 1st</td>
+                                <td>10,000.00 FOTA </td>
+                                <td>ABC12345</td>
+                                <td>ABC12345</td>
+                                <td>0xwqas12sda4AAsd...2314AADS</td>
+                                <td>22/09/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Main Owner 1st</td>
+                                <td>10,000.00 FOTA </td>
+                                <td>ABC12345</td>
+                                <td>ABC12345</td>
+                                <td>0xwqas12sda4AAsd...2314AADS</td>
+                                <td>22/09/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Main Owner 1st</td>
+                                <td>10,000.00 FOTA </td>
+                                <td>ABC12345</td>
+                                <td>ABC12345</td>
+                                <td>0xwqas12sda4AAsd...2314AADS</td>
+                                <td>22/09/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Main Owner 1st</td>
+                                <td>10,000.00 FOTA </td>
+                                <td>ABC12345</td>
+                                <td>ABC12345</td>
+                                <td>0xwqas12sda4AAsd...2314AADS</td>
+                                <td>22/09/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Main Owner 1st</td>
+                                <td>10,000.00 FOTA </td>
+                                <td>ABC12345</td>
+                                <td>ABC12345</td>
+                                <td>0xwqas12sda4AAsd...2314AADS</td>
+                                <td>22/09/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Main Owner 1st</td>
+                                <td>10,000.00 FOTA </td>
+                                <td>ABC12345</td>
+                                <td>ABC12345</td>
+                                <td>0xwqas12sda4AAsd...2314AADS</td>
+                                <td>22/09/2021</td>
+                            </tr>
+                            <tr>
+                                <td>Main Owner 1st</td>
+                                <td>10,000.00 FOTA </td>
+                                <td>ABC12345</td>
+                                <td>ABC12345</td>
+                                <td>0xwqas12sda4AAsd...2314AADS</td>
+                                <td>22/09/2021</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div aria-live="polite" aria-atomic="true">
+                <div class="toast warming">
+                    <i class="icon-spam"></i>
+                    <span>This item needs to be at least level 10 to start selling/renting</span>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="rentModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content auto-height-modal">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Sell<br>
+                            Kronok
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-delete"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="">
+                            <nav>
+                                <div class="nav modal-nav-tabs" id="nav-tab" role="tablist">
+                                    <div class="nav-link active" id="fixed-tab" data-bs-toggle="tab" data-bs-target="#fixed" type="button" role="tab" aria-controls="nav-1" aria-selected="true">Fixed
+                                    </div>
+                                    <div class="nav-link" id="trailing-tab" data-bs-toggle="tab" data-bs-target="#trailing" type="button" role="tab" aria-controls="nav-2" aria-selected="false">Traling
+                                    </div>
+                                </div>
+                            </nav>
+                            <div class="modal-tab-content tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="fixed" role="tabpanel" aria-labelledby="nav-2-tab">
+                                    <div class="mb-3 currency-input">
+                                        <label class="fota-form-label">
+                                            Start Price:
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <input type="email" class="fota-form-control">
+                                            <span class="unit txt-green">USDT</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 currency-input">
+                                        <label class="fota-form-label">
+                                            End Price:
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <input type="email" class="fota-form-control">
+                                            <span class="unit txt-green">USDT</span>
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 currency-input">
+                                        <label class="fota-form-label">
+                                            Duration
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <input type="email" class="fota-form-control">
+                                            <span class="unit txt-light-grey">Days</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="trailing" role="tabpanel" aria-labelledby="nav-3-tab">
+                                    <div class="mb-3 currency-input">
+                                        <label class="fota-form-label">
+                                            Price:
+                                        </label>
+                                        <div class="input-wrapper">
+                                            <input type="email" class="fota-form-control">
+                                            <span class="unit txt-green">USDT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <a href="#" class="fota-primary-btn blue sink-effect"><span>FOR RENT</span></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

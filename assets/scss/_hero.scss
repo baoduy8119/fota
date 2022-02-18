@@ -9,7 +9,7 @@
     &.hero-detail {
         padding-top: 0;
         .hero-video-bg::after {
-            bottom: 6px;
+            bottom: 0;
         }
         &.bg-red {
             background: #5c1e18;
@@ -31,7 +31,7 @@
         &.bg-purple {
             background: #5a2f42;
             .hero-video-bg::after {
-                bottom: 6px;
+                bottom: 0;
                 background: rgb(90, 47, 66);
                 background: linear-gradient(0deg, rgba(90, 47, 66, 1) 0%, rgba(255, 255, 255, 0) 100%);
             }
@@ -39,7 +39,7 @@
         &.bg-grey {
             background: #efdb8f;
             .hero-video-bg::after {
-                bottom: 6px;
+                bottom: 0;
                 background: rgb(239, 219, 143);
                 background: linear-gradient(0deg, rgba(239, 219, 143, 1) 0%, rgba(255, 255, 255, 0) 100%);
             }
