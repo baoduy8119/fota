@@ -2388,3 +2388,14 @@ button {
         }
     }
 }
+.progress {
+    background: #094a43;
+    height: 10px;
+    border-radius: 0;
+    .progress-bar {
+        background-color: #52b488;
+    }
+    &.hero-progress {
+        max-width: 300px;
+    }
+}

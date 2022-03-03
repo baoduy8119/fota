@@ -734,6 +734,9 @@
         @media screen and (max-width: 991px) {
             padding: 0 20px;
         }
+        @media screen and (max-width: 767px) {
+            padding: 0 10px;
+        }
         .label {
             display: block;
             text-align: center;
@@ -769,9 +772,15 @@
             margin-top: 40px;
         }
         .upgrade-button {
+            @media screen and (max-width: 767px) {
+                padding: 0 10px;
+            }
             .fota-primary-btn {
-                width: inherit;
-                min-width: 360px;
+                width: 100%;
+                @media screen and (min-width: 768px) {
+                    width: inherit;
+                    min-width: 360px;
+                }
             }
         }
         &.hero-skills {
@@ -806,6 +815,47 @@
                     }
                 }
             }
+            .desc {
+                @media screen and (max-width: 1440px) {
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+    .hero-info {
+        .hero-alliances {
+            margin-top: 20px;
+        }
+        .hero-level {
+            margin-top: 50px;
+            text-align: center;
+            @media screen and (max-width: 575px) {
+                margin-top: 30px;
+            }
+            .label {
+                font-size: 24px;
+                font-weight: 700;
+            }
+            .hero-progress {
+                margin: 15px auto 0;
+            }
+            .progress-value {
+                display: inline-block;
+                margin-top: 5px;
+            }
+        }
+    }
+    .hero-stats {
+        margin-top: 20px;
+        > span {
+            flex: 0 0 33.3333%;
+            margin: 15px 0;
+            @media screen and (max-width: 1440px) {
+                flex: 0 0 50%;
+            }
+            .spec {
+                margin-left: 5px;
+            }
         }
     }
     .container-fluid {
@@ -827,9 +877,16 @@
             width: initial;
         }
     }
-    .hero-alliances .item-class img {
-        width: 40px;
-        height: 40px;
+    .hero-alliances .item-class {
+        &:first-child {
+            img {
+                width: 48px;
+            }
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
     }
 }
 .nav-item {
@@ -938,7 +995,7 @@
         z-index: 1;
         margin-top: 30px;
         font-size: 26px;
-        color: #f0b90b;
+        color: white;
         font-weight: 700;
     }
     .btn {
@@ -956,6 +1013,24 @@
             position: relative;
             width: 100px;
             z-index: 1;
+        }
+        &.skill {
+            img {
+                width: 140px;
+                height: 157px;
+            }
+        }
+        .level {
+            position: absolute;
+            bottom: 13px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #785425;
+            font-size: 20px;
+            min-width: 30px;
+            z-index: 1;
+            border-radius: 5px;
+            font-weight: 600;
         }
     }
     &.animation {
