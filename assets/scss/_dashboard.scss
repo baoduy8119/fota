@@ -729,6 +729,8 @@
     .rate {
         margin: 20px auto 30px;
         max-width: 400px;
+        font-size: 20px;
+        font-weight: bold;
         @media screen and (max-width: 991px) {
             padding: 0 20px;
         }
@@ -766,6 +768,45 @@
         @media screen and (max-width: 1400px) {
             margin-top: 40px;
         }
+        .upgrade-button {
+            .fota-primary-btn {
+                width: inherit;
+                min-width: 360px;
+            }
+        }
+        &.hero-skills {
+            .nav-link {
+                position: relative;
+                .level {
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 25px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #785425;
+                    font-size: 20px;
+                    font-weight: 700;
+                    border-radius: 5px;
+                    color: white;
+                    min-width: 30px;
+                    transition: all 0.3s;
+                }
+                &.lock {
+                    opacity: 1;
+                    img {
+                        filter: grayscale(100%);
+                    }
+                    .level {
+                        background: #4b4b4b;
+                    }
+                }
+                &.active {
+                    .level {
+                        bottom: 18px;
+                    }
+                }
+            }
+        }
     }
     .container-fluid {
         padding-bottom: 50px;
@@ -785,6 +826,10 @@
         .input-group {
             width: initial;
         }
+    }
+    .hero-alliances .item-class img {
+        width: 40px;
+        height: 40px;
     }
 }
 .nav-item {

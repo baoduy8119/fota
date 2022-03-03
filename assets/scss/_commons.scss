@@ -39,6 +39,9 @@
 .txt-red {
     color: red;
 }
+.txt-dark-yellow {
+    color: #e9a64f;
+}
 body {
     font-family: 'Lora', serif;
     color: $grey;
@@ -1326,7 +1329,8 @@ button {
     @media screen and (min-width: 992px) {
         margin-top: 30px;
     }
-    img {
+    img,
+    video {
         width: 100px;
     }
     .label {
