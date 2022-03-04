@@ -286,7 +286,7 @@
     padding: 0 10px;
     @media screen and (min-width: 992px) {
         padding: 40px 10px;
-        height: 560px;
+        height: 610px;
         background: url('../images/nav-dashboard-bg.png');
     }
     li {
@@ -784,6 +784,14 @@
             }
         }
         &.hero-skills {
+            .tab-content {
+                @media screen and (max-width: 991px) {
+                    margin-top: 30px;
+                }
+            }
+            nav {
+                margin-top: 20px;
+            }
             .nav-link {
                 position: relative;
                 .level {
@@ -799,6 +807,11 @@
                     color: white;
                     min-width: 30px;
                     transition: all 0.3s;
+                    @media screen and (max-width: 991px) {
+                        font-size: 16px;
+                        min-width: 24px;
+                        bottom: 12px;
+                    }
                 }
                 &.lock {
                     opacity: 1;
@@ -812,6 +825,9 @@
                 &.active {
                     .level {
                         bottom: 18px;
+                        @media screen and (max-width: 991px) {
+                            bottom: 7px;
+                        }
                     }
                 }
             }
@@ -823,6 +839,11 @@
         }
     }
     .hero-info {
+        position: relative;
+        .breadcrumb {
+            top: 15px;
+            left: 20px;
+        }
         .hero-alliances {
             margin-top: 20px;
         }
