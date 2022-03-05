@@ -233,6 +233,9 @@ textarea {
     }
 }
 .txt {
+    &-green-2 {
+        color: #51897e;
+    }
     &-light-green {
         color: $light-green;
     }
@@ -378,10 +381,12 @@ textarea {
     }
 }
 .icon-heart,
+.icon-heart-plus,
 .color-heart {
     color: #3ebd7a;
 }
 .icon-blur,
+.icon-water-plus,
 .color-blur {
     color: #3cd1d3;
 }

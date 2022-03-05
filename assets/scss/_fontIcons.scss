@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'icomoon';
-    src: url('fonts/icomoon.eot?qtz9hq');
-    src: url('fonts/icomoon.eot?qtz9hq#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?qtz9hq') format('truetype'),
-        url('fonts/icomoon.woff?qtz9hq') format('woff'), url('fonts/icomoon.svg?qtz9hq#icomoon') format('svg');
+    src: url('fonts/icomoon.eot?eataq');
+    src: url('fonts/icomoon.eot?eataq#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?eataq') format('truetype'),
+        url('fonts/icomoon.woff?eataq') format('woff'), url('fonts/icomoon.svg?eataq#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;
@@ -24,10 +24,16 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-heart-plus:before {
+    content: '\e923';
+}
+.icon-water-plus:before {
+    content: '\e924';
+}
 .icon-lock:before {
     content: '\e922';
 }
-.icon-upgrade:before {
+.icon-icon-upgrade:before {
     content: '\e921';
 }
 .icon-attack:before {
