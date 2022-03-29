@@ -452,6 +452,9 @@
                     //         }
                     //     }
                     // }
+                    .btn.skill-up {
+                        margin-bottom: 10px;
+                    }
                 }
             }
             .card-image {
@@ -518,6 +521,13 @@
                                 text-align: right;
                             }
                         }
+                    }
+                    .btn.skill-up {
+                        position: absolute;
+                        z-index: 1;
+                        top: -18px;
+                        left: 50%;
+                        transform: translateX(-50%);
                     }
                 }
             }
