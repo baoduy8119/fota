@@ -1624,28 +1624,34 @@ button {
     }
 }
 .navbar-custom-lg {
+    padding-top: 70px;
+    @media screen and (max-width: 767px) {
+        padding-top: 10px;
+    }
     .nav {
         width: 625px;
         height: 72px;
         background: url('../images/nav-custom-lg-bg.png');
-        background-size: cover;
-        @media screen and (max-width: 991px) {
+        background-size: 100%;
+        @media screen and (max-width: 767px) {
+            padding: 12px 0;
             margin-left: auto;
             margin-right: auto;
-            width: 345px;
-            height: 50px;
-            background: url(../images/nav-custom-bg.png) no-repeat;
+            width: 347px;
+            height: 78px;
+            background: url('../images/nav-custom-lg-m-bg.png') no-repeat;
             background-size: 100%;
         }
         @media screen and (max-width: 375px) {
             width: 320px;
-            height: 47px;
+            height: 72px;
         }
         li {
             a {
                 font-size: 22px;
-                @media screen and (max-width: 991px) {
-                    padding: 8px 15px;
+                padding: 8px 25px;
+                @media screen and (max-width: 767px) {
+                    padding: 2px 15px;
                     font-size: 16px;
                 }
             }
