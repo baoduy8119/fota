@@ -268,6 +268,24 @@
             }
         }
         &-related {
+            .wrapper {
+                margin-top: 30px;
+                @media screen and (min-width: 992px) {
+                    display: flex;
+                }
+                .hero-col {
+                    width: 100%;
+                    @media screen and (min-width: 992px) {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                        &:first-child {
+                            width: 3px;
+                            height: 574px;
+                            background: url(../images/hero-related-bg.png) no-repeat right center;
+                        }
+                    }
+                }
+            }
             @media screen and (max-width: 991px) {
                 padding-left: 0;
                 padding-right: 0;

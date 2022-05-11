@@ -2448,3 +2448,26 @@ button {
         margin-top: 40px;
     }
 }
+.hero-skills {
+    h3 {
+        margin-bottom: 30px;
+    }
+    .tab-content {
+        .video {
+            max-width: 100%;
+            height: 175px;
+            @media screen and (min-width: 992px) {
+                height: 500px;
+            }
+        }
+        .sub-title {
+            margin-top: 170px !important;
+        }
+    }
+    nav {
+        position: absolute;
+        top: 630px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
