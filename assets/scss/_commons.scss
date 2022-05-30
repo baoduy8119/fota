@@ -43,7 +43,7 @@
     color: #e9a64f;
 }
 body {
-    font-family: 'Lora', serif;
+    font-family: "Lora", serif;
     color: $grey;
     @media screen and (max-width: 991px) {
         font-size: 14px;
@@ -64,9 +64,9 @@ body {
 }
 .page-content {
     padding-bottom: 60px;
-    background: #06302b url('../images/content-bg.png') no-repeat top center;
+    background: #06302b url("../images/content-bg.png") no-repeat top center;
     &.land {
-        background: #06302b url('../images/lands/land-detail-bg.png') no-repeat top center;
+        background: #06302b url("../images/lands/land-detail-bg.png") no-repeat top center;
     }
     background-size: cover;
 }
@@ -98,7 +98,7 @@ body {
 .page-title-box {
     margin-top: 20px;
     padding-bottom: 17px;
-    background: url('../images/page-title-bottom-bg.png') no-repeat 0 100%;
+    background: url("../images/page-title-bottom-bg.png") no-repeat 0 100%;
 }
 .top-content {
     // margin-top: 70px;
@@ -118,7 +118,7 @@ body {
     .nav {
         width: 495px;
         height: 72px;
-        background: url('../images/nav-custom-bg.png') no-repeat;
+        background: url("../images/nav-custom-bg.png") no-repeat;
         background-size: 100%;
         &.long-type {
             li {
@@ -187,7 +187,7 @@ body {
         padding-bottom: 3px;
         visibility: hidden;
         opacity: 0;
-        background: url('../images/dropdown-bottom-bg.png') 0 100% no-repeat;
+        background: url("../images/dropdown-bottom-bg.png") 0 100% no-repeat;
         background-size: 100%;
         transition: all 0.3s;
         z-index: 1;
@@ -471,7 +471,7 @@ button {
     &-toggle {
         &.open {
             i::before {
-                content: '\f077';
+                content: "\f077";
             }
         }
     }
@@ -560,11 +560,11 @@ button {
 .modal-content {
     width: 440px;
     height: 490px;
-    background: url('../images/modal-bg.png') no-repeat;
+    background: url("../images/modal-bg.png") no-repeat;
     @media screen and (max-width: 991px) {
         width: 326px;
         height: 433px;
-        background: url('../images/modal-mb-bg.png') no-repeat;
+        background: url("../images/modal-mb-bg.png") no-repeat;
     }
     &.transparent-modal {
         background: none;
@@ -577,11 +577,11 @@ button {
     &.medium-modal {
         width: 466px;
         height: 550px;
-        background: url('../images/modal-medium-bg.png') no-repeat;
+        background: url("../images/modal-medium-bg.png") no-repeat;
         @media screen and (max-width: 991px) {
             width: 326px;
             height: 491px;
-            background: url('../images/modal-medium-mb-bg.png') no-repeat;
+            background: url("../images/modal-medium-mb-bg.png") no-repeat;
         }
         .modal-btn {
             margin-top: 20px;
@@ -591,27 +591,27 @@ button {
     &.large-modal {
         width: 466px;
         height: 780px;
-        background: url('../images/modal-large-bg.png') no-repeat;
+        background: url("../images/modal-large-bg.png") no-repeat;
         @media screen and (max-width: 991px) {
             width: 326px;
             height: 671px;
-            background: url('../images/modal-large-mb-bg.png') no-repeat;
+            background: url("../images/modal-large-mb-bg.png") no-repeat;
         }
     }
     &.account-modal {
         width: 466px;
         height: 600px;
-        background: url('../images/account-modal-bg.png') no-repeat;
+        background: url("../images/account-modal-bg.png") no-repeat;
         @media screen and (max-width: 991px) {
             width: 326px;
             // height: 671px;
-            background: url('../images/modal-large-mb-bg.png') no-repeat;
+            background: url("../images/modal-large-mb-bg.png") no-repeat;
         }
     }
     &.receipt-modal {
         width: 466px;
         height: 550px;
-        background: url('../images/modal-receipt-bg.png') no-repeat;
+        background: url("../images/modal-receipt-bg.png") no-repeat;
         .inline-group {
             margin: 0 12px;
             @media screen and (max-width: 991px) {
@@ -623,7 +623,7 @@ button {
             .fota-form-control {
                 width: 102px;
                 height: 50px;
-                background: url('../images/input-s-bg.png') no-repeat;
+                background: url("../images/input-s-bg.png") no-repeat;
                 background-size: cover;
                 @media screen and (max-width: 991px) {
                     width: 71px;
@@ -635,7 +635,7 @@ button {
             .fota-form-control {
                 width: 236px;
                 height: 50px;
-                background: url('../images/input-m-bg.png') no-repeat;
+                background: url("../images/input-m-bg.png") no-repeat;
                 color: $light-yellow;
                 background-size: cover;
                 @media screen and (max-width: 991px) {
@@ -652,7 +652,7 @@ button {
         }
     }
     &.auto-height-modal {
-        background: url('../images/modal-aheight-center-bg.png');
+        background: url("../images/modal-aheight-center-bg.png");
         background-size: cover;
         min-height: 489px;
         height: inherit;
@@ -671,12 +671,12 @@ button {
             position: absolute;
             left: 0;
             right: 0;
-            content: '';
+            content: "";
         }
         &::before {
             top: -7px;
             height: 192px;
-            background: url('../images/modal-aheight-top-bg.png') no-repeat;
+            background: url("../images/modal-aheight-top-bg.png") no-repeat;
             background-size: cover;
             @media screen and (min-width: 992px) {
                 height: 275px;
@@ -685,7 +685,7 @@ button {
         &::after {
             bottom: -7px;
             height: 150px;
-            background: url('../images/modal-aheight-bottom-bg.png') no-repeat;
+            background: url("../images/modal-aheight-bottom-bg.png") no-repeat;
             background-size: cover;
             @media screen and (min-width: 992px) {
                 height: 214px;
@@ -728,25 +728,25 @@ button {
         width: 137px;
         height: 99px;
         margin: 30px auto 0;
-        background: url('../images/trade-bg.png') no-repeat;
+        background: url("../images/trade-bg.png") no-repeat;
         justify-content: center;
         text-transform: uppercase;
         font-weight: bold;
         font-size: 30px;
         .page-rent & {
-            background: url('../images/rent-bg.png') no-repeat;
+            background: url("../images/rent-bg.png") no-repeat;
         }
         #registerModal & {
             width: 186px;
             height: 99px;
-            background: url('../images/btn-modal-bg.png') no-repeat;
+            background: url("../images/btn-modal-bg.png") no-repeat;
             font-size: 22px;
             line-height: 26px;
         }
         @media screen and (max-width: 991px) {
             width: 160px;
             height: 85px;
-            background: url('../images/btn-modal-mb-bg.png') no-repeat;
+            background: url("../images/btn-modal-mb-bg.png") no-repeat;
         }
         span {
             margin-top: -15px;
@@ -778,7 +778,7 @@ button {
         width: 36px;
         height: 45px;
         padding: 0;
-        background: url('../images/btn-close-bg.png') no-repeat;
+        background: url("../images/btn-close-bg.png") no-repeat;
         background-size: cover;
         opacity: 1;
         z-index: 99;
@@ -798,7 +798,7 @@ button {
         width: 360px;
         height: 50px;
         padding: 0 20px;
-        background: url('../images/input-bg.png');
+        background: url("../images/input-bg.png");
         appearance: none;
         outline: none;
         border: none;
@@ -807,7 +807,7 @@ button {
         @media screen and (max-width: 991px) {
             width: 265px;
             height: 35px;
-            background: url('../images/input-mb-bg.png');
+            background: url("../images/input-mb-bg.png");
         }
     }
     &-form-label {
@@ -862,10 +862,10 @@ button {
     user-select: none;
     width: 360px;
     height: 50px;
-    background-image: url('../images/input-bg.png');
+    background-image: url("../images/input-bg.png");
     background-size: 100%;
     @media screen and (max-width: 991px) {
-        background-image: url('../images/input-mb-bg.png');
+        background-image: url("../images/input-mb-bg.png");
         width: 265px;
         height: 35px;
     }
@@ -899,7 +899,7 @@ button {
         border-radius: 50%;
         transition: all 0.3s;
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 3px;
             left: 3px;
@@ -910,7 +910,7 @@ button {
             transition: all 0.2s;
         }
         :after {
-            content: '';
+            content: "";
             position: absolute;
             display: none;
         }
@@ -939,7 +939,7 @@ button {
     }
     &::before,
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         right: 0;
@@ -958,12 +958,12 @@ button {
     }
     &::before {
         top: -7px;
-        background: url('../images/small-box-top-bg.png');
+        background: url("../images/small-box-top-bg.png");
         background-size: cover;
     }
     &::after {
         bottom: -7px;
-        background: url('../images/small-box-bottom-bg.png');
+        background: url("../images/small-box-bottom-bg.png");
         background-size: cover;
     }
     @media screen and (max-width: 991px) {
@@ -973,11 +973,11 @@ button {
 .full-box {
     &::before {
         top: -7px;
-        background: url('../images/full-box-top-bg.png');
+        background: url("../images/full-box-top-bg.png");
     }
     &::after {
         bottom: -7px;
-        background: url('../images/full-box-bottom-bg.png');
+        background: url("../images/full-box-bottom-bg.png");
     }
     &.summary {
         padding: 40px 30px 60px;
@@ -989,10 +989,10 @@ button {
         margin-top: 50px;
         background-color: rgba(1, 14, 14, 0.3);
         &::before {
-            background: url('../images/diagram-top-bg.png');
+            background: url("../images/diagram-top-bg.png");
         }
         &::after {
-            background: url('../images/diagram-bottom-bg.png');
+            background: url("../images/diagram-bottom-bg.png");
         }
     }
     &.receipt-box {
@@ -1000,10 +1000,10 @@ button {
         padding: 20px;
         background: rgba($color: #000, $alpha: 0.5);
         &::before {
-            background: url('../images/fota-receipt-top-box-bg.png');
+            background: url("../images/fota-receipt-top-box-bg.png");
         }
         &::after {
-            background: url('../images/fota-receipt-bottom-box-bg.png');
+            background: url("../images/fota-receipt-bottom-box-bg.png");
         }
         @media screen and (max-width: 576px) {
             text-align: center;
@@ -1115,21 +1115,21 @@ button {
 .half-box {
     &::before {
         top: -7px;
-        background: url('../images/half-box-top-bg.png');
+        background: url("../images/half-box-top-bg.png");
     }
     &::after {
         bottom: -7px;
-        background: url('../images/half-box-bottom-bg.png');
+        background: url("../images/half-box-bottom-bg.png");
     }
 }
 .half-box-2 {
     &::before {
         top: -7px;
-        background: url('../images/half-box-top-bg-2.png');
+        background: url("../images/half-box-top-bg-2.png");
     }
     &::after {
         bottom: -7px;
-        background: url('../images/half-box-bottom-bg-2.png');
+        background: url("../images/half-box-bottom-bg-2.png");
     }
 }
 .nav-tabs {
@@ -1258,7 +1258,7 @@ button {
         &:hover,
         &.active {
             &::after {
-                content: '';
+                content: "";
                 position: absolute;
                 top: 3px;
                 left: 3px;
@@ -1281,26 +1281,26 @@ button {
         padding: 0 10px;
         font-size: 14px;
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: -20px;
             left: 50%;
             transform: translateX(-50%);
             width: 213px;
             height: 24px;
-            background: url('../images/large-arrow.png');
+            background: url("../images/large-arrow.png");
             background-size: 100%;
             @media screen and (max-width: 991px) {
                 top: -25px;
                 width: 76px;
                 height: 24px;
-                background: url('../images/medium-arrow.png');
+                background: url("../images/medium-arrow.png");
             }
             @media screen and (min-width: 1025px) and (max-width: 1400px) {
                 .page-detail & {
                     width: 76px;
                     height: 24px;
-                    background: url('../images/medium-arrow.png');
+                    background: url("../images/medium-arrow.png");
                 }
             }
         }
@@ -1381,7 +1381,7 @@ button {
         }
         &::before,
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             background: #475446;
             @media screen and (max-width: 1399px) {
@@ -1405,7 +1405,7 @@ button {
             position: relative;
             display: block;
             &::before {
-                content: '';
+                content: "";
                 position: absolute;
                 top: -60px;
                 left: 50%;
@@ -1424,14 +1424,14 @@ button {
     width: 360px;
     height: 100px;
     padding: 15px 20px;
-    background: url('../images/group-content-1.png');
+    background: url("../images/group-content-1.png");
     background-size: cover;
     line-height: 24px;
     @media screen and (max-width: 991px) {
         width: 265px;
         height: 85px;
         padding: 8px 20px;
-        background: url('../images/group-content-mb-1.png');
+        background: url("../images/group-content-mb-1.png");
     }
     i {
         margin-right: 10px;
@@ -1441,13 +1441,13 @@ button {
     width: 360px;
     height: 50px;
     padding: 15px 20px;
-    background: url('../images/input-bg.png');
+    background: url("../images/input-bg.png");
     background-size: cover;
     @media screen and (max-width: 991px) {
         width: 265px;
         height: 35px;
         padding: 8px 20px;
-        background: url('../images/input-mb-bg.png');
+        background: url("../images/input-mb-bg.png");
     }
     i {
         margin-right: 10px;
@@ -1503,7 +1503,7 @@ button {
     justify-content: center;
     width: 114px;
     height: 40px;
-    background: url('../images/fota-btn-bg.png') no-repeat;
+    background: url("../images/fota-btn-bg.png") no-repeat;
     background-size: cover;
     color: white;
     letter-spacing: 1px;
@@ -1511,20 +1511,20 @@ button {
     border: none;
 
     &.small-green {
-        background: url('../images/fota-green-medium-btn-bg.png') no-repeat;
+        background: url("../images/fota-green-medium-btn-bg.png") no-repeat;
     }
 
     &.fota-small-btn {
         width: 84px;
         height: 40px;
-        background: url('../images/fota-small-btn-bg.png') no-repeat;
+        background: url("../images/fota-small-btn-bg.png") no-repeat;
         background-size: cover;
     }
 
     &.fota-large-btn {
         width: 196px;
         height: 50px;
-        background: url('../images/fota-large-btn-bg.png') no-repeat;
+        background: url("../images/fota-large-btn-bg.png") no-repeat;
         background-size: cover;
         font-size: 18px;
         i {
@@ -1536,7 +1536,7 @@ button {
     &.fota-green-btn {
         width: 166px;
         height: 40px;
-        background: url('../images/fota-green-btn-bg.png') no-repeat;
+        background: url("../images/fota-green-btn-bg.png") no-repeat;
         background-size: cover;
         font-size: 18px;
         span {
@@ -1631,7 +1631,7 @@ button {
     .nav {
         width: 625px;
         height: 72px;
-        background: url('../images/nav-custom-lg-bg.png');
+        background: url("../images/nav-custom-lg-bg.png");
         background-size: 100%;
         @media screen and (max-width: 767px) {
             padding: 12px 0;
@@ -1639,7 +1639,7 @@ button {
             margin-right: auto;
             width: 347px;
             height: 78px;
-            background: url('../images/nav-custom-lg-m-bg.png') no-repeat;
+            background: url("../images/nav-custom-lg-m-bg.png") no-repeat;
             background-size: 100%;
         }
         @media screen and (max-width: 375px) {
@@ -1669,7 +1669,7 @@ button {
         width: 84px;
         height: 40px;
         padding: 0;
-        background: url('../images/fota-small-btn-bg.png') no-repeat;
+        background: url("../images/fota-small-btn-bg.png") no-repeat;
         cursor: pointer;
         background-size: cover;
         border: none;
@@ -1681,14 +1681,14 @@ button {
             height: 29px;
         }
     }
-    input[type='text'] {
+    input[type="text"] {
         padding: 0 100px 0 20px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
 }
-.custom-file-input input[type='file'] {
+.custom-file-input input[type="file"] {
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -1702,7 +1702,7 @@ button {
     width: 200px;
     margin: 0 auto;
     &::after {
-        content: '';
+        content: "";
         width: 200px;
         height: 200px;
         position: absolute;
@@ -1710,7 +1710,7 @@ button {
         left: 0;
         right: 0;
         bottom: 0;
-        background: url('../images/avatar-overlay.png');
+        background: url("../images/avatar-overlay.png");
     }
 }
 .mcblock-4 {
@@ -1781,7 +1781,7 @@ button {
 }
 .hero-sell-modal {
     height: 630px;
-    background: url('../images/modal-hero-sell.png') no-repeat;
+    background: url("../images/modal-hero-sell.png") no-repeat;
     .modal-header {
         @media screen and (max-width: 991px) {
             margin-top: 35px;
@@ -1792,7 +1792,7 @@ button {
     justify-content: center;
     width: 321px;
     height: 42px;
-    background: url('../images/modal-title-bg.png') no-repeat;
+    background: url("../images/modal-title-bg.png") no-repeat;
     background-size: 100%;
     align-items: center;
     @media screen and (max-width: 991px) {
@@ -1810,7 +1810,7 @@ button {
             color: $green;
         }
         &::after {
-            content: '/';
+            content: "/";
             position: absolute;
             right: -5px;
             top: -1px;
@@ -1954,18 +1954,18 @@ button {
     }
 }
 .rent-btn {
-    background: url('../images/rent-bg.png') no-repeat;
+    background: url("../images/rent-bg.png") no-repeat;
     background-size: cover;
     &:hover {
-        background: url('../images/rent-active-bg.png') no-repeat;
+        background: url("../images/rent-active-bg.png") no-repeat;
         background-size: cover;
     }
 }
 .buy-btn {
-    background: url('../images/buy-button-bg.png') no-repeat;
+    background: url("../images/buy-button-bg.png") no-repeat;
     background-size: cover;
     &:hover {
-        background: url('../images/buy-button-active-bg.png') no-repeat;
+        background: url("../images/buy-button-active-bg.png") no-repeat;
         background-size: cover;
     }
 }
@@ -2026,7 +2026,7 @@ button {
         width: 114px;
         height: 40px;
         text-align: center;
-        background: url('../images/fota-btn-bg.png') no-repeat;
+        background: url("../images/fota-btn-bg.png") no-repeat;
         font-size: 14px;
         color: white;
         opacity: 0;
@@ -2049,7 +2049,7 @@ button {
         position: relative;
     }
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 4px;
         left: 4px;
@@ -2083,7 +2083,7 @@ button {
     height: 20px;
     display: block;
     border-left: 2px solid #000;
-    content: '';
+    content: "";
     left: 22px;
     top: 4px;
     animation-duration: 1s;
@@ -2095,7 +2095,7 @@ button {
     height: 20px;
     display: block;
     border-left: 2px solid #000;
-    content: '';
+    content: "";
     left: 22px;
     top: 5px;
     animation-duration: 60s;
@@ -2143,7 +2143,7 @@ button {
         transform: translateX(-50%);
         width: 120px;
         height: 50px;
-        background: url('../images/badge-bg.png') no-repeat;
+        background: url("../images/badge-bg.png") no-repeat;
         background-size: 100%;
         text-transform: uppercase;
         z-index: 2;
@@ -2170,7 +2170,7 @@ button {
     display: block;
     width: 137px;
     height: 99px;
-    background: url('../images/trade-bg.png');
+    background: url("../images/trade-bg.png");
     font-size: 30px;
     font-weight: bold;
     padding-top: 20px;
@@ -2201,7 +2201,7 @@ button {
     min-width: 210px;
     transition: all 0.2s;
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -2264,10 +2264,10 @@ button {
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        content: '';
+        content: "";
         width: 100px;
         height: 100px;
-        background: url('../images/fota-loading.gif');
+        background: url("../images/fota-loading.gif");
         background-size: 100%;
     }
 }
@@ -2326,7 +2326,7 @@ button {
     padding: 0 20px;
     width: 360px;
     height: 50px;
-    background: url('../images/input-green-bg.png') 100%;
+    background: url("../images/input-green-bg.png") 100%;
     font-size: 16px;
     display: flex;
     align-items: center;
@@ -2342,7 +2342,7 @@ button {
         }
         &.open {
             i::before {
-                content: '\e90f';
+                content: "\e90f";
             }
         }
     }
@@ -2361,7 +2361,7 @@ button {
     .input-group {
         width: inherit;
         .radio-container {
-            background-image: url('../images/input-green-bg.png');
+            background-image: url("../images/input-green-bg.png");
         }
     }
     .fota-table {
@@ -2389,10 +2389,10 @@ button {
         bottom: 70px;
         left: 50%;
         transform: translateX(-50%);
-        content: '';
+        content: "";
         width: 113px;
         height: 14px;
-        background: url('../images/title-bottom-bg.png');
+        background: url("../images/title-bottom-bg.png");
         background-size: 100%;
         @media screen and (max-width: 991px) {
             bottom: 20px;
@@ -2412,7 +2412,7 @@ button {
 }
 .not-found {
     padding: 80px 0;
-    font-family: 'Marcellus', 'Lora', serif;
+    font-family: "Marcellus", "Lora", serif;
     @media screen and (min-width: 992px) {
         padding: 140px 0;
         font-size: 90px;
@@ -2439,7 +2439,7 @@ button {
         font-size: 16px;
         margin-top: 20px;
         letter-spacing: 1px;
-        font-family: 'Lora', serif;
+        font-family: "Lora", serif;
         @media screen and (min-width: 992px) {
             font-size: 20px;
         }
@@ -2461,13 +2461,83 @@ button {
             }
         }
         .sub-title {
-            margin-top: 170px !important;
+            margin-top: 110px !important;
+            @media screen and (min-width: 992px) {
+                margin-top: 170px !important;
+            }
         }
     }
     nav {
         position: absolute;
-        top: 630px;
+        top: 270px;
         left: 50%;
         transform: translateX(-50%);
+        @media screen and (min-width: 992px) {
+            top: 630px;
+
+        }
+        @media screen and (max-width: 991px) {
+            width: 320px
+        }
     }
+}
+$circle-size: 100px;
+$background-color: #b3cef6; 
+$progress-color: #4b86db;
+$percent: 75;
+$duration: 2s;
+.progress-bar {
+	position: relative;
+	height: $circle-size;
+	width: $circle-size;
+    background-color: transparent;
+	div {
+		position: absolute;
+		height: $circle-size;
+		width: $circle-size;
+		border-radius: 50%;
+			span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+				position: absolute;
+				font-family: Arial;
+				font-size: 20px;
+				height: 80px;
+				width: 80px;
+				left: 10px;
+				top: 10px;
+				text-align: center;
+				border-radius: 50%;
+				background-color: #0e1413;
+			}
+	}
+
+	.background {
+		background-color: $background-color;
+	}
+	.rotate {
+		clip: rect(0 ($circle-size / 2) $circle-size 0);
+		background-color: $progress-color;
+		// animation: rotate $duration linear;
+		// transform: rotate(-100deg);
+		// transition: all (2s * $percent / 100) linear;
+	}
+	.left {
+		clip: rect(0 ($circle-size / 2) $circle-size 0);
+		opacity: 1;
+		// animation: toggle ($duration / 2)  step-start;
+		background-color: $background-color;
+	}
+	.right {
+		clip: rect(0 ($circle-size / 2) $circle-size 0);
+		transform: rotate(180deg);
+		opacity: 0;
+		// animation: toggle ($duration / 2) step-end;
+		background-color: $progress-color;
+	}
+}
+@keyframes toggle {
+	0%		{ opacity: 0; }
+	100%	{ opacity: 1; }
 }

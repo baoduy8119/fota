@@ -62,6 +62,37 @@
             top: -120px;
         }
     }
+    .rewards {
+        margin: 30px auto;
+        max-width: 500px;
+        border: 2px solid #1d2e2b;
+        .maxout {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 200px;
+            @media screen and (max-width: 767px) {
+                font-size: 12px;
+            }
+            .progress-bar {
+                margin: 20px auto 0;
+            }
+        }
+        .info {
+            width: 300px;
+            border-left: 2px solid #1d2e2b;
+            background: #131a19;
+            padding: 20px;
+            text-align: center;
+            .label {
+                margin: 8px 0;
+                font-size: 14px;
+                @media screen and (max-width: 767px) {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
     h3 {
         font-size: 30px;
         font-weight: bold;
