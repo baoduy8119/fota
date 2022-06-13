@@ -3417,32 +3417,32 @@ button:focus {
   margin-top: 40px;
 }
 
-.hero-skills h3 {
+.hero-container .hero-skills h3 {
   margin-bottom: 30px;
 }
 
-.hero-skills .tab-content .video {
+.hero-container .hero-skills .tab-content .video {
   max-width: 100%;
   height: 175px;
 }
 
 @media screen and (min-width: 992px) {
-  .hero-skills .tab-content .video {
+  .hero-container .hero-skills .tab-content .video {
     height: 500px;
   }
 }
 
-.hero-skills .tab-content .sub-title {
+.hero-container .hero-skills .tab-content .sub-title {
   margin-top: 110px !important;
 }
 
 @media screen and (min-width: 992px) {
-  .hero-skills .tab-content .sub-title {
+  .hero-container .hero-skills .tab-content .sub-title {
     margin-top: 170px !important;
   }
 }
 
-.hero-skills nav {
+.hero-container .hero-skills nav {
   position: absolute;
   top: 270px;
   left: 50%;
@@ -3451,13 +3451,13 @@ button:focus {
 }
 
 @media screen and (min-width: 992px) {
-  .hero-skills nav {
+  .hero-container .hero-skills nav {
     top: 630px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .hero-skills nav {
+  .hero-container .hero-skills nav {
     width: 320px;
   }
 }
