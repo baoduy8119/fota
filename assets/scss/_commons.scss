@@ -42,6 +42,9 @@
 .txt-dark-yellow {
     color: #e9a64f;
 }
+.txt-red {
+    color: $red;
+}
 body {
     font-family: "Lora", serif;
     color: $grey;
@@ -364,6 +367,9 @@ textarea {
         }
         &-fs-20 {
             font-size: 20px;
+        }
+        &-fs-26 {
+            font-size: 26px;
         }
         &-fs-16 {
             font-size: 16px;
@@ -1551,6 +1557,11 @@ button {
     width: 100%;
     text-align: left;
     border: 1px solid #073b35;
+    &.cols-3 {
+        th {
+            width: 33.3333%;
+        }
+    }
     thead {
         background-color: #055148;
         color: white;
