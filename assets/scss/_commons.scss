@@ -990,6 +990,29 @@ button {
         @media screen and (min-width: 992px) {
             padding: 40px 220px 120px;
         }
+        .item-desc {
+            margin-top: 30px;
+            border: 2px solid #172122;
+            text-align: left;
+            color: $grey;
+            .label {
+                font-size: 16px;
+            }
+            p {
+                margin: 0;
+            }
+            .top-pane,
+            .bottom-pane {
+                padding: 15px 20px;
+            }
+            .top-pane {
+                background-color: rgba(14, 20, 20, 0.7);
+            }
+            .bottom-pane {
+                border-top: 2px solid #172122;
+                background-color: rgba(20, 26, 26, 0.7);
+            }
+        }
     }
     &.diagram-box {
         margin-top: 50px;

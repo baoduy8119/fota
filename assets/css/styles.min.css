@@ -1512,6 +1512,35 @@ button:focus {
   }
 }
 
+.full-box.summary .item-desc {
+  margin-top: 30px;
+  border: 2px solid #172122;
+  text-align: left;
+  color: #e3e6d5;
+}
+
+.full-box.summary .item-desc .label {
+  font-size: 16px;
+}
+
+.full-box.summary .item-desc p {
+  margin: 0;
+}
+
+.full-box.summary .item-desc .top-pane,
+.full-box.summary .item-desc .bottom-pane {
+  padding: 15px 20px;
+}
+
+.full-box.summary .item-desc .top-pane {
+  background-color: rgba(14, 20, 20, 0.7);
+}
+
+.full-box.summary .item-desc .bottom-pane {
+  border-top: 2px solid #172122;
+  background-color: rgba(20, 26, 26, 0.7);
+}
+
 .full-box.diagram-box {
   margin-top: 50px;
   background-color: rgba(1, 14, 14, 0.3);
