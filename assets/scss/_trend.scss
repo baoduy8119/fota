@@ -519,6 +519,20 @@
             }
         }
     }
+    &.top-1 {
+        align-items: end;
+        > .level-col {
+            &:first-child {
+                margin-bottom: 142px;
+                align-self: flex-end;
+            }
+        }
+        > .level-col.two-branch {
+            &:before {
+                top: calc(50% + 71px);
+            }
+        }
+    }
     @media screen and (min-width: 1400px) {
         justify-content: center;
     }
@@ -572,6 +586,16 @@
                 left: 0;
                 width: 2px;
                 height: 144px;
+            }
+            &.parent-at-bottom {
+                &::before {
+                    transform: translateY(-1px);
+                }
+            }
+            &.line-full-height {
+                &::before {
+                    height: 286px;
+                }
             }
         }
     }

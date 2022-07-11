@@ -7746,6 +7746,22 @@ button:focus {
   top: calc(50% + 71px);
 }
 
+.diagram.top-1 {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.diagram.top-1 > .level-col:first-child {
+  margin-bottom: 142px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.diagram.top-1 > .level-col.two-branch:before {
+  top: calc(50% + 71px);
+}
+
 @media screen and (min-width: 1400px) {
   .diagram {
     -webkit-box-pack: center;
@@ -7815,6 +7831,15 @@ button:focus {
   left: 0;
   width: 2px;
   height: 144px;
+}
+
+.diagram .level-col.two-branch.parent-at-bottom::before {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+}
+
+.diagram .level-col.two-branch.line-full-height::before {
+  height: 286px;
 }
 
 .diagram .level {
